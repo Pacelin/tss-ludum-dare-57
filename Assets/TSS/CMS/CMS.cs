@@ -17,13 +17,10 @@ namespace TSS.ContentManagement
     [RuntimeOrder(ERuntimeOrder.SystemRegistration)]
     public class CMS : IRuntimeLoader
     {
-		public static Transform GameObject { get; private set; }
  
 
         public async UniTask Initialize(CancellationToken cancellationToken)
         {
-			GameObject = (await Addressables.LoadAssetAsync<GameObject>("Assets/Scenes/GameObject.prefab")
-				.ToUniTask(cancellationToken: cancellationToken)).GetComponent<Transform>();
         }
 
         public void Dispose() { }

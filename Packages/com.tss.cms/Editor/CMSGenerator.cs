@@ -46,9 +46,11 @@ namespace TSS.ContentManagement.Editor
             var templateAsset = AssetDatabase.LoadAssetAtPath<TextAsset>(TEMPLATE_PATH);
             var template = Template.Parse(templateAsset.text);
 
+            AssetDatabase.StartAssetEditing();
             var model = CollectData(database);
             var render = template.Render(model);
             TSSEditorUtils.WriteFile(GENERATION_PATH, render);
+            AssetDatabase.StopAssetEditing();
             AssetDatabase.Refresh();
         }
 
@@ -98,14 +100,23 @@ namespace TSS.ContentManagement.Editor
 
                 return currentFolder;
             }
-            
-            foreach (var entry in database.Entries)
+
+            var entries = database.Entries.ToArray();
+            foreach (var entry in entries)
             {
                 var assetPath = AssetDatabase.GUIDToAssetPath(entry.GUID);
+                if (assetPath == null)
+                {
+                    CMSAssetDatabase.UnmarkAsset(entry.GUID);
+                    continue;
+                }
                 var asset = AssetDatabase.LoadAssetAtPath<Object>(assetPath);
                 var addressable = AddressableAssetSettingsDefaultObject.Settings.FindAssetEntry(entry.GUID);
                 if (addressable == null)
+                {
+                    CMSAssetDatabase.UnmarkAsset(entry.GUID);
                     continue;
+                }
                 
                 var item = new ItemGenerationData();
                 item.name = entry.CMSName;
