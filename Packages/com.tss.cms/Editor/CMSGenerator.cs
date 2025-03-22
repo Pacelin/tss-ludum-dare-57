@@ -38,7 +38,7 @@ namespace TSS.ContentManagement.Editor
     internal static class CMSGenerator
     {
         private const string TEMPLATE_PATH = "Packages/com.tss.cms/Editor/cms_template.txt";
-        private const string GENERATION_PATH = "Assets/TSS/CMS/CMS.cs";
+        private const string GENERATION_PATH = "Assets/TSS/CMS.cs";
         
         public static void Generate()
         {

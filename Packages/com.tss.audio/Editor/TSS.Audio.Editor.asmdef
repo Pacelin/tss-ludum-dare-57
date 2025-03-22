@@ -1,0 +1,20 @@
+{
+    "name": "TSS.Audio.Editor",
+    "rootNamespace": "TSS.Audio.Editor",
+    "references": [
+        "GUID:f47a80bad6405604f9d5888234a4b06a",
+        "GUID:b1d2e48546b45594ea9f55aff520bbcf",
+        "GUID:c81d0ee8d6efa394bb6dc05915596a13"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

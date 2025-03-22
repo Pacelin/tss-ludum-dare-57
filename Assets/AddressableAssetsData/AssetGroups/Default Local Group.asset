@@ -25,11 +25,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: e987e4e4e79ef5a45806a4c74df1a3d3
-    m_Address: Assets/Scenes/GameObject.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 3df31db82dee45c4ca1035a0e1c9b599, type: 2}
   m_SchemaSet:

@@ -8,8 +8,8 @@ namespace TSS.ContentManagement.Editor
 {
     internal class CMSAssetDatabase : ScriptableObject
     {
-        public const string ASSET_PATH = "Assets/Settings/CMSDatabase.asset";
-        private const string ASSET_DIR = "Assets/Settings";
+        public const string ASSET_PATH = "Assets/TSS/CMSDatabase.asset";
+        private const string ASSET_DIR = "Assets/TSS";
 
         private static CMSAssetDatabase Instance
         {
