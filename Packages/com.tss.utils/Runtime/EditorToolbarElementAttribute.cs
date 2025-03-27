@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace TSS.Utils.Editor
+namespace TSS.Utils
 {
     public enum EToolbarAlign
     {
@@ -14,7 +14,7 @@ namespace TSS.Utils.Editor
         LeftPanel,
         RightPanel
     }
-    
+
     [Conditional("UNITY_EDITOR")] 
     public class EditorToolbarElementAttribute : Attribute
     {

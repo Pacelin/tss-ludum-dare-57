@@ -9,9 +9,11 @@ namespace TSS.Core
     [RuntimeOrder(ERuntimeOrder.SubsystemRegistration, 1)]
     internal class RuntimeLocalization : IRuntimeLoader
     {
-        public UniTask Initialize(CancellationToken cancellationToken) =>
-            LocalizationSettings.InitializationOperation
+        public async UniTask Initialize(CancellationToken cancellationToken)
+        {
+            await LocalizationSettings.InitializationOperation
                 .ToUniTask(cancellationToken: cancellationToken);
+        }
         public void Dispose() { }
     }
 }

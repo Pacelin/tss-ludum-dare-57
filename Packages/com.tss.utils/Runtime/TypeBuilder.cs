@@ -14,7 +14,7 @@ namespace TSS.Utils
             _filters.Add(t => t.IsClass && !t.IsAbstract);
             return this;
         }
-        
+
         public TypeBuilder DerivedFrom<T>()
         {
             var derivedType = typeof(T);

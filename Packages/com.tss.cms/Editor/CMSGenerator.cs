@@ -38,20 +38,25 @@ namespace TSS.ContentManagement.Editor
     internal static class CMSGenerator
     {
         private const string TEMPLATE_PATH = "Packages/com.tss.cms/Editor/cms_template.txt";
-        private const string GENERATION_PATH = "Assets/TSS/CMS.cs";
+        private const string GENERATION_PATH = "Assets/TSS/CMS.Generated.cs";
         
         public static void Generate()
         {
-            var database = AssetDatabase.LoadAssetAtPath<CMSAssetDatabase>(CMSAssetDatabase.ASSET_PATH);
-            var templateAsset = AssetDatabase.LoadAssetAtPath<TextAsset>(TEMPLATE_PATH);
-            var template = Template.Parse(templateAsset.text);
-
             AssetDatabase.StartAssetEditing();
-            var model = CollectData(database);
-            var render = template.Render(model);
-            TSSEditorUtils.WriteFile(GENERATION_PATH, render);
-            AssetDatabase.StopAssetEditing();
-            AssetDatabase.Refresh();
+            try
+            {
+                var database = AssetDatabase.LoadAssetAtPath<CMSAssetDatabase>(CMSAssetDatabase.ASSET_PATH);
+                var templateAsset = AssetDatabase.LoadAssetAtPath<TextAsset>(TEMPLATE_PATH);
+                var template = Template.Parse(templateAsset.text);
+                var model = CollectData(database);
+                var render = template.Render(model);
+                TSSEditorUtils.WriteFile(GENERATION_PATH, render);
+            }
+            finally
+            {
+                AssetDatabase.StopAssetEditing();
+                AssetDatabase.Refresh();
+            }
         }
 
         private static GenerationData CollectData(CMSAssetDatabase database)

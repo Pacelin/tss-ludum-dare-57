@@ -9,7 +9,20 @@ namespace TSS.Utils.Editor
     {
         private static double _doubleClickExpiration;
         private const double _doubleClickThreshold = 0.3;
+        private static float _lastLabelGUI;
+        private const float SMALL_LABEL_WIDTH = 51;
+        
+        public static void BeginSmallLabel()
+        {
+            _lastLabelGUI = EditorGUIUtility.labelWidth;
+            EditorGUIUtility.labelWidth = SMALL_LABEL_WIDTH;
+        }
 
+        public static void EndSmallLabel()
+        {
+            EditorGUIUtility.labelWidth = _lastLabelGUI;
+        }
+        
         public static bool DrawInlineReadonly(this SerializedProperty property)
         {
             property = property.Copy();

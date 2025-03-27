@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Threading.Tasks;
 using JetBrains.Annotations;
-using TSS.Utils.Editor;
+using TSS.Utils;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
@@ -79,12 +79,14 @@ namespace TSS.Jams.Editor
         private void CheckForUpdates(int progressId)
         {
             Progress.SetDescription(progressId, "Check for butler updates");
+            Progress.Report(progressId, 0f);
             var startInfo = new ProcessStartInfo(BUTLER_PATH, UPGRADE_ARGS);
             startInfo.UseShellExecute = false;
             var process = new Process();
             process.StartInfo = startInfo;
             process.Start();
             process.WaitForExit();
+            Progress.Report(progressId, 0.1f);
         }
 
         private void Login(int progressId)
@@ -96,6 +98,7 @@ namespace TSS.Jams.Editor
             process.StartInfo = startInfo;
             process.Start();
             process.WaitForExit();
+            Progress.Report(progressId, 0.3f);
         }
 
         private void Upload(int progressId, string directory, string user, string game, string channel, string version)
@@ -110,6 +113,7 @@ namespace TSS.Jams.Editor
             process.StartInfo = startInfo;
             process.Start();
             process.WaitForExit();
+            Progress.Report(progressId, 1f);
         }
     }
 }

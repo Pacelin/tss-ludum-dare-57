@@ -68,22 +68,15 @@
       "dependencies": {},
       "url": "https://package.openupm.com"
     },
-    "com.tss.audio": {
-      "version": "file:com.tss.audio",
+    "com.tss.audio-fmod": {
+      "version": "file:com.tss.audio-fmod",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
         "com.unity.addressables": "2.2.2",
-        "com.unity.localization": "1.5.4",
-        "com.unity.inputsystem": "1.13.1",
-        "com.unity.cinemachine": "3.1.3",
         "jp.hadashikick.vcontainer": "1.16.8",
-        "com.cysharp.messagepipe": "1.8.1",
-        "com.cysharp.messagepipe.vcontainer": "1.8.1",
         "com.cysharp.unitask.compatible": "2.3.1",
-        "com.cysharp.r3": "1.2.9",
-        "org.nuget.r3": "1.2.9",
-        "org.nuget.observablecollections.r3": "3.3.3",
+        "org.nuget.scriban": "5.11.0",
         "com.tss.utils": "1.0.0"
       }
     },
@@ -139,6 +132,14 @@
         "org.nuget.r3": "1.2.9",
         "org.nuget.observablecollections.r3": "3.3.3",
         "com.tss.utils": "1.0.0"
+      }
+    },
+    "com.tss.tweening": {
+      "version": "file:com.tss.tweening",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.cysharp.unitask.compatible": "2.3.1"
       }
     },
     "com.tss.utils": {

@@ -11,5 +11,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 739b1727448846c3932ee719b1f8fcd9, type: 3}
   m_Name: CMSDatabase
-  m_EditorClassIdentifier: 
-  _entries: []
+  m_EditorClassIdentifier: TSS.ContentManagement.Editor.CMSAssetDatabase, TSS.ContentManagement.Editor
+  _entries:
+  - GUID: 9cc9788200c0f5641bb9f12b06fd1059
+    CMSName: Canvas
+    ComponentName: GameObject
+    Namespace: 

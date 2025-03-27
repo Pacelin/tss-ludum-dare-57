@@ -233,7 +233,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   identifier: 46fbfdf3fc43db0458918377fd40293e
   parentIdentifier: default
-  active: 0
+  active: 1
   Properties:
     LiveUpdate:
       Value: 0
@@ -283,7 +283,7 @@ MonoBehaviour:
     CallbackHandler:
       Value: {fileID: 0}
       HasValue: 0
-  OutputTypeName: 
+  OutputTypeName: AUTODETECT
   threadAffinities:
     Value: []
     HasValue: 0
@@ -453,10 +453,10 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 
-  sourceBankPath: 
+  sourceProjectPath: FMODProject/test/test.fspro
+  sourceBankPath: FMODProject/test/Build
   sourceBankPathUnformatted: 
-  BankRefreshCooldown: 5
+  BankRefreshCooldown: 1
   ShowBankRefreshWindow: 1
   AutomaticEventLoading: 1
   BankLoadType: 0
@@ -475,7 +475,8 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
+  MasterBanks:
+  - Master
   Banks: []
   BanksToLoad: []
   LiveUpdatePort: 9264
@@ -488,22 +489,22 @@ MonoBehaviour:
   EnableErrorCallback: 0
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 0
-  CurrentVersion: 131623
-  HideSetupWizard: 0
+  CurrentVersion: 131846
+  HideSetupWizard: 1
   LastEventReferenceScanVersion: 131623
   Platforms:
-  - {fileID: -553531092296775061}
-  - {fileID: 2999983285176177282}
-  - {fileID: -5067782567207832733}
-  - {fileID: 8633838505843461809}
-  - {fileID: -7025378354719771179}
-  - {fileID: 2182804651900735491}
-  - {fileID: 5661886138263150780}
-  - {fileID: 1351313522567826559}
-  - {fileID: -2908142703863121807}
-  - {fileID: -1063536814803999042}
-  - {fileID: 1791757881908445297}
   - {fileID: -6962012573773953475}
+  - {fileID: 1791757881908445297}
+  - {fileID: -1063536814803999042}
+  - {fileID: -2908142703863121807}
+  - {fileID: 1351313522567826559}
+  - {fileID: 5661886138263150780}
+  - {fileID: 2182804651900735491}
+  - {fileID: -7025378354719771179}
+  - {fileID: 8633838505843461809}
+  - {fileID: -5067782567207832733}
+  - {fileID: 2999983285176177282}
+  - {fileID: -553531092296775061}
   MigratedPlatforms: 0500000000000000060000000a0000000800000009000000120000000c000000150000000b0000000200000001000000
 --- !u!114 &1351313522567826559
 MonoBehaviour:
@@ -648,16 +649,16 @@ MonoBehaviour:
     HasValue: 0
   displaySortOrder: 0
   childIdentifiers:
-  - fd7c55dab0fce234b8c25f6ffca523c1
-  - de700ef3f37a49b58a57ae3addf01ad9
-  - c88d16e5272a4e241b0ef0ac2e53b73d
-  - b7716510a1f36934c87976f3a81dbf3d
-  - 2c5177b11d81d824dbb064f9ac8527da
-  - 52eb9df5db46521439908db3a29a1bbb
-  - e7a046c753c3c3d4aacc91f6597f310d
-  - 2fea114e74ecf3c4f920e1d5cc1c4c40
-  - 46fbfdf3fc43db0458918377fd40293e
   - 0f8eb3f400726694eb47beb1a9f94ce8
+  - 46fbfdf3fc43db0458918377fd40293e
+  - 2fea114e74ecf3c4f920e1d5cc1c4c40
+  - e7a046c753c3c3d4aacc91f6597f310d
+  - 52eb9df5db46521439908db3a29a1bbb
+  - 2c5177b11d81d824dbb064f9ac8527da
+  - b7716510a1f36934c87976f3a81dbf3d
+  - c88d16e5272a4e241b0ef0ac2e53b73d
+  - de700ef3f37a49b58a57ae3addf01ad9
+  - fd7c55dab0fce234b8c25f6ffca523c1
   codecChannels:
     Value: []
     HasValue: 0

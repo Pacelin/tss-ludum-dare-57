@@ -15,7 +15,7 @@ namespace TSS.Core
     [UsedImplicitly]
     internal class RuntimeEntryPoint : IInitializable, IDisposable
     {
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         private static void Run()
         {
             var runtimeGO = new GameObject("[TSS Runtime]");

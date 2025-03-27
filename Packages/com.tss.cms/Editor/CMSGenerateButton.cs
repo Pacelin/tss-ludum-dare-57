@@ -1,5 +1,5 @@
 ﻿using JetBrains.Annotations;
-using TSS.Utils.Editor;
+using TSS.Utils;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;

@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ea5ee402b54766b03b0e8bc83eb011, type: 3}
+  m_Name: SO_TweenPreset
+  m_EditorClassIdentifier: TSS.Tweening.ScriptableTweenPreset, TSS.Tweening
+  _items:
+  - rid: 944662523075363171
+  references:
+    version: 2
+    RefIds:
+    - rid: 944662523075363171
+      type: {class: ScriptableTweenTranform_DOJump, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _easing: 1
+        _delay:
+          rid: 944662523075363172
+        _loopsCount:
+          rid: 944662523075363173
+        _loopType: 0
+        _ignoreTimescale: 0
+        _duration:
+          rid: 944662523075363174
+        _endValue:
+          rid: 944662531060531341
+        _jumpForce:
+          rid: 944662523075363181
+        _jumpsCount:
+          rid: 944662523075363179
+        _local: 0
+    - rid: 944662523075363172
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 944662523075363173
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 944662523075363174
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.5
+    - rid: 944662523075363179
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 944662523075363181
+      type: {class: FloatRandomBetweenValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _min: 1
+        _max: 3
+    - rid: 944662531060531341
+      type: {class: Vector3FollowValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _target: {fileID: 0}
