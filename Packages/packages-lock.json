@@ -171,6 +171,12 @@
         "com.solidalloy.missing-script-type": "1.1.0"
       }
     },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.addressables": {
       "version": "2.3.16",
       "depth": 1,

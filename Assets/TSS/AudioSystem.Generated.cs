@@ -64,6 +64,7 @@ namespace TSS.Audio
 		public static SoundEvent_ButtonClick ButtonClick { get; } = new();
 		public static SoundEvent_PlayButtonClick PlayButtonClick { get; } = new();
 		public static SoundEvent_UIStateChanged UIStateChanged { get; } = new();
+		public static SoundEvent_MainMenuOST MainMenuOST { get; } = new();
     
 		private System.IDisposable _focusDisposable;
 		
@@ -159,6 +160,27 @@ namespace TSS.Audio
 		public float Length => 156;
 
 		private static readonly FMOD.GUID _guid = new FMOD.GUID() { Data1 = -790106898, Data2 = 1279714956, Data3 = -822204765, Data4 = -1405864594 };
+
+		public void PlayOneShot() => RuntimeManager.PlayOneShot(_guid);
+		public void PlayOneShotAttached(GameObject attachTo) => RuntimeManager.PlayOneShotAttached(_guid, attachTo);
+		public void PlayOneShotInPoint(Vector3 point) => RuntimeManager.PlayOneShot(_guid, point);
+
+		public Instance CreateInstance() => new Instance(RuntimeManager.CreateInstance(_guid));
+		ISoundEventInstance ISoundEvent.CreateInstance() => CreateInstance();
+
+		public class Instance : SoundEventInstance
+		{
+			public Instance(FMOD.Studio.EventInstance eventInstance) : base(eventInstance) { }
+
+		}
+	}
+
+	public class SoundEvent_MainMenuOST : ISoundEvent
+	{
+		public bool IsOneShot => false;
+		public float Length => 98977;
+
+		private static readonly FMOD.GUID _guid = new FMOD.GUID() { Data1 = -1577484616, Data2 = 1116902958, Data3 = -170917233, Data4 = -1447747404 };
 
 		public void PlayOneShot() => RuntimeManager.PlayOneShot(_guid);
 		public void PlayOneShotAttached(GameObject attachTo) => RuntimeManager.PlayOneShotAttached(_guid, attachTo);

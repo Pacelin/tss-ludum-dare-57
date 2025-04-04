@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ea5ee402b54766b03b0e8bc83eb011, type: 3}
+  m_Name: STP_Button_Arrow_Feedback_Left
+  m_EditorClassIdentifier: 
+  _items:
+  - rid: 4922611518401938250
+  - rid: 4922611522109440891
+  - rid: 4922611522109440918
+  references:
+    version: 2
+    RefIds:
+    - rid: 4922611518401938250
+      type: {class: ScriptableTweenGraphic_DOTint, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _easing: 6
+        _delay:
+          rid: 4922611518401938251
+        _loopsCount:
+          rid: 4922611518401938252
+        _loopType: 0
+        _ignoreTimescale: 0
+        _duration:
+          rid: 4922611518401938253
+        _useStartValue: 0
+        _startValue:
+          rid: 4922611518401938254
+        _endValue:
+          rid: 4922611518401938255
+    - rid: 4922611518401938251
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611518401938252
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 4922611518401938253
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.1
+    - rid: 4922611518401938254
+      type: {class: ColorValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _color: {r: 1, g: 1, b: 1, a: 1}
+    - rid: 4922611518401938255
+      type: {class: ColorValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _color: {r: 1, g: 1, b: 1, a: 1}
+    - rid: 4922611522109440891
+      type: {class: ScriptableTweenRectTranform_DOAnchorPos, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 1
+        _easing: 6
+        _delay:
+          rid: 4922611522109440892
+        _loopsCount:
+          rid: 4922611522109440893
+        _loopType: 0
+        _ignoreTimescale: 0
+        _duration:
+          rid: 4922611522109440894
+        _useStartValue: 0
+        _startValue:
+          rid: 4922611522109440895
+        _endValue:
+          rid: 4922611522109440896
+    - rid: 4922611522109440892
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611522109440893
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 4922611522109440894
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.05
+    - rid: 4922611522109440895
+      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: {x: 0, y: 0}
+    - rid: 4922611522109440896
+      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: {x: -5, y: 0}
+    - rid: 4922611522109440918
+      type: {class: ScriptableTweenRectTranform_DOAnchorPos, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _easing: 5
+        _delay:
+          rid: 4922611522109440919
+        _loopsCount:
+          rid: 4922611522109440920
+        _loopType: 0
+        _ignoreTimescale: 0
+        _duration:
+          rid: 4922611522109440921
+        _useStartValue: 0
+        _startValue:
+          rid: 4922611522109440922
+        _endValue:
+          rid: 4922611522109440923
+    - rid: 4922611522109440919
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611522109440920
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 4922611522109440921
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.05
+    - rid: 4922611522109440922
+      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: {x: 0, y: 0}
+    - rid: 4922611522109440923
+      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: {x: 0, y: 0}

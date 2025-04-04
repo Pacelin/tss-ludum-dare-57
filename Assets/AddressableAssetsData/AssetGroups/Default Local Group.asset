@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 78641ba9cfcb7c740af3afacdcc3358a
+    m_Address: Assets/Scenes/2_Game.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 82bdb546796e2da4eb218e0597a05672
     m_Address: Assets/Scenes/1_Loading.unity
     m_ReadOnly: 0

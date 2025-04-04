@@ -23,7 +23,19 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 762675748802560
-    m_Localized: SECOND
+    m_Localized: 'Volume:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5440935510282240
+    m_Localized: 'Music:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5441115429146624
+    m_Localized: 'Sound:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5448663477653504
+    m_Localized: 'Language:'
     m_Metadata:
       m_Items: []
   references:
