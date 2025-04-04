@@ -1,4 +1,6 @@
-﻿using TSS.Audio;
+﻿using mixpanel;
+using TSS.Audio;
+using TSS.Utils.Randoms.ADHOC;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,8 +12,10 @@ namespace TSS.ContentManagement
         [SerializeField] private Button _second;
         [SerializeField] private Slider _slider;
         [SerializeField] private Slider _pitchSlider;
+        [SerializeField] private RandomADHOC<ScriptableObject> _r;
 
         private SoundEvent_OST.Instance _ost;
+        private bool _isFirst;
 
         private void OnEnable()
         {
@@ -23,6 +27,8 @@ namespace TSS.ContentManagement
             _pitchSlider.onValueChanged.AddListener(OnPitchChanged);
             _ost = AudioSystem.OST.CreateInstance();
             _ost.Start();
+            Mixpanel.StartTimedEvent("first_music");
+            _isFirst = true;
         }
 
         private void OnDisable()
@@ -36,10 +42,26 @@ namespace TSS.ContentManagement
             _ost = null;
         }
 
-        private void OnFirstClick() =>
+        private void OnFirstClick()
+        {
+            if (_isFirst)
+                return;
+            _isFirst = true;
             _ost.SetMusic(SoundEvent_OST.ELabel_Music.Default);
-        private void OnSecondClick() =>
+            Mixpanel.Track("second_music");
+            Mixpanel.StartTimedEvent("first_music");
+        }
+
+        private void OnSecondClick()
+        {
+            if (!_isFirst)
+                return;
+            _isFirst = false;
             _ost.SetMusic(SoundEvent_OST.ELabel_Music.Game);
+            Mixpanel.Track("first_music");
+            //Mixpanel.ClearTimedEvent("first_music");
+            Mixpanel.StartTimedEvent("second_music");
+        }
 
         private void OnVolumeChanged(float volume) =>
             AudioSystem.Volumes.MasterVolume = volume;

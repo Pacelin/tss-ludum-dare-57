@@ -18,7 +18,10 @@ namespace TSS.Utils.Editor
                 if (!scriptableObjectType.IsAssignableFrom(type))
                     continue;
                 var attribute = type.GetCustomAttribute<CreateSingletonAssetAttribute>();
-                TSSEditorUtils.ValidateAddressableSO(type, attribute.Path, attribute.Address);
+                if (attribute.Address == null)
+                    TSSEditorUtils.ValidateSO(type, attribute.Path);
+                else
+                    TSSEditorUtils.ValidateAddressableSO(type, attribute.Path, attribute.Address);
             }
         }
     }

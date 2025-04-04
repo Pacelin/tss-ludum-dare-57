@@ -5,6 +5,7 @@
   "description": "This package contains all utilities for TSS team projects",
   "unity": "6000.0",
   "dependencies": {
+    "com.unity.localization": "1.5.4",
     "com.solidalloy.type-references": "2.16.0",
     "com.solidalloy.missing-script-type": "1.1.0"
   },

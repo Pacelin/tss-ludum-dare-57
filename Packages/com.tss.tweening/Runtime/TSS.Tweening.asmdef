@@ -8,7 +8,9 @@
         "GUID:593a5b492d29ac6448b1ebf7f035ef33",
         "GUID:84651a3751eca9349aac36a66bba901b",
         "GUID:6d87492a0adca3b4881c412d6097ea36",
-        "GUID:f47a80bad6405604f9d5888234a4b06a"
+        "GUID:f47a80bad6405604f9d5888234a4b06a",
+        "GUID:029c1c1b674aaae47a6841a0b89ad80e",
+        "GUID:9841aa18ec092324d9bc44e7c012f2a3"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
@@ -22,6 +24,11 @@
             "name": "com.tss.core",
             "expression": "",
             "define": "TSS_CORE"
+        },
+        {
+            "name": "com.tss.audio-fmod",
+            "expression": "",
+            "define": "TSS_FMOD"
         }
     ],
     "noEngineReferences": false

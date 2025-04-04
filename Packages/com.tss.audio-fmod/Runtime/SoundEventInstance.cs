@@ -5,7 +5,7 @@ using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 namespace TSS.Audio
 {
-    public abstract class SoundEventInstance : ISoundEventInstance
+    public class SoundEventInstance : ISoundEventInstance
     {
         protected EventInstance Instance => _instance;
         

@@ -35,7 +35,39 @@ namespace TSS.Tweening
     }
     
     [Serializable]
-    [ScriptableTweenPath("Misc/Callback", 1002)]
+    [ScriptableTweenPath("Misc/Enable GO", 1003)]
+    [NoFoldout]
+    public class ScriptableTweenEnableGO : IScriptableTweenItem<GameObject>
+    {
+        [SerializeField] private ETweenConnectBehaviour _connectBehaviour;
+
+        public void AddTween(Sequence sequence, GameObject obj)
+        {
+            if (_connectBehaviour == ETweenConnectBehaviour.Append)
+                sequence.AppendCallback(() => obj.SetActive(true));
+            else
+                sequence.JoinCallback(() => obj.SetActive(true));
+        }
+    }
+    
+    [Serializable]
+    [ScriptableTweenPath("Misc/Disable GO", 1004)]
+    [NoFoldout]
+    public class ScriptableTweenDisableGO : IScriptableTweenItem<GameObject>
+    {
+        [SerializeField] private ETweenConnectBehaviour _connectBehaviour;
+
+        public void AddTween(Sequence sequence, GameObject obj)
+        {
+            if (_connectBehaviour == ETweenConnectBehaviour.Append)
+                sequence.AppendCallback(() => obj.SetActive(false));
+            else
+                sequence.JoinCallback(() => obj.SetActive(false));
+        }
+    }
+    
+    [Serializable]
+    [ScriptableTweenPath("Misc/Callback", 1005)]
     [NotPreset]
     public class ScriptableTweenCallback : IScriptableTweenItemNoTarget
     {
@@ -52,7 +84,7 @@ namespace TSS.Tweening
     }
     
     [Serializable]
-    [ScriptableTweenPath("Misc/Event", 1003)]
+    [ScriptableTweenPath("Misc/Event", 1006)]
     [NoFoldout]
     public class ScriptableTweenEvent : IScriptableTweenItem<ScriptableTweenEventHandler>
     {

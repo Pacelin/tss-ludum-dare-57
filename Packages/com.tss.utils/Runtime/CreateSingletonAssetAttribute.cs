@@ -8,7 +8,7 @@ namespace TSS.Utils
         public string Path { get; }
         public string Address { get; }
 
-        public CreateSingletonAssetAttribute(string path, string address)
+        public CreateSingletonAssetAttribute(string path, string address = null)
         {
             Path = path;
             Address = address;

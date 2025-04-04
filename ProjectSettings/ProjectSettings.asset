@@ -834,7 +834,7 @@ PlayerSettings:
     ReservedCFE: DOTWEEN
     Standalone: DOTWEEN
     VisionOS: DOTWEEN
-    WebGL: TSS_CORE_DEBUG;TSS_FMOD_AUDIO;DOTWEEN
+    WebGL: TSS_CORE_DEBUG;TSS_FMOD_AUDIO
     Windows Store Apps: DOTWEEN
     XboxOne: DOTWEEN
     iPhone: DOTWEEN

@@ -10,12 +10,11 @@ namespace TSS.Utils.Editor
         private static double _doubleClickExpiration;
         private const double _doubleClickThreshold = 0.3;
         private static float _lastLabelGUI;
-        private const float SMALL_LABEL_WIDTH = 51;
         
-        public static void BeginSmallLabel()
+        public static void BeginSmallLabel(float width = 51)
         {
             _lastLabelGUI = EditorGUIUtility.labelWidth;
-            EditorGUIUtility.labelWidth = SMALL_LABEL_WIDTH;
+            EditorGUIUtility.labelWidth = width;
         }
 
         public static void EndSmallLabel()

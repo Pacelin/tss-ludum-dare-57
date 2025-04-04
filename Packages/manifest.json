@@ -53,7 +53,8 @@
         "com.cysharp",
         "com.solidalloy",
         "jp.hadashikick",
-        "com.hryooba"
+        "com.hryooba",
+        "com.mixpanel"
       ],
       "overrideBuiltIns": false
     }

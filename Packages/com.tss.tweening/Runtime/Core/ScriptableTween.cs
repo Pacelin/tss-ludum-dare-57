@@ -1,3 +1,4 @@
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using JetBrains.Annotations;
@@ -26,17 +27,7 @@ namespace TSS.Tweening
             _sequence = null;
         }
 
-        public UniTask WaitForCompletion()
-        {
-            Assert.IsNotNull(_sequence);
-            return _sequence.AsyncWaitForCompletion().AsUniTask();
-        }
-
-        public UniTask WaitForStart()
-        {
-            Assert.IsNotNull(_sequence);
-            return _sequence.AsyncWaitForStart().AsUniTask();
-        }
+        public UniTask WaitWhilePlay() => UniTask.WaitWhile(() => IsPlaying);
         
         public void Play()
         {
