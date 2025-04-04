@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LudumDare57.UI
+namespace LudumDare57.Core
 {
     [PublicAPI]
     public class OverlayInputLock : MonoBehaviour

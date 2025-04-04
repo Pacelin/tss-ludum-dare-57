@@ -3,13 +3,16 @@ using JetBrains.Annotations;
 using R3;
 using TSS.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-namespace LudumDare57.UI
+namespace LudumDare57.Core
 {
     [PublicAPI]
     public class FeedbackButton : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IPointerExitHandler, IPointerClickHandler
     {
+        [SerializeField] private UnityEvent _onBecomeHover;
+        [SerializeField] private UnityEvent _onClick;
         [SerializeField] private ScriptableTween _toDefaultTween;
         [SerializeField] private ScriptableTween _toHoverTween;
         [SerializeField] private ScriptableTween _toDownTween;
@@ -26,6 +29,7 @@ namespace LudumDare57.UI
         public void OnPointerEnter(PointerEventData eventData)
         {
             _hover = true;
+            _onBecomeHover?.Invoke();
             UpdateState();
         }
 
@@ -48,6 +52,7 @@ namespace LudumDare57.UI
                 return;
             _down = false;
             _beforeFeedbackSubject.OnNext(Unit.Default);
+            _onClick?.Invoke();
             if (_feedbackTween)
             {
                 KillTransitionTweens();

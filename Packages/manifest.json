@@ -54,7 +54,8 @@
         "com.solidalloy",
         "jp.hadashikick",
         "com.hryooba",
-        "com.mixpanel"
+        "com.mixpanel",
+        "com.coffee"
       ],
       "overrideBuiltIns": false
     }
