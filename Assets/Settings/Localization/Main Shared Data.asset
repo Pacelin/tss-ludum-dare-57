@@ -16,11 +16,23 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 57a0e491692fc7143b32d45150d7ad8c
   m_Entries:
   - m_Id: 762519120908288
-    m_Key: entry_1
+    m_Key: play_button
     m_Metadata:
       m_Items: []
   - m_Id: 762675748802560
-    m_Key: entry_2
+    m_Key: master_volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5440935510282240
+    m_Key: music_volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5441115429146624
+    m_Key: sound_volume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5448663477653504
+    m_Key: language_label
     m_Metadata:
       m_Items: []
   m_Metadata:

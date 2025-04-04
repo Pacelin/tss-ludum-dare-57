@@ -15,5 +15,6 @@ MonoBehaviour:
   _masterBusPath: bus:/
   _busesPaths:
   - bus:/OST
+  - bus:/SFX
   _defaultMasterVolume: 0.2
   _defaultVolume: 1

@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.2d.sprite": "1.0.0",
     "com.unity.ai.navigation": "2.0.6",
     "com.unity.collab-proxy": "2.7.1",
     "com.unity.ide.rider": "3.0.31",
@@ -54,7 +55,8 @@
         "com.solidalloy",
         "jp.hadashikick",
         "com.hryooba",
-        "com.mixpanel"
+        "com.mixpanel",
+        "com.coffee"
       ],
       "overrideBuiltIns": false
     }

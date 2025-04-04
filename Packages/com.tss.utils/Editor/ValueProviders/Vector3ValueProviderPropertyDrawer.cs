@@ -36,7 +36,7 @@ namespace TSS.Utils.Editor.ValueProviders
                 EditorGUI.PropertyField(rects[1], radiusProp, new GUIContent("Radius"));
                 TSSEditorGUI.EndSmallLabel();
             }
-            else if (property.managedReferenceValue is Vector3OneScaledValueProvider)
+            else if (property.managedReferenceValue is Vector3UniformValueProvider)
             {
                 var valueProp = property.FindPropertyRelative("_value");
                 EditorGUI.PropertyField(rect, valueProp, GUIContent.none);
@@ -72,8 +72,8 @@ namespace TSS.Utils.Editor.ValueProviders
                 return " (Random In Sphere)";
             if (value is RandomInBoundsVector3ValueProvider)
                 return " (Random In Bounds)";
-            if (value is Vector3OneScaledValueProvider)
-                return " (One Scaled)";
+            if (value is Vector3UniformValueProvider)
+                return " (Uniform)";
             if (value is Vector3FollowValueProvider)
                 return " (Follow)";
             return base.LabelPostfix(value);
@@ -83,8 +83,8 @@ namespace TSS.Utils.Editor.ValueProviders
         {
             yield return ValueProviderEntry.Create<Vector3ValueProvider>("Value", 
                 () => new Vector3ValueProvider(Vector3.zero));
-            yield return ValueProviderEntry.Create<Vector3OneScaledValueProvider>("One Scaled",
-                () => new Vector3OneScaledValueProvider(1));
+            yield return ValueProviderEntry.Create<Vector3UniformValueProvider>("One Scaled",
+                () => new Vector3UniformValueProvider(1));
             yield return ValueProviderEntry.Create<RandomOnLineVector3ValueProvider>("Random On Line",
                 () => new RandomOnLineVector3ValueProvider(Vector3.zero, Vector3.right));
             yield return ValueProviderEntry.Create<RandomInSphereVector3ValueProvider>("Random In Sphere",

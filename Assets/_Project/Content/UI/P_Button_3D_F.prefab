@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4612273793085977905}
   - component: {fileID: 6300029979042321288}
   m_Layer: 5
-  m_Name: P_Button_3D
+  m_Name: P_Button_3D_F
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,6 +98,24 @@ MonoBehaviour:
   _toHoverTween: {fileID: 9166376559645260128}
   _toDownTween: {fileID: 3814548620905061557}
   _feedbackTween: {fileID: 4147071155893203850}
+  _onBecomeHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4717636895578816374}
+        m_TargetAssemblyTypeName: TSS.Audio.SoundEventComponent, TSS.Audio.FMOD
+        m_MethodName: PlayOneShot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _onClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &941307347770468062
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4061604126811174176}
   - component: {fileID: 9166376559645260128}
+  - component: {fileID: 4717636895578816374}
   m_Layer: 5
   m_Name: Hover_State
   m_TagString: Untagged
@@ -354,6 +373,25 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &4717636895578816374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724489315651574278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventRef:
+    Guid:
+      Data1: -790106898
+      Data2: 1279714956
+      Data3: -822204765
+      Data4: -1405864594
+    Path: event:/UIStateChanged
 --- !u!1 &6444431129340062853
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,8 +668,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _preset: {fileID: 11400000, guid: c12256edc0bd11f46bbb40b74d0a37e3, type: 2}
   _targets:
-  - {fileID: 6363952711130955019}
-  - {fileID: 931808080554284926}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   _items: []
   _cacheTween: 0
   _playOnEnable: 0

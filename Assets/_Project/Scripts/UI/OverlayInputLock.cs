@@ -1,6 +1,5 @@
 ﻿using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace LudumDare57.UI
 {

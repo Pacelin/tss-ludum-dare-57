@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: STP_Button_3D_Feedback
   m_EditorClassIdentifier: 
   _items:
+  - rid: 4922611518401938242
+  - rid: 4922611518401938250
   - rid: 4922611518401937534
   - rid: 4922611518401937541
   references:
@@ -39,7 +41,7 @@ MonoBehaviour:
     - rid: 4922611518401937535
       type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
-        _value: 0
+        _value: 0.1
     - rid: 4922611518401937536
       type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
@@ -60,3 +62,53 @@ MonoBehaviour:
       type: {class: ScriptableTweenDisableGO, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
         _connectBehaviour: 0
+    - rid: 4922611518401938242
+      type: {class: ScriptableTweenFMOD_DOSound, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _sound:
+          _eventRef:
+            Guid:
+              Data1: -1817814564
+              Data2: 1255403468
+              Data3: -203230578
+              Data4: 2052636638
+            Path: event:/PlayButtonClick
+    - rid: 4922611518401938250
+      type: {class: ScriptableTweenGraphic_DOTint, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _easing: 6
+        _delay:
+          rid: 4922611518401938251
+        _loopsCount:
+          rid: 4922611518401938252
+        _loopType: 0
+        _ignoreTimescale: 0
+        _duration:
+          rid: 4922611518401938253
+        _useStartValue: 0
+        _startValue:
+          rid: 4922611518401938254
+        _endValue:
+          rid: 4922611518401938255
+    - rid: 4922611518401938251
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611518401938252
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 4922611518401938253
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.3
+    - rid: 4922611518401938254
+      type: {class: ColorValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _color: {r: 1, g: 1, b: 1, a: 1}
+    - rid: 4922611518401938255
+      type: {class: ColorValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _color: {r: 1, g: 1, b: 1, a: 1}
