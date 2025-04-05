@@ -132,9 +132,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.Game.LootSpawn, Assembly-CSharp
   _activationY: -15
-  _deactivationY: 15
-  _distance: 20
-  _lootCount: {x: 3, y: 5}
+  _deactivationY: 45
+  _distance: 30
+  _lootCount: {x: 5, y: 7}
   _spawnSpread: 3
   _loots:
     _entries:

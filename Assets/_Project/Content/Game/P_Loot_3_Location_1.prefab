@@ -47,8 +47,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfb9b0d2fde54496815ae313d509a072, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: LudumDare57.Hole.HoleLootView, Assembly-CSharp
-  _yDestroyPosition: 15
+  m_EditorClassIdentifier: LudumDare57.Game.HoleLootView, Assembly-CSharp
   _onClickTween: {fileID: 1504837068081558826}
   _onDestroyTween: {fileID: 8602350534987949152}
   _costRange: {x: 10, y: 15}

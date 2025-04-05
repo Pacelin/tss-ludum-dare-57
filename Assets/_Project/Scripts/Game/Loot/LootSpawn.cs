@@ -38,13 +38,11 @@ namespace LudumDare57.Game
             _loot.Clear();
         }
 
-#if UNITY_EDITOR
-        private void OnDrawGizmosSelected()
+        protected override void OnGizmosSelected()
         {
             var pos = transform.position;
             pos.y -= _distance / 2;
             Gizmos.DrawWireCube(pos, new Vector3(8, _distance, 0.1f));
         }
-#endif
     }
 }

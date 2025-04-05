@@ -30,6 +30,18 @@ namespace LudumDare57.Game
             }
         }
 
+        private void OnDrawGizmosSelected()
+        {
+            var pos = transform.position;
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(new Vector3(pos.x - 4, pos.y - _activationY), new Vector3(pos.x + 4, pos.y - _activationY));
+            Gizmos.DrawLine(new Vector3(pos.x - 4, pos.y - _deactivationY), new Vector3(pos.x + 4, pos.y - _deactivationY));
+            Gizmos.color = Color.white;
+            OnGizmosSelected();
+        }
+        
+        protected virtual void OnGizmosSelected() {}
+
         protected abstract void OnActivate();
         protected abstract void OnDeactivate();
     }
