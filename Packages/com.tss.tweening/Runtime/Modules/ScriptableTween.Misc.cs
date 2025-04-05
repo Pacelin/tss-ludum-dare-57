@@ -1,6 +1,5 @@
 ﻿using System;
 using DG.Tweening;
-using JetBrains.Annotations;
 using TSS.Utils;
 using UnityEngine;
 using UnityEngine.Events;
@@ -97,11 +96,5 @@ namespace TSS.Tweening
             else
                 sequence.JoinCallback(obj.OnTrigger);
         }
-    }
-    
-    [PublicAPI]
-    public abstract class ScriptableTweenEventHandler : MonoBehaviour
-    {
-        public abstract void OnTrigger();
     }
 }

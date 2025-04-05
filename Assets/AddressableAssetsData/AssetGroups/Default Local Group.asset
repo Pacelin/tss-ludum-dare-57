@@ -15,6 +15,11 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 74d1f905e2729fb4cabb3f98768f8d67
   m_SerializeEntries:
+  - m_GUID: 2a43fcfe879388142b6b1f3aa88a8f34
+    m_Address: Assets/_Project/Content/Game/P_Hole_View.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 62af7fca09f34c74481788e651479d18
     m_Address: Runtime Settings
     m_ReadOnly: 0
@@ -27,6 +32,16 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 82bdb546796e2da4eb218e0597a05672
     m_Address: Assets/Scenes/1_Menu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8324801cd66ad7944863c8401d13b775
+    m_Address: Assets/_Project/Content/Game/P_Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 939b9bb0f8355484ea77720ca7be1f52
+    m_Address: Hole Config
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

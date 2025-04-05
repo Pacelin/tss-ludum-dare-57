@@ -19,6 +19,7 @@ namespace TSS.Utils.Randoms.ADHOC
 
         public void Reset()
         {
+            _random = new System.Random();
             for (int i = 0; i < _entries.Length; i++)
                 _wheights[i] = _entries[i].Weight;
         }
