@@ -49,12 +49,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.Hole.HoleLootView, Assembly-CSharp
   _yDestroyPosition: 15
-  _renderer: {fileID: 0}
   _onClickTween: {fileID: 1504837068081558826}
   _onDestroyTween: {fileID: 8602350534987949152}
-  _costRange: {x: 4, y: 7}
-  _kicksCount: {x: 3, y: 4}
-  _scaleRange: {x: 1, y: 1.2}
+  _costRange: {x: 4, y: 10}
+  _kicksCount: {x: 1, y: 3}
+  _scaleRange: {x: 1, y: 2}
   _rotateRange: {x: -15, y: 10}
 --- !u!60 &5684799854823472330
 PolygonCollider2D:

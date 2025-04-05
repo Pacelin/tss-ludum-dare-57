@@ -1,5 +1,4 @@
-﻿using System;
-using Cysharp.Threading.Tasks;
+﻿using Cysharp.Threading.Tasks;
 using LudumDare57.Game;
 using TSS.Tweening;
 using UnityEngine;
@@ -10,7 +9,6 @@ namespace LudumDare57.Hole
 {
     public class HoleLootView : HoleItemView, IPointerClickHandler
     {
-        [SerializeField] private SpriteRenderer _renderer;
         [SerializeField] private ScriptableTween _onClickTween;
         [SerializeField] private ScriptableTween _onDestroyTween;
         [Space]

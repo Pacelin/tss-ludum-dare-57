@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299a303a6a6a47918de8ae9b1977f4ab, type: 3}
   m_Name: SO_Hole_Minerals
   m_EditorClassIdentifier: LudumDare57.Hole.HoleLootConfig, Assembly-CSharp
-  _depth: 20
-  _lootEnd: 35
+  _depth: 7
+  _lootDistance: 15
   _loots:
     _entries:
     - Value: {fileID: 11400000, guid: 64fb769eff265224e860983a316792a2, type: 2}

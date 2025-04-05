@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: LudumDare57.Hole.HoleConfig, Assembly-CSharp
   _entries:
   - {fileID: 11400000, guid: 68f474a8e72fc3b418903dcaee556b7a, type: 2}
-  _entrySpawnThreshold: 10
-  _initialHoleSpeed: 0.7
+  _entrySpawnThreshold: 6
+  _initialHoleSpeed: 0.8
