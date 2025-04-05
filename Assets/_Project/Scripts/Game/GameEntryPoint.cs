@@ -20,6 +20,7 @@ namespace LudumDare57.Game
             
             GameContext.Hole = Object.Instantiate(CMS.HolePrefab);
             GameContext.Player = Object.Instantiate(CMS.PlayerPrefab);
+            GameContext.Inventory = Object.Instantiate(CMS.InventoryPrefab);
             
             GameContext.StateMachine = new GameStateMachine();
             

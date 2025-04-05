@@ -46,6 +46,26 @@ MonoBehaviour:
     m_Localized: Main Menu
     m_Metadata:
       m_Items: []
+  - m_Id: 5846448609824768
+    m_Localized: Diamond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5849725040726016
+    m_Localized: '{0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5849783521906688
+    m_Localized: '{0}$'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5852370899963904
+    m_Localized: '{0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5856777448329216
+    m_Localized: Bulk
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

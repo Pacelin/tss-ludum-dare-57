@@ -43,6 +43,26 @@ MonoBehaviour:
     m_Key: mainmenu_button
     m_Metadata:
       m_Items: []
+  - m_Id: 5846448609824768
+    m_Key: item_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5849725040726016
+    m_Key: item_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5849783521906688
+    m_Key: item_cost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5852370899963904
+    m_Key: item_count
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5856777448329216
+    m_Key: item_2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
