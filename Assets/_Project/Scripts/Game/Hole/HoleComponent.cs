@@ -18,9 +18,9 @@ namespace LudumDare57.Game
 
         [SerializeField] private Vector2 _wallsX;
         [SerializeField] private ParallaxLayer[] _parallaxLayers;
-
+        [SerializeField] private float _downSpeed = 3;
+        
         private float _depth = 0;
-        private float _downSpeed = 1;
 
         private void OnDrawGizmosSelected()
         {
