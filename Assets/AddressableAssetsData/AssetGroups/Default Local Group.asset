@@ -40,11 +40,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 939b9bb0f8355484ea77720ca7be1f52
-    m_Address: Hole Config
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e5f45ce303cab2046acd57fff6441457
     m_Address: Audio Volumes
     m_ReadOnly: 0

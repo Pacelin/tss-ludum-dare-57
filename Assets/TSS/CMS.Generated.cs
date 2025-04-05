@@ -8,7 +8,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine.AddressableAssets;
 using JetBrains.Annotations;
 using UnityEngine;
-using LudumDare57.Hole;
+using LudumDare57.Game;
 using TSS.Core;
 
 namespace TSS.ContentManagement
@@ -18,13 +18,17 @@ namespace TSS.ContentManagement
     [RuntimeOrder(ERuntimeOrder.SystemRegistration)]
     public class CMS : IRuntimeLoader
     {
+		public static HoleComponent HolePrefab { get; private set; }
+		public static PlayerComponent PlayerPrefab { get; private set; }
  
 
         public async UniTask Initialize(CancellationToken cancellationToken)
         {
 			await Scenes.Initialize(cancellationToken);
-			await Hole.Initialize(cancellationToken);
-			await Player.Initialize(cancellationToken);
+			HolePrefab = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/Game/P_Hole_View.prefab")
+				.ToUniTask(cancellationToken: cancellationToken)).GetComponent<HoleComponent>();
+			PlayerPrefab = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/Game/P_Player.prefab")
+				.ToUniTask(cancellationToken: cancellationToken)).GetComponent<PlayerComponent>();
         }
 
         public void Dispose() { }
@@ -37,31 +41,6 @@ namespace TSS.ContentManagement
 
 			public static async UniTask Initialize(CancellationToken cancellationToken)
 			{
-			}
-		}
-		[PublicAPI]
-		public static class Hole
-		{
-			public static HoleConfig Config { get; private set; }
-			public static HoleView Prefab { get; private set; }
-
-			public static async UniTask Initialize(CancellationToken cancellationToken)
-			{
-				Config = await Addressables.LoadAssetAsync<HoleConfig>("Hole Config")
-					.ToUniTask(cancellationToken: cancellationToken);
-				Prefab = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/Game/P_Hole_View.prefab")
-					.ToUniTask(cancellationToken: cancellationToken)).GetComponent<HoleView>();
-			}
-		}
-		[PublicAPI]
-		public static class Player
-		{
-			public static PlayerView Prefab { get; private set; }
-
-			public static async UniTask Initialize(CancellationToken cancellationToken)
-			{
-				Prefab = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/Game/P_Player.prefab")
-					.ToUniTask(cancellationToken: cancellationToken)).GetComponent<PlayerView>();
 			}
 		}
     }

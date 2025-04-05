@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using Random = UnityEngine.Random;
 
-namespace LudumDare57.Hole
+namespace LudumDare57.Game
 {
-    public class HoleLootView : HoleItemView, IPointerClickHandler
+    public class HoleLootView : MonoBehaviour, IPointerClickHandler
     {
         [SerializeField] private ScriptableTween _onClickTween;
         [SerializeField] private ScriptableTween _onDestroyTween;
@@ -30,7 +30,7 @@ namespace LudumDare57.Hole
             transform.localScale = Vector3.one * Mathf.Lerp(_scaleRange.x, _scaleRange.y, t);
 
             var rotateAngle = Random.Range(_rotateRange.x, _rotateRange.y);
-            var flip = transform.position.x > GameContext.HoleView.HoleCenterX;
+            var flip = transform.position.x > GameContext.Hole.HoleCenterX;
             if (flip)
                 rotateAngle -= rotateAngle * 2;
             transform.rotation = Quaternion.Euler(0, flip ? 180 : 0, rotateAngle);

@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 
-namespace LudumDare57.Hole
+namespace LudumDare57.Game
 {
-    public class PlayerView : MonoBehaviour
+    public class PlayerComponent : MonoBehaviour
     {
         public Transform BackpackPoint => _backpackPoint;
         

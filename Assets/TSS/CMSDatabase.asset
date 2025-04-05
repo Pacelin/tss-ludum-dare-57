@@ -21,15 +21,11 @@ MonoBehaviour:
     CMSName: Scenes/Game
     ComponentName: GameObject
     Namespace: 
-  - GUID: 939b9bb0f8355484ea77720ca7be1f52
-    CMSName: Hole/Config
-    ComponentName: GameObject
-    Namespace: 
   - GUID: 2a43fcfe879388142b6b1f3aa88a8f34
-    CMSName: Hole/Prefab
-    ComponentName: HoleView
-    Namespace: LudumDare57.Hole
+    CMSName: HolePrefab
+    ComponentName: HoleComponent
+    Namespace: LudumDare57.Game
   - GUID: 8324801cd66ad7944863c8401d13b775
-    CMSName: Player/Prefab
-    ComponentName: PlayerView
-    Namespace: LudumDare57.Hole
+    CMSName: PlayerPrefab
+    ComponentName: PlayerComponent
+    Namespace: LudumDare57.Game
