@@ -34,7 +34,6 @@ namespace LudumDare57.Inventory
 
         public void Show()
         {
-            gameObject.SetActive(true);
             if (_closeTween.IsPlaying)
                 _closeTween.Pause();
             _openTween.Play();
@@ -45,7 +44,6 @@ namespace LudumDare57.Inventory
             if (_openTween.IsPlaying)
                 _openTween.Pause();
             _closeTween.Play();
-            _closeTween.WaitWhilePlay().ContinueWith(() => gameObject.SetActive(false)).Forget();
         }
         
         public void SetCost(int cost)
