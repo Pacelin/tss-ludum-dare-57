@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: CMSDatabase
   m_EditorClassIdentifier: TSS.ContentManagement.Editor.CMSAssetDatabase, TSS.ContentManagement.Editor
   _entries:
-  - GUID: 9cc9788200c0f5641bb9f12b06fd1059
-    CMSName: Canvas
+  - GUID: 82bdb546796e2da4eb218e0597a05672
+    CMSName: Scenes/MainMenu
+    ComponentName: GameObject
+    Namespace: 
+  - GUID: 78641ba9cfcb7c740af3afacdcc3358a
+    CMSName: Scenes/Game
     ComponentName: GameObject
     Namespace: 

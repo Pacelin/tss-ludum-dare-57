@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ea5ee402b54766b03b0e8bc83eb011, type: 3}
+  m_Name: STP_Popup_Open
+  m_EditorClassIdentifier: 
+  _items:
+  - rid: 4922611536225370221
+  - rid: 4922611518401937528
+  references:
+    version: 2
+    RefIds:
+    - rid: 4922611518401937528
+      type: {class: ScriptableTweenRectTranform_DOAnchorPos, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 1
+        _easing: 6
+        _delay:
+          rid: 4922611518401937529
+        _loopsCount:
+          rid: 4922611518401937530
+        _loopType: 0
+        _ignoreTimescale: 1
+        _duration:
+          rid: 4922611518401937531
+        _useStartValue: 0
+        _startValue:
+          rid: 4922611518401937532
+        _endValue:
+          rid: 4922611518401937533
+    - rid: 4922611518401937529
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611518401937530
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 4922611518401937531
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.4
+    - rid: 4922611518401937532
+      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: {x: 0, y: 0}
+    - rid: 4922611518401937533
+      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: {x: 0, y: 0}
+    - rid: 4922611536225370221
+      type: {class: ScriptableTweenCanvasGroup_DOFade, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _easing: 6
+        _delay:
+          rid: 4922611536225370222
+        _loopsCount:
+          rid: 4922611536225370223
+        _loopType: 0
+        _ignoreTimescale: 0
+        _duration:
+          rid: 4922611536225370224
+        _useStartValue: 0
+        _startValue:
+          rid: 4922611536225370225
+        _endValue:
+          rid: 4922611536225370226
+    - rid: 4922611536225370222
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611536225370223
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 4922611536225370224
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.3
+    - rid: 4922611536225370225
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611536225370226
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
