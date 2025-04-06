@@ -16,6 +16,7 @@ namespace LudumDare57.Game
         public static InventoryComponent Inventory { get; set; }
         public static ShopComponent Shop { get; set; }
         public static LocationView LocationView { get; set; }
+        public static DepthScaleView DepthScale { get; set; }
 
         public static ReactiveProperty<int> Coins { get; } = new();
         public static int PickaxeLevel { get; set; }

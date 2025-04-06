@@ -32,6 +32,7 @@ namespace LudumDare57.Game
             GameContext.Inventory = Object.Instantiate(CMS.InventoryPrefab);
             GameContext.Shop = Object.Instantiate(CMS.ShopPrefab);
             GameContext.LocationView = Object.Instantiate(CMS.LocationPrefab);
+            GameContext.DepthScale = Object.Instantiate(CMS.DepthScalePrefab);
             
             GameContext.StateMachine = new GameStateMachine();
             
@@ -45,10 +46,20 @@ namespace LudumDare57.Game
 
         public void Dispose()
         {
+            Mixpanel.Track("fun_end");
             _disposable.Dispose();
             _cts.Cancel();
             _cts.Dispose();
             _cts = null;
+            
+            GameContext.CancellationToken = default;
+            GameContext.Hole = null;
+            GameContext.Player = null;
+            GameContext.Inventory = null;
+            GameContext.Shop = null;
+            GameContext.DepthScale = null;
+            GameContext.LocationView = null;
+            GameContext.StateMachine = null;
         }
     }
 }
