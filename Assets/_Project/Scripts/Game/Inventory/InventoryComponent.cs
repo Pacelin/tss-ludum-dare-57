@@ -1,4 +1,6 @@
 ﻿using System.Linq;
+using LudumDare57.Game;
+using LudumDare57.UI;
 using TSS.ContentManagement;
 using UnityEngine;
 
@@ -12,6 +14,20 @@ namespace LudumDare57.Inventory
 
         private void Awake() => _entries = new ItemEntry[_itemsContainers.Length];
 
+        public void ShowSoldButtons()
+        {
+            for (int i = 0; i < _entries.Length; i++)
+                if (_entries[i].Component)
+                    _entries[i].Component.ShowSoldButton();
+        }
+
+        public void HideSoldButtons()
+        {
+            for (int i = 0; i < _entries.Length; i++)
+                if (_entries[i].Component)
+                    _entries[i].Component.HideSoldButton();
+        }
+        
         public bool TryAddItem(string id, int cost)
         {
             var emptyIndex = -1;
@@ -48,6 +64,17 @@ namespace LudumDare57.Inventory
 
         public (string id, int count)[] GetAvailableItems() => _entries.Where(e => !string.IsNullOrEmpty(e.Id))
             .Select(e => (e.Id, e.Count)).ToArray();
+
+        public void SellItem(ItemComponent component)
+        {
+            for (int i = 0; i < _entries.Length; i++)
+            {
+                if (_entries[i].Component != component)
+                    continue;
+                GameContext.Coins.Value += _entries[i].Cost;
+                RemoveItem(_entries[i].Id, 1f);
+            }
+        }
         
         public void RemoveItem(string id, int count)
         {

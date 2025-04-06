@@ -441,8 +441,8 @@ CanvasGroup:
   m_GameObject: {fileID: 4990117095262749851}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!1 &5467635746644085859
 GameObject:
@@ -454,6 +454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 866691796588538151}
   - component: {fileID: 1569186387627252155}
+  - component: {fileID: 7767114149566784511}
   m_Layer: 5
   m_Name: CloseTween
   m_TagString: Untagged
@@ -588,6 +589,26 @@ MonoBehaviour:
       type: {class: ScriptableTweenDisableGO, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
         _connectBehaviour: 0
+--- !u!114 &7767114149566784511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5467635746644085859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &5981578108962271978
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,6 +619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2138137636807489016}
   - component: {fileID: 5170944304058790389}
+  - component: {fileID: 1277506749240387620}
   m_Layer: 5
   m_Name: OpenTween
   m_TagString: Untagged
@@ -732,3 +754,23 @@ MonoBehaviour:
       type: {class: ScriptableTweenEnableGO, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
         _connectBehaviour: 0
+--- !u!114 &1277506749240387620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5981578108962271978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1

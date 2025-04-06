@@ -66,6 +66,34 @@ MonoBehaviour:
     m_Localized: Bulk
     m_Metadata:
       m_Items: []
+  - m_Id: 6009231531970560
+    m_Localized: Sell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6016722189815808
+    m_Localized: Buy ({0}$)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6019017241661440
+    m_Localized: 'Name: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6019309819531264
+    m_Localized: 'Description: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6021420351361024
+    m_Localized: Girch
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6021498436718592
+    m_Localized: Good choice!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6024274596204544
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

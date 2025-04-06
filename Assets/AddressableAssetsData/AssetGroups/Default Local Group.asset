@@ -45,6 +45,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8d623736f046e43499199c2aebdf6b7c
+    m_Address: Assets/_Project/Content/UI/P_Shop.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: da09abf10950ef94b9eff1a49a3528a9
     m_Address: Assets/_Project/Content/Game/P_Inventory.prefab
     m_ReadOnly: 0

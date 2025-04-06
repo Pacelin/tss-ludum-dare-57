@@ -189,6 +189,7 @@ MonoBehaviour:
   _parallaxLayers:
   - Parallax: 1
     Transform: {fileID: 3761654906760894409}
+  _downSpeed: 3
 --- !u!1 &4524467838818244221
 GameObject:
   m_ObjectHideFlags: 0
