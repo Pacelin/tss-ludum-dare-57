@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f9da377c72a450c9d96d2786dc627ac, type: 3}
-  m_Name: SO_ShopUpgrade_7 1
+  m_Name: SO_ShopUpgrade_8
   m_EditorClassIdentifier: LudumDare57.Game.Shop.ShopUpgradeConfig, Assembly-CSharp
   _name:
     m_TableReference:

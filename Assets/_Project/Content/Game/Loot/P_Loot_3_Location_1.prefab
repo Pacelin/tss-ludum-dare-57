@@ -54,6 +54,8 @@ MonoBehaviour:
   _kicksCount: {x: 2, y: 4}
   _scaleRange: {x: 1, y: 1.25}
   _rotateRange: {x: -30, y: -50}
+  _dropItem: 3
+  _dropChance: 1
 --- !u!60 &4928273522855542018
 PolygonCollider2D:
   m_ObjectHideFlags: 0
