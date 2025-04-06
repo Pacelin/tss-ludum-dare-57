@@ -55,7 +55,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 07a7d03a523d1a343a99bed57a055a69, type: 2}
+  - {fileID: -876546973899608171, guid: 2a312ba1a6ee2b6428d124d5b56df009, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -334,7 +334,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 13199d53ac775c8459b0d3dabc54ddb4, type: 2}
+  - {fileID: -876546973899608171, guid: 2a312ba1a6ee2b6428d124d5b56df009, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -411,3 +411,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.Game.Shop.ShopActivation, Assembly-CSharp
   _shopLevel: 1
+  _enterAnalytics: 
+  _exitAnalytics: 

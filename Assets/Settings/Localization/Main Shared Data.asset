@@ -315,14 +315,6 @@ MonoBehaviour:
     m_Key: mainmenu_button
     m_Metadata:
       m_Items: []
-  - m_Id: 6030651477594112
-    m_Key: upgrade_name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6032063288709120
-    m_Key: upgrade_description
-    m_Metadata:
-      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

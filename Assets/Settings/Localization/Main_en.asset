@@ -55,11 +55,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5849783521906688
-    m_Localized: <style name="currency">{0}</style>
+    m_Localized: <style="currency">{0}</style>
     m_Metadata:
       m_Items: []
   - m_Id: 5852370899963904
-    m_Localized: <style name="number">{0}</style>
+    m_Localized: <style="number">{0}</style>
     m_Metadata:
       m_Items: []
   - m_Id: 5856777448329216
@@ -67,11 +67,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775534878720
-    m_Localized: <style="uncommon">Gold Ingot</style>
+    m_Localized: <style="uncommon">Golden Ingot</style>
     m_Metadata:
       m_Items: []
   - m_Id: 6028775585210368
-    m_Localized: <style="uncommon">Handful of Gold Coins</style>
+    m_Localized: <style="uncommon">Handful of Golden Coins</style>
     m_Metadata:
       m_Items: []
   - m_Id: 6028775585210369
@@ -79,7 +79,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775585210370
-    m_Localized: <style="uncommon">Gold Ore</style>
+    m_Localized: <style="uncommon">Golden Ore</style>
     m_Metadata:
       m_Items: []
   - m_Id: 6028775585210371
@@ -103,7 +103,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775585210376
-    m_Localized: <style="rare">Crystalline Dust</style>
+    m_Localized: <style="rare">Crystal Dust</style>
     m_Metadata:
       m_Items: []
   - m_Id: 6028775585210377
@@ -215,15 +215,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598986
-    m_Localized: null
+    m_Localized: Blockage
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598987
-    m_Localized: null
+    m_Localized: Sharp Spikes
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598988
-    m_Localized: null
+    m_Localized: Something from the Deep
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598989
@@ -311,19 +311,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599010
-    m_Localized: Buy <style name="currency">{0}</style>
+    m_Localized: Buy <style="currency">{0}</style>
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599011
     m_Localized: Sell
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6030651477594112
-    m_Localized: 'Name: {0}'
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6032063288709120
-    m_Localized: 'Description: {0}'
     m_Metadata:
       m_Items: []
   references:
