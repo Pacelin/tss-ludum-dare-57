@@ -134,8 +134,8 @@ MonoBehaviour:
   _activationY: -15
   _deactivationY: 65
   _distance: 50
-  _lootCount: {x: 5, y: 8}
-  _spawnSpread: 3
+  _lootCount: {x: 6, y: 8}
+  _spawnSpread: 2
   _loots:
     _entries:
     - Value: {fileID: 11400000, guid: 72f7cc305a413a243832213d75cc24e3, type: 2}
@@ -188,7 +188,7 @@ MonoBehaviour:
   _deactivationY: 65
   _distance: 50
   _lootCount: {x: 7, y: 10}
-  _spawnSpread: 3
+  _spawnSpread: 1
   _loots:
     _entries:
     - Value: {fileID: 11400000, guid: 2357958cb4eab2b4eb724ac15ea6657c, type: 2}
@@ -242,7 +242,7 @@ MonoBehaviour:
   _parallaxLayers:
   - Parallax: 1
     Transform: {fileID: 3761654906760894409}
-  _downSpeed: 3
+  _downSpeed: 4
 --- !u!1 &4524467838818244221
 GameObject:
   m_ObjectHideFlags: 0
