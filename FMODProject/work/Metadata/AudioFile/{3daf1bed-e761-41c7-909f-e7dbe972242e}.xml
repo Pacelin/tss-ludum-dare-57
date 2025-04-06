@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{94a2009a-51ef-486d-b376-a00e99cf5b5a}">
+	<object class="AudioFile" id="{3daf1bed-e761-41c7-909f-e7dbe972242e}">
 		<property name="assetPath">
-			<value>alex-productions-epic-cinematic-trailer-elite(chosic.com).mp3</value>
+			<value>ost_shop.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
@@ -14,7 +14,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>98.977959183673462</value>
+			<value>144.11755102040817</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{cfa004d2-95d8-431c-98f0-201d45e0d327}</destination>
