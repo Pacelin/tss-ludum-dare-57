@@ -14,7 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: LudumDare57.Inventory.ItemsCollection, Assembly-CSharp
   _collection:
     _serializedList:
-    - Key: Diamond
+    - Key: 1
       Value: {fileID: 11400000, guid: 94735fb30b97faa4783eb9547b671dc8, type: 2}
-    - Key: Bulk
+    - Key: 2
       Value: {fileID: 11400000, guid: d40954474911fb342906ee3ec2c84eb5, type: 2}
+    - Key: 3
+      Value: {fileID: 11400000, guid: 12dbe221ab2bc64478ebdab44516d89b, type: 2}
+    - Key: 4
+      Value: {fileID: 11400000, guid: 7b62031cffe8de842aeb99bb116d5c67, type: 2}
+    - Key: 5
+      Value: {fileID: 11400000, guid: fc772751d7adecc43bab8df9ab50f99e, type: 2}
+    - Key: 6
+      Value: {fileID: 11400000, guid: 63e000dc766dff54fb6495c42b21c775, type: 2}
+    - Key: 7
+      Value: {fileID: 11400000, guid: b62b4004b4b42544b8826a94351b036e, type: 2}
+    - Key: 8
+      Value: {fileID: 11400000, guid: 82d6aee6cdd30a241a0aeba0179b0200, type: 2}
+    - Key: 9
+      Value: {fileID: 11400000, guid: 6f7e27d4a7587f34d87225740e96fb10, type: 2}
+    - Key: 10
+      Value: {fileID: 11400000, guid: 290a4e4c82496574fa5cae4333fb0443, type: 2}
+    - Key: 11
+      Value: {fileID: 11400000, guid: 95d6fa3a71482324bb43bb8973111fc4, type: 2}
+    - Key: 12
+      Value: {fileID: 11400000, guid: 2f891761991741240ac7fa63fd3ec9af, type: 2}

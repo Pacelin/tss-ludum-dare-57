@@ -410,3 +410,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f053ccc3e9a64f9ca2af236a28e84242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.Game.Shop.ShopActivation, Assembly-CSharp
+  _shopLevel: 1

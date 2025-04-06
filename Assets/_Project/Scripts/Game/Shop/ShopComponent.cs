@@ -8,11 +8,14 @@ namespace LudumDare57.Game.Shop
 {
     public class ShopComponent : MonoBehaviour
     {
+        public int ShopLevel => _shopLevel;
+        
         [SerializeField] private FeedbackButton _hideButton;
         [SerializeField] private ScriptableTween _showTween;
         [SerializeField] private ScriptableTween _hideTween;
 
         private IDisposable _disposable;
+        private int _shopLevel;
 
         private void OnEnable()
         {
@@ -24,8 +27,9 @@ namespace LudumDare57.Game.Shop
             _disposable?.Dispose();
         }
 
-        public void Show()
+        public void Show(int shopLevel)
         {
+            _shopLevel = shopLevel;
             if (_hideTween.IsPlaying)
                 _hideTween.Pause();
             _showTween.Play();

@@ -64,7 +64,7 @@ namespace LudumDare57.Game.Shop
 
         public void UpdateButtonState()
         {
-            if (_activeItem == null)
+            if (_activeItem == null || _activeItem.MinimumShopLevel > GameContext.Shop.ShopLevel)
             {
                 _buyButton.gameObject.SetActive(false);
                 _buyBG.SetActive(false);
@@ -80,7 +80,7 @@ namespace LudumDare57.Game.Shop
 
         public void UpdateItemState()
         {
-            if (_activeItem == null)
+            if (_activeItem == null || _activeItem.MinimumShopLevel > GameContext.Shop.ShopLevel)
             {
                 _iconImage.sprite = _soldOutIcon.LoadAsset();
                 _tooltip.Hide();
@@ -108,7 +108,7 @@ namespace LudumDare57.Game.Shop
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if (_activeItem != null)
+            if (_activeItem != null && GameContext.Shop.ShopLevel >= _activeItem.MinimumShopLevel)
                 _tooltip.Show();
         }
 
