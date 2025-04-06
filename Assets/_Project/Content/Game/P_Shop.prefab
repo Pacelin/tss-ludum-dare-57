@@ -959,6 +959,22 @@ PrefabInstance:
       value: -25.845001
       objectReference: {fileID: 0}
     - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: _items.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: '_items.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 1f0fda531adeacd4580cf2bc92d9973f, type: 2}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: '_items.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: dfd59f9aa10268b4695e65bab6e1aca7, type: 2}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: '_items.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: f9217808330d9204a814e8e2f33a31a4, type: 2}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: _butStr.m_TableEntryReference.m_KeyId
       value: 6028775593599010
       objectReference: {fileID: 0}
@@ -1137,6 +1153,18 @@ PrefabInstance:
       value: -25.845001
       objectReference: {fileID: 0}
     - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: _items.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: '_items.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: fd3e955b01665cb48bed666365818256, type: 2}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: '_items.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: fdff408ae64e66348baf27d07329f8f0, type: 2}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: _butStr.m_TableEntryReference.m_KeyId
       value: 6028775593599010
       objectReference: {fileID: 0}
@@ -1314,6 +1342,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -25.845001
       objectReference: {fileID: 0}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: '_items.Array.data[0]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 2718299b3ff441e4a8da6f4cc3b54a76, type: 2}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: '_items.Array.data[1]'
+      value: 
+      objectReference: {fileID: 11400000, guid: 73b68c0a626f7944694018391146c072, type: 2}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: '_items.Array.data[2]'
+      value: 
+      objectReference: {fileID: 11400000, guid: a693dd7feec1fbb438b381404acc497e, type: 2}
     - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: _butStr.m_TableEntryReference.m_KeyId
       value: 6028775593599010
