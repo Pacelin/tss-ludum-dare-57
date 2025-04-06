@@ -62,6 +62,19 @@ namespace LudumDare57.Inventory
             return true;
         }
 
+        public bool HasSpaceFor(string item)
+        {
+            for (int i = 0; i < _entries.Length; i++)
+            {
+                if (string.IsNullOrEmpty(_entries[i].Id))
+                    return true;
+                if (_entries[i].Id == item)
+                    return true;
+            }
+
+            return false;
+        }
+        
         public (string id, int count)[] GetAvailableItems() => _entries.Where(e => !string.IsNullOrEmpty(e.Id))
             .Select(e => (e.Id, e.Count)).ToArray();
 

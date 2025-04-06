@@ -53,3 +53,7 @@ MonoBehaviour:
     CMSName: DepthScalePrefab
     ComponentName: DepthScaleView
     Namespace: LudumDare57.Game.Shop
+  - GUID: 826c69fa21152d2429a730a5852be49b
+    CMSName: DropPrefab
+    ComponentName: DropView
+    Namespace: LudumDare57.Game.Shop

@@ -41,7 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5320897200647326900}
   - component: {fileID: 8390461427950297137}
-  - component: {fileID: 820858762607303292}
   m_Layer: 0
   m_Name: P_Player
   m_TagString: Untagged
@@ -78,70 +77,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.Game.PlayerComponent, Assembly-CSharp
   _backpackPoint: {fileID: 4153249630155032645}
---- !u!114 &820858762607303292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5532187823765880833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa9ff0b64396cb04282c72829dcc46c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _preset: {fileID: 0}
-  _targets:
-  - {fileID: 5320897200647326900}
-  _items:
-  - rid: 4922611536225370251
-  _cacheTween: 0
-  _playOnEnable: 1
-  _loops: 0
-  _loopType: 0
-  _delay: 0
-  references:
-    version: 2
-    RefIds:
-    - rid: 4922611536225370251
-      type: {class: ScriptableTweenTranform_DOMove, ns: TSS.Tweening, asm: TSS.Tweening}
-      data:
-        _connectBehaviour: 0
-        _easing: 6
-        _delay:
-          rid: 4922611536225370252
-        _loopsCount:
-          rid: 4922611536225370253
-        _loopType: 0
-        _ignoreTimescale: 0
-        _duration:
-          rid: 4922611536225370254
-        _useStartValue: 1
-        _startValue:
-          rid: 4922611536225370255
-        _endValue:
-          rid: 4922611536225370256
-        _local: 0
-    - rid: 4922611536225370252
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 0
-    - rid: 4922611536225370253
-      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 1
-    - rid: 4922611536225370254
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 2
-    - rid: 4922611536225370255
-      type: {class: Vector3ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: {x: 0, y: 4, z: 0}
-    - rid: 4922611536225370256
-      type: {class: Vector3ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: {x: 0, y: 0, z: 0}
+  _backpackCap: {fileID: 5630262134739807762}
+  _backpackLocalClosedRotation: {x: -17, y: 0, z: 0}
+  _backpackLocalOpenedRotation: {x: -80, y: 0, z: 0}
+  _openDuration: 0.5
+  _closeDuration: 0.5
+  _openEase: 6
+  _closeEase: 30
 --- !u!1001 &6722275104108274570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -196,11 +138,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 402c95532f74ba14cbf229a1d0204146, type: 2}
     - target: {fileID: -7824753648676844136, guid: 4bf598ddad9745b4d921755696b8a70e, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9884939
+      value: 0.9890159
       objectReference: {fileID: 0}
     - target: {fileID: -7824753648676844136, guid: 4bf598ddad9745b4d921755696b8a70e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.15126085
+      value: -0.14780933
       objectReference: {fileID: 0}
     - target: {fileID: -7824753648676844136, guid: 4bf598ddad9745b4d921755696b8a70e, type: 3}
       propertyPath: m_LocalRotation.z
@@ -208,7 +150,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7824753648676844136, guid: 4bf598ddad9745b4d921755696b8a70e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -17.4
+      value: -17
       objectReference: {fileID: 0}
     - target: {fileID: -804731622281664130, guid: 4bf598ddad9745b4d921755696b8a70e, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -226,6 +168,11 @@ PrefabInstance:
       addedObject: {fileID: 4153249630155032645}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf598ddad9745b4d921755696b8a70e, type: 3}
+--- !u!4 &5630262134739807762 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -7824753648676844136, guid: 4bf598ddad9745b4d921755696b8a70e, type: 3}
+  m_PrefabInstance: {fileID: 6722275104108274570}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6539482751474467937 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4bf598ddad9745b4d921755696b8a70e, type: 3}
