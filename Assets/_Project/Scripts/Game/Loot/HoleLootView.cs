@@ -1,6 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
-using LudumDare57.Game;
+using LudumDare57.Inventory;
 using TSS.Tweening;
+using TSS.Utils.Randoms.Weighted;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Random = UnityEngine.Random;
@@ -16,7 +17,10 @@ namespace LudumDare57.Game
         [SerializeField] private Vector2Int _kicksCount;
         [SerializeField] private Vector2 _scaleRange;
         [SerializeField] private Vector2 _rotateRange;
-        
+        [InventoryItem] 
+        [SerializeField] private string _dropItem;
+        [SerializeField] private float _dropChance = 1;
+
         private int _cost;
         private int _kicksRemaining;
         
@@ -40,6 +44,7 @@ namespace LudumDare57.Game
                 return;
             if (--_kicksRemaining <= 0)
             {
+                DropItems();
                 _onDestroyTween.Play();
                 _onDestroyTween.WaitWhilePlay().ContinueWith(() =>
                 {
@@ -49,6 +54,17 @@ namespace LudumDare57.Game
             else
             {
                 _onClickTween.Play();
+            }
+        }
+
+        private void DropItems()
+        {
+            if (Random.Range(0f, 1f) <= _dropChance)
+            {
+                if (GameContext.Inventory.TryAddItem(_dropItem, _cost))
+                {
+                    
+                }
             }
         }
     }
