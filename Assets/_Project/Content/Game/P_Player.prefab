@@ -252,7 +252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 0.64278764
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: m_LocalRotation.x
@@ -260,7 +260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: -0.7660445
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: m_LocalRotation.z
@@ -272,7 +272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: -100
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -281,15 +281,15 @@ PrefabInstance:
     - target: {fileID: -8143710011712545758, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ca8f07219ceb53848bd7c8755311cf47, type: 2}
+      objectReference: {fileID: 2100000, guid: 2403b7544b8c5ce4bbe60e014d672143, type: 2}
     - target: {fileID: -1439730007547781893, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ca8f07219ceb53848bd7c8755311cf47, type: 2}
+      objectReference: {fileID: 2100000, guid: 2403b7544b8c5ce4bbe60e014d672143, type: 2}
     - target: {fileID: -1120989108687609925, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ca8f07219ceb53848bd7c8755311cf47, type: 2}
+      objectReference: {fileID: 2100000, guid: 2403b7544b8c5ce4bbe60e014d672143, type: 2}
     - target: {fileID: 919132149155446097, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: m_Name
       value: M_GG_Pose_Rope_2
@@ -301,7 +301,7 @@ PrefabInstance:
     - target: {fileID: 6745302439343835087, guid: 2dea29c87bd035748bc018229f5274d0, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: ca8f07219ceb53848bd7c8755311cf47, type: 2}
+      objectReference: {fileID: 2100000, guid: 2403b7544b8c5ce4bbe60e014d672143, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
