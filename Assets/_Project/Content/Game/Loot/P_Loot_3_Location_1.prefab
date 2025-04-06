@@ -52,8 +52,8 @@ MonoBehaviour:
   _onDestroyTween: {fileID: 8602350534987949152}
   _costRange: {x: 10, y: 15}
   _kicksCount: {x: 2, y: 4}
-  _scaleRange: {x: 1, y: 1.25}
-  _rotateRange: {x: -30, y: -50}
+  _scaleRange: {x: 1.5, y: 2}
+  _rotateRange: {x: 20, y: -10}
   _dropItem: 3
   _dropChance: 1
 --- !u!60 &4928273522855542018
@@ -102,14 +102,13 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.71929914, y: 1.304151}
-      - {x: -0.37133357, y: 1.683198}
-      - {x: 0.08677177, y: 2.0798585}
-      - {x: 0.28167662, y: 1.9824897}
-      - {x: 0.48829484, y: 1.0252802}
-      - {x: -0.051573217, y: -0.2349801}
-      - {x: -0.9722887, y: 0.13945912}
-      - {x: -1.1918478, y: 1.3585641}
+    - - {x: 0.88838035, y: 0.6507645}
+      - {x: -0.13209954, y: 0.5031683}
+      - {x: -0.45362198, y: -0.023446232}
+      - {x: -0.117314905, y: -0.58402157}
+      - {x: 0.5262007, y: -0.293522}
+      - {x: 0.82791716, y: 0.028303102}
+      - {x: 1.1697716, y: 0.5419563}
   m_UseDelaunayMesh: 0
 --- !u!1 &4393876011941092743
 GameObject:
@@ -136,13 +135,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4393876011941092743}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.5, w: 0.8660254}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8361530493997258381}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 60}
 --- !u!212 &2300931240375984770
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -187,9 +186,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 2957409305dee1a48ac33dc6ef0e2b43, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8321681368c6e2640aba928c8326a2e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
