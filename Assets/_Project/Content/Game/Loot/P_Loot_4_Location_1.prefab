@@ -53,7 +53,7 @@ MonoBehaviour:
   _scaleRange: {x: 1.5, y: 2}
   _rotateRange: {x: 20, y: -10}
   _requirePickaxeLevel: 1
-  _dropItem: 3
+  _dropItem: 4
   _dropChance: 1
 --- !u!60 &1074572643387198954
 PolygonCollider2D:
