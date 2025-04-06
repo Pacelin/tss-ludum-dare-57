@@ -21,6 +21,9 @@ namespace LudumDare57.Game
             _cts = CancellationTokenSource.CreateLinkedTokenSource(Runtime.CancellationToken);
             GameContext.CancellationToken = _cts.Token;
             GameContext.Coins.Value = 0;
+            GameContext.PickaxeLevel = 1;
+            GameContext.PickaxeStrength = 0;
+            GameContext.IncomeMultiplier = 1;
             _disposable = GameContext.Coins.Subscribe(c => Mixpanel.Register("Coins", c));
             Mixpanel.Track("fun_start");
             
