@@ -32,7 +32,7 @@ MonoBehaviour:
     m_LocalVariables: []
   _icon: {fileID: 739874969, guid: 600e20b1b9a38da4db1ce2d4f77fe510, type: 3}
   _buyEvent: upg_handle_2
-  _cost: 200
+  _cost: 250
   _minimumShopLevel: 3
   _pickaxeStrength: 4
   references:
