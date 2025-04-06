@@ -50,7 +50,7 @@ MonoBehaviour:
   _onDestroyTween: {fileID: 1657646257783650767}
   _costRange: {x: 40, y: 50}
   _kicksCount: {x: 6, y: 8}
-  _scaleRange: {x: 1, y: 2}
+  _scaleRange: {x: 1, y: 1}
   _rotateRange: {x: -15, y: 10}
   _requirePickaxeLevel: 1
   _dropItem: 8

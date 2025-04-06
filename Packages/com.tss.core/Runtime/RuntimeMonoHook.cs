@@ -6,6 +6,7 @@ namespace TSS.Core
     internal class RuntimeMonoHook : MonoBehaviour
     {
         internal static readonly ReactiveProperty<bool> _pauseState = new(false);
+        internal static readonly ReactiveProperty<bool> _overridePauseState = new(false);
         internal static readonly ReactiveProperty<bool> _focusState = new(true);
         internal static readonly Subject<ApplicationQuitCancellationToken> _quitRequestSubject = new();
         internal static readonly Subject<Unit> _quitSubject = new();
