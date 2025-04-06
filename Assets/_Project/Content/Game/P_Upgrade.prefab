@@ -511,13 +511,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a835aaf997747a58369a6627f2e9da3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.Game.Shop.ShopUpgradeComponent, Assembly-CSharp
+  _buyBG: {fileID: 1043290532066506181}
   _buyButton: {fileID: 627723472839816004}
   _buyText: {fileID: 3640647191312200083}
   _butStr:
     m_TableReference:
       m_TableCollectionName: GUID:57a0e491692fc7143b32d45150d7ad8c
     m_TableEntryReference:
-      m_KeyId: 6016722189815808
+      m_KeyId: 6028775593599010
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

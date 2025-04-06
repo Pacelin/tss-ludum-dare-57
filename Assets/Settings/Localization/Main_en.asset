@@ -318,6 +318,14 @@ MonoBehaviour:
     m_Localized: Sell
     m_Metadata:
       m_Items: []
+  - m_Id: 6030651477594112
+    m_Localized: 'Name: {0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6032063288709120
+    m_Localized: 'Description: {0}'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

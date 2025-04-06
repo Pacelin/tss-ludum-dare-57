@@ -8,13 +8,12 @@ namespace LudumDare57.Game
         
         private void Update()
         {
-            var y = transform.position.y;
-            if (y >= 0)
+            if (!_activated && transform.position.y >= 0)
             {
                 _activated = true;
                 OnActivate();
             }
-            else
+            else if (_activated && transform.position.y < 0)
             {
                 _activated = false;
             }

@@ -50,11 +50,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _preset: {fileID: 0}
   _targets:
+  - {fileID: 5763870435302399772}
   - {fileID: 3166267152572464937}
-  - {fileID: 1647879954077360172}
   _items:
+  - rid: 4922611557021515975
   - rid: 4922611557021515956
-  - rid: 4922611557021515964
   _cacheTween: 0
   _playOnEnable: 0
   _loops: 0
@@ -100,44 +100,10 @@ MonoBehaviour:
       type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
         _value: {x: 0, y: 0}
-    - rid: 4922611557021515964
-      type: {class: ScriptableTweenCanvasGroup_DOFade, ns: TSS.Tweening, asm: TSS.Tweening}
+    - rid: 4922611557021515975
+      type: {class: ScriptableTweenEnableGO, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
-        _connectBehaviour: 1
-        _easing: 6
-        _delay:
-          rid: 4922611557021515965
-        _loopsCount:
-          rid: 4922611557021515966
-        _loopType: 0
-        _ignoreTimescale: 0
-        _duration:
-          rid: 4922611557021515967
-        _useStartValue: 0
-        _startValue:
-          rid: 4922611557021515968
-        _endValue:
-          rid: 4922611557021515969
-    - rid: 4922611557021515965
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 0
-    - rid: 4922611557021515966
-      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 1
-    - rid: 4922611557021515967
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 0.5
-    - rid: 4922611557021515968
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 0
-    - rid: 4922611557021515969
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 1
+        _connectBehaviour: 0
 --- !u!1 &2142364247276080801
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,10 +155,10 @@ MonoBehaviour:
   _preset: {fileID: 0}
   _targets:
   - {fileID: 3166267152572464937}
-  - {fileID: 1647879954077360172}
+  - {fileID: 5763870435302399772}
   _items:
   - rid: 4922611557021515956
-  - rid: 4922611557021515964
+  - rid: 4922611557021515977
   _cacheTween: 0
   _playOnEnable: 0
   _loops: 0
@@ -238,44 +204,10 @@ MonoBehaviour:
       type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
         _value: {x: 0, y: -1080}
-    - rid: 4922611557021515964
-      type: {class: ScriptableTweenCanvasGroup_DOFade, ns: TSS.Tweening, asm: TSS.Tweening}
+    - rid: 4922611557021515977
+      type: {class: ScriptableTweenDisableGO, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
-        _connectBehaviour: 1
-        _easing: 6
-        _delay:
-          rid: 4922611557021515965
-        _loopsCount:
-          rid: 4922611557021515966
-        _loopType: 0
-        _ignoreTimescale: 0
-        _duration:
-          rid: 4922611557021515967
-        _useStartValue: 0
-        _startValue:
-          rid: 4922611557021515968
-        _endValue:
-          rid: 4922611557021515969
-    - rid: 4922611557021515965
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 0
-    - rid: 4922611557021515966
-      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 1
-    - rid: 4922611557021515967
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 0.5
-    - rid: 4922611557021515968
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 0
-    - rid: 4922611557021515969
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 0
+        _connectBehaviour: 0
 --- !u!1 &4269132866292743568
 GameObject:
   m_ObjectHideFlags: 0
@@ -402,7 +334,6 @@ GameObject:
   - component: {fileID: 3868814215189990560}
   - component: {fileID: 4251277392024699762}
   - component: {fileID: 4186941029401071553}
-  - component: {fileID: 1647879954077360172}
   m_Layer: 5
   m_Name: P_Shop
   m_TagString: Untagged
@@ -511,18 +442,6 @@ MonoBehaviour:
   _hideButton: {fileID: 8656577770955168460}
   _showTween: {fileID: 9168428012209973138}
   _hideTween: {fileID: 4468143377521336221}
---- !u!225 &1647879954077360172
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5763870435302399772}
-  m_Enabled: 1
-  m_Alpha: 0
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &6800514584237281242
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,6 +734,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1331457660307506560, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: _nameStr.m_TableEntryReference.m_KeyId
+      value: 6030651477594112
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331457660307506560, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: _descriptionStr.m_TableEntryReference.m_KeyId
+      value: 6032063288709120
+      objectReference: {fileID: 0}
     - target: {fileID: 3177056558097577205, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: m_Name
       value: P_Upgrade
@@ -842,6 +769,10 @@ PrefabInstance:
     - target: {fileID: 5228441827391547827, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -25.845001
+      objectReference: {fileID: 0}
+    - target: {fileID: 6747161310930088107, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
+      propertyPath: _butStr.m_TableEntryReference.m_KeyId
+      value: 6028775593599010
       objectReference: {fileID: 0}
     - target: {fileID: 7305222327719741410, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: m_SizeDelta.x

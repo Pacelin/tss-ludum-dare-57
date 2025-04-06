@@ -32,9 +32,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3393683574431807812}
-  - {fileID: 8982367634999062940}
   - {fileID: 1638353007383380845}
   - {fileID: 1463808037386509342}
+  - {fileID: 8982367634999062940}
   - {fileID: 6592785294148287703}
   - {fileID: 7067788658360610967}
   m_Father: {fileID: 0}
@@ -524,7 +524,7 @@ MonoBehaviour:
     - rid: 4922611557021515915
       type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
-        _value: {x: 0, y: 50}
+        _value: {x: 0, y: 40}
 --- !u!1 &9084983513413961688
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,6 +907,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2698001536653961805, guid: a7e7f44201a5a0f4ca04eb8aa2b28e02, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286657974265426817, guid: a7e7f44201a5a0f4ca04eb8aa2b28e02, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286657974265426817, guid: a7e7f44201a5a0f4ca04eb8aa2b28e02, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286657974265426817, guid: a7e7f44201a5a0f4ca04eb8aa2b28e02, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286657974265426817, guid: a7e7f44201a5a0f4ca04eb8aa2b28e02, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
@@ -1347,7 +1363,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:57a0e491692fc7143b32d45150d7ad8c
     m_TableEntryReference:
-      m_KeyId: 6009231531970560
+      m_KeyId: 6028775593599011
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

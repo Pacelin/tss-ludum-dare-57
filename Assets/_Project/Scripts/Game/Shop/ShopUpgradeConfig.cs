@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using mixpanel;
+using UnityEngine;
 using UnityEngine.Localization;
 
 namespace LudumDare57.Game.Shop
@@ -20,7 +21,6 @@ namespace LudumDare57.Game.Shop
 
         public virtual void OnBuy()
         {
-            
         }
     }
 }

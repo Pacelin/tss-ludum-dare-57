@@ -2,6 +2,9 @@
 {
     public class ShopActivation : ActivationTrigger
     {
-        protected override void OnActivate() => GameContext.Shop.Show();
+        protected override void OnActivate()
+        {
+            GameContext.Shop.Show();
+        }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using mixpanel;
 using R3;
 using TMPro;
 using TSS.Tweening;
@@ -12,6 +13,7 @@ namespace LudumDare57.Game.Shop
 {
     public class ShopUpgradeComponent : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
+        [SerializeField] private GameObject _buyBG;
         [SerializeField] private Button _buyButton;
         [SerializeField] private TMP_Text _buyText;
         [SerializeField] private LocalizedString _butStr;
@@ -56,6 +58,7 @@ namespace LudumDare57.Game.Shop
             if (_idleTween.IsPlaying)
                 _idleTween.Pause();
             GameContext.Coins.Value -= _activeItem.Cost;
+            Mixpanel.Track(_activeItem.ButEvent);
             Next();
         }
 
@@ -64,11 +67,13 @@ namespace LudumDare57.Game.Shop
             if (_activeItem == null)
             {
                 _buyButton.gameObject.SetActive(false);
+                _buyBG.SetActive(false);
             }
             else
             {
                 _buyButton.gameObject.SetActive(true);
-                _buyText.text = string.Format(_butStr.GetLocalizedString(), _activeItem);
+                _buyBG.SetActive(true);
+                _buyText.text = string.Format(_butStr.GetLocalizedString(), _activeItem.Cost);
                 _buyButton.interactable = GameContext.Coins.CurrentValue >= _activeItem.Cost;
             }
         }
@@ -92,6 +97,7 @@ namespace LudumDare57.Game.Shop
             _activeItemIndex++;
             _activeItem = _activeItemIndex >= _items.Length ? null : _items[_activeItemIndex];
             _nextTween.Play();
+            UpdateButtonState();
         }
 
         private void OnLocaleChanged(Locale locale)
