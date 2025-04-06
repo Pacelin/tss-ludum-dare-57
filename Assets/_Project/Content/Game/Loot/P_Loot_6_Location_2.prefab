@@ -53,8 +53,9 @@ MonoBehaviour:
   _costRange: {x: 25, y: 35}
   _kicksCount: {x: 5, y: 7}
   _scaleRange: {x: 1, y: 2}
-  _rotateRange: {x: -15, y: 10}
-  _dropItem: 5
+  _rotateRange: {x: -65, y: 65}
+  _requirePickaxeLevel: 1
+  _dropItem: 6
   _dropChance: 1
 --- !u!60 &5684799854823472330
 PolygonCollider2D:
@@ -250,6 +251,7 @@ MonoBehaviour:
   _playOnEnable: 0
   _loops: 0
   _loopType: 0
+  _delay: 0
   references:
     version: 2
     RefIds:
@@ -353,6 +355,7 @@ MonoBehaviour:
   _playOnEnable: 0
   _loops: 0
   _loopType: 0
+  _delay: 0
   references:
     version: 2
     RefIds:
