@@ -15,8 +15,8 @@ MonoBehaviour:
   Entries:
     _entries:
     - Value: {fileID: 4663229359588411088, guid: e419e6ce73bbada46a45542567f82944, type: 3}
-      Weight: 3
+      Weight: 1
     - Value: {fileID: 4663229359588411088, guid: 4327055b8f090bb4aba46c95c780060f, type: 3}
-      Weight: 3
+      Weight: 1
     - Value: {fileID: 4663229359588411088, guid: 6b29a7dd40a4e1e4782291bca1fcb224, type: 3}
       Weight: 1

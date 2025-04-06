@@ -772,8 +772,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.Game.LootSpawn, Assembly-CSharp
   _activationY: -15
-  _deactivationY: 65
-  _distance: 50
+  _deactivationY: 90
+  _distance: 75
   _lootCount: {x: 9, y: 12}
   _spawnSpread: 1
   _loots:
@@ -1033,7 +1033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2997286846619197917, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -410
+      value: -435
       objectReference: {fileID: 0}
     - target: {fileID: 2997286846619197917, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
       propertyPath: m_LocalPosition.z
