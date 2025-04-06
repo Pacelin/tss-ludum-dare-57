@@ -90,7 +90,8 @@ namespace TSS.Tweening
         internal Sequence GetNewTween()
         {
             _sequence = DOTween.Sequence(this)
-                .SetLoops(Loops, LoopType);
+                .SetLoops(Loops, LoopType)
+                .SetDelay(Delay);
             var targetIndex = 0;
             foreach (var scriptableTweenItem in Items)
             {

@@ -208,9 +208,10 @@ MonoBehaviour:
   - rid: 4922611557021515933
   - rid: 4922611557021515935
   _cacheTween: 0
-  _playOnEnable: 1
+  _playOnEnable: 0
   _loops: 0
   _loopType: 0
+  _delay: 0
   references:
     version: 2
     RefIds:
@@ -490,7 +491,6 @@ RectTransform:
   - {fileID: 3369240433366309828}
   - {fileID: 3038102086539929109}
   - {fileID: 7305222327719741410}
-  - {fileID: 6017437673888270819}
   - {fileID: 4110004107037405597}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -537,8 +537,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1f0fda531adeacd4580cf2bc92d9973f, type: 2}
   - {fileID: 11400000, guid: 1f0fda531adeacd4580cf2bc92d9973f, type: 2}
   - {fileID: 11400000, guid: 1f0fda531adeacd4580cf2bc92d9973f, type: 2}
-  _idleTween: {fileID: 7332793810305950420}
   _nextTween: {fileID: 7015678885780845146}
+  _sinTarget: {fileID: 6041259404504115331}
+  _sinOffset: 0
+  _sinAmplitude: 30
+  _sinSpeed: 1
   references:
     version: 2
     RefIds: []
@@ -580,165 +583,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &3522630700515957729
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6017437673888270819}
-  - component: {fileID: 7332793810305950420}
-  - component: {fileID: 6982024725829491024}
-  m_Layer: 5
-  m_Name: IdleTween
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &6017437673888270819
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3522630700515957729}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 399732004007977361}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 225.01001, y: -2.0300293}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7332793810305950420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3522630700515957729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa9ff0b64396cb04282c72829dcc46c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _preset: {fileID: 0}
-  _targets:
-  - {fileID: 6041259404504115331}
-  - {fileID: 6041259404504115331}
-  _items:
-  - rid: 4922611557021515919
-  - rid: 4922611557021515942
-  _cacheTween: 0
-  _playOnEnable: 1
-  _loops: -1
-  _loopType: 1
-  references:
-    version: 2
-    RefIds:
-    - rid: 4922611557021515919
-      type: {class: ScriptableTweenRectTranform_DOAnchorPos, ns: TSS.Tweening, asm: TSS.Tweening}
-      data:
-        _connectBehaviour: 0
-        _easing: 7
-        _delay:
-          rid: 4922611557021515920
-        _loopsCount:
-          rid: 4922611557021515921
-        _loopType: 0
-        _ignoreTimescale: 0
-        _duration:
-          rid: 4922611557021515922
-        _useStartValue: 0
-        _startValue:
-          rid: 4922611557021515923
-        _endValue:
-          rid: 4922611557021515924
-    - rid: 4922611557021515920
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 0
-    - rid: 4922611557021515921
-      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 1
-    - rid: 4922611557021515922
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 2
-    - rid: 4922611557021515923
-      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: {x: 0, y: 0}
-    - rid: 4922611557021515924
-      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: {x: 0, y: -30}
-    - rid: 4922611557021515942
-      type: {class: ScriptableTweenRectTranform_DOAnchorPos, ns: TSS.Tweening, asm: TSS.Tweening}
-      data:
-        _connectBehaviour: 0
-        _easing: 7
-        _delay:
-          rid: 4922611557021515943
-        _loopsCount:
-          rid: 4922611557021515944
-        _loopType: 0
-        _ignoreTimescale: 0
-        _duration:
-          rid: 4922611557021515945
-        _useStartValue: 0
-        _startValue:
-          rid: 4922611557021515946
-        _endValue:
-          rid: 4922611557021515947
-    - rid: 4922611557021515943
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 0
-    - rid: 4922611557021515944
-      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 1
-    - rid: 4922611557021515945
-      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: 2
-    - rid: 4922611557021515946
-      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: {x: 0, y: 0}
-    - rid: 4922611557021515947
-      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
-      data:
-        _value: {x: 0, y: 30}
---- !u!114 &6982024725829491024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3522630700515957729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreLayout: 1
-  m_MinWidth: -1
-  m_MinHeight: -1
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
 --- !u!1 &7172762642635340690
 GameObject:
   m_ObjectHideFlags: 0
