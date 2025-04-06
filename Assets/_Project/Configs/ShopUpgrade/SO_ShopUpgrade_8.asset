@@ -30,7 +30,7 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  _icon: {fileID: 21300000, guid: 1593d2ee87f71e34d952d0200b76730a, type: 3}
+  _icon: {fileID: 21300000, guid: f4e8106d1a93e614a9338b1147881c55, type: 3}
   _buyEvent: upg_unlock_1
   _cost: 250
   _minimumShopLevel: 2
