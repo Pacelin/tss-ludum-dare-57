@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 197780376994432ab156b502b2062254, type: 3}
-  m_Name: SO_LootDeposit_1_Location_2
+  m_Name: SO_LootDeposit_3_Location_1
   m_EditorClassIdentifier: LudumDare57.Game.HoleLootsDeposit, Assembly-CSharp
   Entries:
     _entries:
@@ -18,3 +18,7 @@ MonoBehaviour:
       Weight: 1
     - Value: {fileID: 4663229359588411088, guid: 5e4ca464a5416ab4ab597fbcbcea6cdd, type: 3}
       Weight: 1
+    - Value: {fileID: 4663229359588411088, guid: ec56d2e7509efc749917268e30749548, type: 3}
+      Weight: 3
+    - Value: {fileID: 4663229359588411088, guid: abb47685d3189654c9ae9c8e7a8c1e39, type: 3}
+      Weight: 4

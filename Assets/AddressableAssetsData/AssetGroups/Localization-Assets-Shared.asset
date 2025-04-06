@@ -20,13 +20,6 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: cfb96b5bb3090814e90b10955159e8c9
-    m_Address: Player
-    m_ReadOnly: 1
-    m_SerializedLabels:
-    - Locale-en
-    - Locale-ru
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: de1508a86e8499b479342219d05977ba
     m_Address: Assets/Settings/Localization/Sprites Shared Data.asset
     m_ReadOnly: 1

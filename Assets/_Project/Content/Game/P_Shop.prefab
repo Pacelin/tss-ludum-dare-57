@@ -922,14 +922,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1331457660307506560, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
-      propertyPath: _nameStr.m_TableEntryReference.m_KeyId
-      value: 6030651477594112
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331457660307506560, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
-      propertyPath: _descriptionStr.m_TableEntryReference.m_KeyId
-      value: 6032063288709120
-      objectReference: {fileID: 0}
     - target: {fileID: 3177056558097577205, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: m_Name
       value: P_Upgrade
@@ -1107,14 +1099,6 @@ PrefabInstance:
     - target: {fileID: 399732004007977361, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331457660307506560, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
-      propertyPath: _nameStr.m_TableEntryReference.m_KeyId
-      value: 6030651477594112
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331457660307506560, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
-      propertyPath: _descriptionStr.m_TableEntryReference.m_KeyId
-      value: 6032063288709120
       objectReference: {fileID: 0}
     - target: {fileID: 3038102086539929109, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -1297,14 +1281,6 @@ PrefabInstance:
     - target: {fileID: 399732004007977361, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331457660307506560, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
-      propertyPath: _nameStr.m_TableEntryReference.m_KeyId
-      value: 6030651477594112
-      objectReference: {fileID: 0}
-    - target: {fileID: 1331457660307506560, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
-      propertyPath: _descriptionStr.m_TableEntryReference.m_KeyId
-      value: 6032063288709120
       objectReference: {fileID: 0}
     - target: {fileID: 3038102086539929109, guid: 003993ed9b0c80a468e28a1d5666b337, type: 3}
       propertyPath: m_AnchoredPosition.x
