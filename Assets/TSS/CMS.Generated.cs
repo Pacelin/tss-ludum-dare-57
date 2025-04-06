@@ -11,6 +11,7 @@ using UnityEngine;
 using LudumDare57.Game;
 using LudumDare57.Inventory;
 using LudumDare57.Game.Shop;
+using LudumDare57.Game.GameEvent;
 using TSS.Core;
 
 namespace TSS.ContentManagement
@@ -26,6 +27,7 @@ namespace TSS.ContentManagement
 		public static InventoryComponent InventoryPrefab { get; private set; }
 		public static ItemComponent InventoryItemPrefab { get; private set; }
 		public static ShopComponent ShopPrefab { get; private set; }
+		public static LocationView LocationPrefab { get; private set; }
  
 
         public async UniTask Initialize(CancellationToken cancellationToken)
@@ -43,6 +45,8 @@ namespace TSS.ContentManagement
 				.ToUniTask(cancellationToken: cancellationToken)).GetComponent<ItemComponent>();
 			ShopPrefab = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/UI/P_Shop.prefab")
 				.ToUniTask(cancellationToken: cancellationToken)).GetComponent<ShopComponent>();
+			LocationPrefab = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/Game/P_LocationView.prefab")
+				.ToUniTask(cancellationToken: cancellationToken)).GetComponent<LocationView>();
         }
 
         public void Dispose() { }

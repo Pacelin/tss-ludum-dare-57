@@ -28,6 +28,7 @@ namespace LudumDare57.Game
             GameContext.Player = Object.Instantiate(CMS.PlayerPrefab);
             GameContext.Inventory = Object.Instantiate(CMS.InventoryPrefab);
             GameContext.Shop = Object.Instantiate(CMS.ShopPrefab);
+            GameContext.LocationView = Object.Instantiate(CMS.LocationPrefab);
             
             GameContext.StateMachine = new GameStateMachine();
             
