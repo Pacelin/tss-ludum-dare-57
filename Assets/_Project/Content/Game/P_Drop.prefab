@@ -293,9 +293,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.Game.Shop.DropView, Assembly-CSharp
   _spriteRenderer: {fileID: 6074552578047731910}
-  _fallDelay: 0.1
+  _fallDelay: 0.01
   _yFall: -15
-  _fallDuration: 2
+  _fallDuration: 1.25
   _fallEase: 5
   _jumpStrength: 2
   _jumpDelay: 0.01
