@@ -33,6 +33,7 @@ MonoBehaviour:
   _icon: {fileID: 21300000, guid: 2fa238c8a5cb3a842be10a49afb6de14, type: 3}
   _buyEvent: upg_handle_0
   _cost: 10
+  _minimumShopLevel: 2
   references:
     version: 2
     RefIds: []
