@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3705585293637027992}
   m_Layer: 0
-  m_Name: P_Shop_Outside
+  m_Name: P_Shop_Outside_Desert
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

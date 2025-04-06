@@ -333,7 +333,7 @@ Transform:
   - {fileID: 8140994700676894529}
   - {fileID: 6255819555270072407}
   - {fileID: 2081108044291525801}
-  - {fileID: 733363438401520040}
+  - {fileID: 6153664641698928818}
   m_Father: {fileID: 807596912460586145}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4677962242989161584
@@ -423,7 +423,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &4125732770184628528
+--- !u!1001 &7352926090223751210
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -480,8 +480,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5cff9b48aaeb6d429c4d419255b3b93, type: 3}
---- !u!4 &733363438401520040 stripped
+--- !u!4 &6153664641698928818 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3705585293637027992, guid: d5cff9b48aaeb6d429c4d419255b3b93, type: 3}
-  m_PrefabInstance: {fileID: 4125732770184628528}
+  m_PrefabInstance: {fileID: 7352926090223751210}
   m_PrefabAsset: {fileID: 0}
