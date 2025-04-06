@@ -52,7 +52,7 @@ MonoBehaviour:
   _onDestroyTween: {fileID: 8602350534987949152}
   _costRange: {x: 20, y: 30}
   _kicksCount: {x: 3, y: 5}
-  _scaleRange: {x: 1, y: 2}
+  _scaleRange: {x: 0.75, y: 1.25}
   _rotateRange: {x: -15, y: 10}
   _dropItem: 1
   _dropChance: 1
@@ -102,13 +102,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.48501688, y: 0.6403616}
-      - {x: -0.12949729, y: 0.3783051}
-      - {x: -0.30403388, y: 0.10822576}
-      - {x: -0.06880206, y: -0.3899888}
-      - {x: 0.24555027, y: -0.21388426}
-      - {x: 0.59780794, y: 0.120925814}
-      - {x: 0.5911181, y: 0.57423484}
+    - - {x: 0.21210298, y: 1.0219313}
+      - {x: -1.0639274, y: 1.0081917}
+      - {x: -1.553762, y: 0.59196764}
+      - {x: -1.6745546, y: -0.31350094}
+      - {x: -1.1738127, y: -0.90049183}
+      - {x: 0.33543855, y: -0.90874213}
+      - {x: 0.67336845, y: -0.15160626}
+      - {x: 0.6592526, y: 0.39004096}
   m_UseDelaunayMesh: 0
 --- !u!1 &4393876011941092743
 GameObject:
@@ -186,9 +187,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 1538d438f16c1f349960f483cb09771e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 868c25e000877834cb69fd29a9c1ae2f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
