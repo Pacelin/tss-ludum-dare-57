@@ -365,19 +365,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2350675055244842158, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2350675055244842158, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2350675055244842158, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2350675055244842158, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2726298111347345903, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.y
@@ -509,35 +509,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472899477456094137, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472899477456094137, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472899477456094137, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472899477456094137, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5187078768577259518, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5187078768577259518, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5187078768577259518, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5187078768577259518, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6086878235527237940, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.x
@@ -776,13 +776,14 @@ GameObject:
   - component: {fileID: 1062896561}
   - component: {fileID: 1062896560}
   - component: {fileID: 1062896564}
+  - component: {fileID: 1062896565}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1062896560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -822,7 +823,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1062896562
 Canvas:
   m_ObjectHideFlags: 0
@@ -832,8 +833,8 @@ Canvas:
   m_GameObject: {fileID: 1062896559}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1182102820}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -844,7 +845,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1062896563
 RectTransform:
@@ -855,16 +856,16 @@ RectTransform:
   m_GameObject: {fileID: 1062896559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960, y: 540}
-  m_SizeDelta: {x: 1920, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!114 &1062896564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -877,6 +878,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deda7b9df9594516b04986fe9b10316d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: TSS.Core.AssignMainCameraToCanvas, TSS.Core
+--- !u!114 &1062896565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062896559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05613c1db194814b83d2d7b146381c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.Game.GameEvent.GameEventComponent, Assembly-CSharp
+  _options: []
+  _openTween: {fileID: 0}
 --- !u!1 &1182102818
 GameObject:
   m_ObjectHideFlags: 0
