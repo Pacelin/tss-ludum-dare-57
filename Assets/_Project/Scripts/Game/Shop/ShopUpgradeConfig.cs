@@ -21,8 +21,6 @@ namespace LudumDare57.Game.Shop
         [SerializeField] private int _cost;
         [SerializeField] private int _minimumShopLevel;
 
-        public virtual void OnBuy()
-        {
-        }
+        public virtual void OnBuy() {  }
     }
 }

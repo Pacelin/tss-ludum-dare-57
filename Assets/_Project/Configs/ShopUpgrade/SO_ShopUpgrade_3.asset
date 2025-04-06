@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f9da377c72a450c9d96d2786dc627ac, type: 3}
+  m_Script: {fileID: 11500000, guid: 140f94c481a04c628005e624dc956ac4, type: 3}
   m_Name: SO_ShopUpgrade_3
   m_EditorClassIdentifier: LudumDare57.Game.Shop.ShopUpgradeConfig, Assembly-CSharp
   _name:
@@ -34,6 +34,7 @@ MonoBehaviour:
   _buyEvent: upg_handle_2
   _cost: 200
   _minimumShopLevel: 3
+  _pickaxeStrength: 4
   references:
     version: 2
     RefIds: []

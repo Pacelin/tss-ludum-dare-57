@@ -17,6 +17,7 @@ namespace LudumDare57.Game
         [SerializeField] private Vector2Int _kicksCount;
         [SerializeField] private Vector2 _scaleRange;
         [SerializeField] private Vector2 _rotateRange;
+        [SerializeField] private int _requirePickaxeLevel = 1;
         [InventoryItem] 
         [SerializeField] private string _dropItem;
         [SerializeField] private float _dropChance = 1;
@@ -26,11 +27,15 @@ namespace LudumDare57.Game
         
         public void Start()
         {
-            _cost = Random.Range(_costRange.x, _costRange.y + 1);
+            _cost = Mathf.CeilToInt(Random.Range(_costRange.x, _costRange.y + 1) * GameContext.IncomeMultiplier);
+            var maxCost = Mathf.CeilToInt(_costRange.y * GameContext.IncomeMultiplier);
             var t = 0f;
-            if (_cost != _costRange.y)
-                t = 1f * (_costRange.y - _costRange.x) / (_costRange.y - _cost);
+            if (_cost != maxCost)
+                t = 1f * (maxCost - _costRange.x) / (maxCost - _cost);
             _kicksRemaining = (int) Mathf.Lerp(_kicksCount.x, _kicksCount.y, t);
+            _kicksRemaining = Mathf.Min(1, _kicksRemaining - GameContext.PickaxeStrength);
+            if (GameContext.PickaxeLevel < _requirePickaxeLevel)
+                _kicksRemaining += 99;
             transform.localScale = Vector3.one * Mathf.Lerp(_scaleRange.x, _scaleRange.y, t);
 
             var rotateAngle = Random.Range(_rotateRange.x, _rotateRange.y);

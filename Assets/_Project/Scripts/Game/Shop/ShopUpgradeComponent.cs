@@ -59,6 +59,7 @@ namespace LudumDare57.Game.Shop
                 _idleTween.Pause();
             GameContext.Coins.Value -= _activeItem.Cost;
             Mixpanel.Track(_activeItem.ButEvent);
+            _activeItem.OnBuy();
             Next();
         }
 

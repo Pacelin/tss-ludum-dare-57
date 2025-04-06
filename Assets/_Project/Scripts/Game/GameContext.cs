@@ -18,5 +18,8 @@ namespace LudumDare57.Game
         public static LocationView LocationView { get; set; }
 
         public static ReactiveProperty<int> Coins { get; } = new();
+        public static int PickaxeLevel { get; set; }
+        public static int PickaxeStrength { get; set; }
+        public static float IncomeMultiplier { get; set; }
     }
 }
