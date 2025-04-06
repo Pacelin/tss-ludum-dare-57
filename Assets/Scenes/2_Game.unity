@@ -365,19 +365,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2350675055244842158, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2350675055244842158, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2350675055244842158, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2350675055244842158, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2726298111347345903, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.y
@@ -509,35 +509,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472899477456094137, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472899477456094137, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472899477456094137, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4472899477456094137, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 5187078768577259518, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5187078768577259518, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5187078768577259518, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5187078768577259518, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6086878235527237940, guid: 27956c441bf8c974a967507559d77504, type: 3}
       propertyPath: m_AnchorMax.x
@@ -776,6 +776,7 @@ GameObject:
   - component: {fileID: 1062896561}
   - component: {fileID: 1062896560}
   - component: {fileID: 1062896564}
+  - component: {fileID: 1062896565}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -877,6 +878,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deda7b9df9594516b04986fe9b10316d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: TSS.Core.AssignMainCameraToCanvas, TSS.Core
+--- !u!114 &1062896565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062896559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05613c1db194814b83d2d7b146381c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.Game.GameEvent.GameEventComponent, Assembly-CSharp
+  _options: []
+  _openTween: {fileID: 0}
 --- !u!1 &1182102818
 GameObject:
   m_ObjectHideFlags: 0
