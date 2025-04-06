@@ -3,7 +3,6 @@ using LudumDare57.UI;
 using mixpanel;
 using R3;
 using TSS.Tweening;
-using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 
 namespace LudumDare57.Game.Shop

@@ -24,15 +24,20 @@ namespace LudumDare57.Game.Shop
         [Space]
         [SerializeField] private ShopUpgradeConfig[] _items;
         [Space]
-        [SerializeField] private ScriptableTween _idleTween;
         [SerializeField] private ScriptableTween _nextTween;
+        [SerializeField] private RectTransform _sinTarget;
+        [SerializeField] private float _sinOffset;
+        [SerializeField] private float _sinAmplitude;
+        [SerializeField] private float _sinSpeed;
 
         private int _activeItemIndex;
         private ShopUpgradeConfig _activeItem;
         private IDisposable _disposable;
+        private float _startY;
 
         private void Awake()
         {
+            _startY = _sinTarget.anchoredPosition.y;
             _activeItemIndex = 0;
             _activeItem = _items[_activeItemIndex];
         }
@@ -45,7 +50,6 @@ namespace LudumDare57.Game.Shop
                 Disposable.Create(() => LocalizationSettings.SelectedLocaleChanged -= OnLocaleChanged),
                 _buyButton.OnClickAsObservable().Subscribe(_ => OnBuyClicked()));
             UpdateItemState();
-            _idleTween.Play();
         }
 
         private void OnDisable()
@@ -53,10 +57,15 @@ namespace LudumDare57.Game.Shop
             _disposable?.Dispose();
         }
 
+        private void Update()
+        {
+            var pos = _sinTarget.anchoredPosition;
+            pos.y = _startY + Mathf.Sin(Time.time * _sinSpeed + _sinOffset) * _sinAmplitude;
+            _sinTarget.anchoredPosition = pos;
+        }
+
         private void OnBuyClicked()
         {
-            if (_idleTween.IsPlaying)
-                _idleTween.Pause();
             GameContext.Coins.Value -= _activeItem.Cost;
             Mixpanel.Track(_activeItem.ButEvent);
             _activeItem.OnBuy();
