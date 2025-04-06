@@ -17,9 +17,10 @@ namespace TSS.Core
         internal static void InitializeInternal() => _cancellationDisposable = new CancellationDisposable();
         internal static void DisposeInternal() => _cancellationDisposable.Dispose();
 
-        public static Observable<bool> ObservePause() => RuntimeMonoHook._pauseState;
+        public static Observable<bool> ObservePause() => RuntimeMonoHook._pauseState.CombineLatest(RuntimeMonoHook._overridePauseState, (p1, p2) => p1 || p2);
         public static Observable<bool> ObserveFocus() => RuntimeMonoHook._focusState;
-        public static void SetPause(bool pause) => RuntimeMonoHook._pauseState.Value = pause;
+
+        public static void SetPause(bool pause) => RuntimeMonoHook._overridePauseState.Value = pause;
         public static IDisposable SubscribeQuitRequest(Observer<ApplicationQuitCancellationToken> observer) =>
             RuntimeMonoHook._quitRequestSubject.Subscribe(observer);
         public static IDisposable SubscribeQuit(Observer<Unit> observer) =>
