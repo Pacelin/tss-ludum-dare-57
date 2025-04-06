@@ -29,6 +29,7 @@ namespace TSS.ContentManagement
 		public static ShopComponent ShopPrefab { get; private set; }
 		public static LocationView LocationPrefab { get; private set; }
 		public static DepthScaleView DepthScalePrefab { get; private set; }
+		public static DropView DropPrefab { get; private set; }
  
 
         public async UniTask Initialize(CancellationToken cancellationToken)
@@ -50,6 +51,8 @@ namespace TSS.ContentManagement
 				.ToUniTask(cancellationToken: cancellationToken)).GetComponent<LocationView>();
 			DepthScalePrefab = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/Game/P_DepthScale.prefab")
 				.ToUniTask(cancellationToken: cancellationToken)).GetComponent<DepthScaleView>();
+			DropPrefab = (await Addressables.LoadAssetAsync<GameObject>("Assets/_Project/Content/Game/P_Drop.prefab")
+				.ToUniTask(cancellationToken: cancellationToken)).GetComponent<DropView>();
         }
 
         public void Dispose() { }

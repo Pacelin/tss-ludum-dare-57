@@ -1,5 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 using LudumDare57.Inventory;
+using TSS.ContentManagement;
 using TSS.Tweening;
 using TSS.Utils.Randoms.Weighted;
 using UnityEngine;
@@ -66,10 +67,8 @@ namespace LudumDare57.Game
         {
             if (Random.Range(0f, 1f) <= _dropChance)
             {
-                if (GameContext.Inventory.TryAddItem(_dropItem, _cost))
-                {
-                    
-                }
+                var drop = Instantiate(CMS.DropPrefab, transform.position, Quaternion.Euler(0, 0, Random.Range(0, 360f)));
+                drop.Claim(_dropItem, _cost);
             }
         }
     }
