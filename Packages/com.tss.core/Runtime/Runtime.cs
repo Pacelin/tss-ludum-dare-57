@@ -19,6 +19,7 @@ namespace TSS.Core
 
         public static Observable<bool> ObservePause() => RuntimeMonoHook._pauseState;
         public static Observable<bool> ObserveFocus() => RuntimeMonoHook._focusState;
+        public static void SetPause(bool pause) => RuntimeMonoHook._pauseState.Value = pause;
         public static IDisposable SubscribeQuitRequest(Observer<ApplicationQuitCancellationToken> observer) =>
             RuntimeMonoHook._quitRequestSubject.Subscribe(observer);
         public static IDisposable SubscribeQuit(Observer<Unit> observer) =>

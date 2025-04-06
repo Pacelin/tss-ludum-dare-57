@@ -15,6 +15,16 @@ MonoBehaviour:
   m_GroupName: Default Local Group
   m_GUID: 74d1f905e2729fb4cabb3f98768f8d67
   m_SerializeEntries:
+  - m_GUID: 2a43fcfe879388142b6b1f3aa88a8f34
+    m_Address: Assets/_Project/Content/Game/P_Hole_View.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 43e3d97fcd9011a4e862fe078e34a97e
+    m_Address: Assets/_Project/Configs/Inventory Items.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 62af7fca09f34c74481788e651479d18
     m_Address: Runtime Settings
     m_ReadOnly: 0
@@ -26,12 +36,27 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 82bdb546796e2da4eb218e0597a05672
-    m_Address: Assets/Scenes/1_Loading.unity
+    m_Address: Assets/Scenes/1_Menu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 8324801cd66ad7944863c8401d13b775
+    m_Address: Assets/_Project/Content/Game/P_Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: da09abf10950ef94b9eff1a49a3528a9
+    m_Address: Assets/_Project/Content/Game/P_Inventory.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: e5f45ce303cab2046acd57fff6441457
     m_Address: Audio Volumes
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f77d2f53e4c665647a590b33b190c3c9
+    m_Address: Assets/_Project/Content/Game/P_InventoryItem.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

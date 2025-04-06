@@ -13,7 +13,31 @@ MonoBehaviour:
   m_Name: CMSDatabase
   m_EditorClassIdentifier: TSS.ContentManagement.Editor.CMSAssetDatabase, TSS.ContentManagement.Editor
   _entries:
-  - GUID: 9cc9788200c0f5641bb9f12b06fd1059
-    CMSName: Canvas
+  - GUID: 82bdb546796e2da4eb218e0597a05672
+    CMSName: Scenes/MainMenu
     ComponentName: GameObject
     Namespace: 
+  - GUID: 78641ba9cfcb7c740af3afacdcc3358a
+    CMSName: Scenes/Game
+    ComponentName: GameObject
+    Namespace: 
+  - GUID: 2a43fcfe879388142b6b1f3aa88a8f34
+    CMSName: HolePrefab
+    ComponentName: HoleComponent
+    Namespace: LudumDare57.Game
+  - GUID: 8324801cd66ad7944863c8401d13b775
+    CMSName: PlayerPrefab
+    ComponentName: PlayerComponent
+    Namespace: LudumDare57.Game
+  - GUID: 43e3d97fcd9011a4e862fe078e34a97e
+    CMSName: InventoryItems
+    ComponentName: PlayerComponent
+    Namespace: LudumDare57.Game
+  - GUID: da09abf10950ef94b9eff1a49a3528a9
+    CMSName: InventoryPrefab
+    ComponentName: InventoryComponent
+    Namespace: LudumDare57.Inventory
+  - GUID: f77d2f53e4c665647a590b33b190c3c9
+    CMSName: InventoryItemPrefab
+    ComponentName: ItemComponent
+    Namespace: LudumDare57.Inventory

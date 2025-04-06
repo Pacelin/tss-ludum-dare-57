@@ -19,7 +19,7 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 762519120908288
-    m_Localized: PLAY
+    m_Localized: Play
     m_Metadata:
       m_Items: []
   - m_Id: 762675748802560
@@ -36,6 +36,34 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5448663477653504
     m_Localized: 'Language:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5655323160743936
+    m_Localized: Resume
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5656107558506496
+    m_Localized: Main Menu
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5846448609824768
+    m_Localized: Diamond
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5849725040726016
+    m_Localized: '{0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5849783521906688
+    m_Localized: '{0}$'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5852370899963904
+    m_Localized: '{0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5856777448329216
+    m_Localized: Bulk
     m_Metadata:
       m_Items: []
   references:
