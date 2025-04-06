@@ -49,3 +49,7 @@ MonoBehaviour:
     CMSName: LocationPrefab
     ComponentName: LocationView
     Namespace: LudumDare57.Game.GameEvent
+  - GUID: d6c6357051983494c8b18c181f7f236b
+    CMSName: DepthScalePrefab
+    ComponentName: DepthScaleView
+    Namespace: LudumDare57.Game.Shop

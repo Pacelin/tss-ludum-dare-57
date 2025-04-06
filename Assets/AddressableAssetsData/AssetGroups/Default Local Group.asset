@@ -50,6 +50,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d6c6357051983494c8b18c181f7f236b
+    m_Address: Assets/_Project/Content/Game/P_DepthScale.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: da09abf10950ef94b9eff1a49a3528a9
     m_Address: Assets/_Project/Content/Game/P_Inventory.prefab
     m_ReadOnly: 0

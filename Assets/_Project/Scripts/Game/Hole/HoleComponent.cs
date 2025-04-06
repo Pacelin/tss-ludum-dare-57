@@ -1,4 +1,5 @@
 ﻿using System;
+using TSS.Core;
 using UnityEngine;
 
 namespace LudumDare57.Game
@@ -15,6 +16,7 @@ namespace LudumDare57.Game
         public float LeftWallX => _wallsX.x;
         public float RightWallX => _wallsX.y;
         public float HoleCenterX => LeftWallX + (RightWallX - LeftWallX) / 2;
+        public float Depth => _depth;
 
         [SerializeField] private Vector2 _wallsX;
         [SerializeField] private ParallaxLayer[] _parallaxLayers;
@@ -37,6 +39,8 @@ namespace LudumDare57.Game
         private void Update()
         {
             if (_stop)
+                return;
+            if (Runtime.IsPaused)
                 return;
             _depth += _downSpeed * Time.deltaTime;
             foreach (var layer in _parallaxLayers)
