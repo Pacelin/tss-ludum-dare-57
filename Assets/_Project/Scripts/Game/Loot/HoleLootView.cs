@@ -33,7 +33,7 @@ namespace LudumDare57.Game
             if (_cost != maxCost)
                 t = 1f * (maxCost - _costRange.x) / (maxCost - _cost);
             _kicksRemaining = (int) Mathf.Lerp(_kicksCount.x, _kicksCount.y, t);
-            _kicksRemaining = Mathf.Min(1, _kicksRemaining - GameContext.PickaxeStrength);
+            _kicksRemaining = Mathf.Max(1, _kicksRemaining - GameContext.PickaxeStrength);
             if (GameContext.PickaxeLevel < _requirePickaxeLevel)
                 _kicksRemaining += 99;
             transform.localScale = Vector3.one * Mathf.Lerp(_scaleRange.x, _scaleRange.y, t);
