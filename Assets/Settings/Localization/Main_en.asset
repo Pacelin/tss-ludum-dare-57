@@ -55,11 +55,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5849783521906688
-    m_Localized: '{0} <sprite name="money">'
+    m_Localized: <style name="currency">{0}</style>
     m_Metadata:
       m_Items: []
   - m_Id: 5852370899963904
-    m_Localized: '{0}'
+    m_Localized: <style name="number">{0}</style>
     m_Metadata:
       m_Items: []
   - m_Id: 5856777448329216
@@ -311,7 +311,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599010
-    m_Localized: Buy {0} <sprite name="money">
+    m_Localized: Buy <style name="currency">{0}</style>
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599011
