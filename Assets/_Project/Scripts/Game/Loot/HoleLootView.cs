@@ -32,7 +32,7 @@ namespace LudumDare57.Game
             var rotateAngle = Random.Range(_rotateRange.x, _rotateRange.y);
             var flip = transform.position.x > GameContext.Hole.HoleCenterX;
             if (flip)
-                rotateAngle -= rotateAngle * 2;
+                rotateAngle *= -1;
             transform.rotation = Quaternion.Euler(0, flip ? 180 : 0, rotateAngle);
         } 
 

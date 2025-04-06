@@ -15,8 +15,8 @@ MonoBehaviour:
   m_TableCollectionName: Main
   m_TableCollectionNameGuidString: 57a0e491692fc7143b32d45150d7ad8c
   m_Entries:
-  - m_Id: 5655323160743936
-    m_Key: resume_button
+  - m_Id: 762519120908288
+    m_Key: play_button
     m_Metadata:
       m_Items: []
   - m_Id: 762675748802560
@@ -35,284 +35,60 @@ MonoBehaviour:
     m_Key: language_label
     m_Metadata:
       m_Items: []
-  - m_Id: 762519120908288
-    m_Key: play_button
+  - m_Id: 5655323160743936
+    m_Key: resume_button
     m_Metadata:
       m_Items: []
-  - m_Id: 6026414389190656
-    m_Key: item.desert.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939392
-    m_Key: item.desert.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939393
-    m_Key: item.desert.2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939394
-    m_Key: item.desert.3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939395
-    m_Key: item.waterfall.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939396
-    m_Key: item.waterfall.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939397
-    m_Key: item.waterfall.2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939398
-    m_Key: item.waterfall.3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939399
-    m_Key: item.crystal.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939400
-    m_Key: item.crystal.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939401
-    m_Key: item.crystal.2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939402
-    m_Key: item.crystal.3
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939403
-    m_Key: loot.desert.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939404
-    m_Key: loot.desert.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939405
-    m_Key: loot.waterfall.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939406
-    m_Key: loot.waterfall.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939407
-    m_Key: loot.crystal.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939408
-    m_Key: loot.crystal.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939409
-    m_Key: upgrade.handle.0.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939410
-    m_Key: upgrade.handle.1.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939411
-    m_Key: upgrade.handle.2.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939412
-    m_Key: upgrade.luck.0.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939413
-    m_Key: upgrade.luck.1.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939414
-    m_Key: upgrade.luck.2.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939415
-    m_Key: upgrade.unlock.0.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939416
-    m_Key: upgrade.unlock.1.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939417
-    m_Key: upgrade.handle.0.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939418
-    m_Key: upgrade.handle.1.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939419
-    m_Key: upgrade.handle.2.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939420
-    m_Key: upgrade.luck.0.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939421
-    m_Key: upgrade.luck.1.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939422
-    m_Key: upgrade.luck.2.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939423
-    m_Key: upgrade.unlock.0.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939424
-    m_Key: upgrade.unlock.1.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939425
-    m_Key: location.desert.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939426
-    m_Key: location.waterfall.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939427
-    m_Key: location.crystal.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939428
-    m_Key: event.blockage.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939429
-    m_Key: event.spikes.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939430
-    m_Key: event.monster.name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939431
-    m_Key: event.blockage.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939432
-    m_Key: event.spikes.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939433
-    m_Key: event.monster.desc
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939434
-    m_Key: event.blockage.choice.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939435
-    m_Key: event.blockage.choice.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939436
-    m_Key: event.blockage.choice.2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939437
-    m_Key: event.blockage.result.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939438
-    m_Key: event.blockage.result.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939439
-    m_Key: event.blockage.result.2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939440
-    m_Key: event.spikes.choice.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939441
-    m_Key: event.spikes.choice.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939442
-    m_Key: event.spikes.choice.2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939443
-    m_Key: event.spikes.result.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414426939444
-    m_Key: event.spikes.result.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414431133696
-    m_Key: event.spikes.result.2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414431133697
-    m_Key: event.monster.choice.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414431133698
-    m_Key: event.monster.choice.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414431133699
-    m_Key: event.monster.choice.2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414431133700
-    m_Key: event.monster.result.0
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414431133701
-    m_Key: event.monster.result.1
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414431133702
-    m_Key: event.monster.result.2
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414431133703
-    m_Key: upgrade.button.buy.label
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6026414431133704
-    m_Key: loot.sell.label
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5849725040726016
-    m_Key: item_name
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5852370899963904
-    m_Key: item_count
-    m_Metadata:
-      m_Items: []
-  - m_Id: 5849783521906688
-    m_Key: item_cost
+  - m_Id: 5656107558506496
+    m_Key: mainmenu_button
     m_Metadata:
       m_Items: []
   - m_Id: 5846448609824768
     m_Key: item_1
     m_Metadata:
       m_Items: []
+  - m_Id: 5849725040726016
+    m_Key: item_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5849783521906688
+    m_Key: item_cost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5852370899963904
+    m_Key: item_count
+    m_Metadata:
+      m_Items: []
   - m_Id: 5856777448329216
     m_Key: item_2
     m_Metadata:
       m_Items: []
-  - m_Id: 5656107558506496
-    m_Key: mainmenu_button
+  - m_Id: 6009231531970560
+    m_Key: button_sell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6016722189815808
+    m_Key: buy_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6019017241661440
+    m_Key: upgrade_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6019309819531264
+    m_Key: description_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6021420351361024
+    m_Key: upgrade_name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6021498436718592
+    m_Key: upgrade_description_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6024274596204544
+    m_Key: exit_shop_button
     m_Metadata:
       m_Items: []
   m_Metadata:
