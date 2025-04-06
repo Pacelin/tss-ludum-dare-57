@@ -81,12 +81,65 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 5, y: 100}
+  m_Size: {x: 5, y: 300}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1998811671439567597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2081108044291525801}
+  - component: {fileID: 386868507016180895}
+  m_Layer: 0
+  m_Name: Loot_Spawn_1_Location_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2081108044291525801
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998811671439567597}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -100, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3761654906760894409}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &386868507016180895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998811671439567597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06aeddb04bed41629f880c401efc9495, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.Game.LootSpawn, Assembly-CSharp
+  _activationY: -15
+  _deactivationY: 65
+  _distance: 50
+  _lootCount: {x: 5, y: 8}
+  _spawnSpread: 3
+  _loots:
+    _entries:
+    - Value: {fileID: 11400000, guid: 72f7cc305a413a243832213d75cc24e3, type: 2}
+      Weight: 1
 --- !u!1 &3112163964974832624
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,7 +151,7 @@ GameObject:
   - component: {fileID: 6255819555270072407}
   - component: {fileID: 6054560241870230919}
   m_Layer: 0
-  m_Name: Loot_Spawn_1
+  m_Name: Loot_Spawn_1_Location_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -132,13 +185,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.Game.LootSpawn, Assembly-CSharp
   _activationY: -15
-  _deactivationY: 45
-  _distance: 30
-  _lootCount: {x: 5, y: 7}
+  _deactivationY: 65
+  _distance: 50
+  _lootCount: {x: 7, y: 10}
   _spawnSpread: 3
   _loots:
     _entries:
-    - Value: {fileID: 11400000, guid: 64fb769eff265224e860983a316792a2, type: 2}
+    - Value: {fileID: 11400000, guid: 2357958cb4eab2b4eb724ac15ea6657c, type: 2}
       Weight: 1
 --- !u!1 &3741857916846892052
 GameObject:
@@ -222,6 +275,7 @@ Transform:
   - {fileID: 3300827646336732630}
   - {fileID: 2652205225867739862}
   - {fileID: 6255819555270072407}
+  - {fileID: 2081108044291525801}
   m_Father: {fileID: 807596912460586145}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7973309350326312099
@@ -305,7 +359,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 5, y: 100}
+  m_Size: {x: 5, y: 300}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
