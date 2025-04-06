@@ -16,8 +16,45 @@ MonoBehaviour:
   m_Tables:
   - {fileID: 11400000, guid: 2c5bb21b928758b4ca8dc221eefd5bb4, type: 2}
   - {fileID: 11400000, guid: e5b2b0fca9999784db17a8fb63e62b22, type: 2}
-  m_Extensions: []
+  m_Extensions:
+  - rid: 3917938306936472366
   m_Group: String Table
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 3917938306936472366
+      type: {class: CsvExtension, ns: UnityEditor.Localization.Plugins.CSV, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_ColumnsList:
+        - rid: 3917938306936472367
+        - rid: 3917938306936472368
+        - rid: 3917938306936472369
+        m_ConnectedFile: "E:/\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0438/Ludum
+          Dare 57 _ \u0422\u0440\u0435\u043A\u0435\u0440 \u0430\u0441\u0441\u0435\u0442\u043E\u0432
+          - \u0421\u0442\u0440\u043E\u043A\u0438 \u043B\u043E\u043A\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438
+          (1).csv"
+    - rid: 3917938306936472367
+      type: {class: KeyIdColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_IncludeId: 1
+        m_IncludeSharedComments: 0
+        m_KeyFieldName: key
+        m_IdFieldName: Id
+        m_CommentFieldName: Shared Comments
+    - rid: 3917938306936472368
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: en
+        m_FieldName: en
+        m_CommentFieldName: English(en) Comments
+        m_IncludeComments: 0
+    - rid: 3917938306936472369
+      type: {class: LocaleColumns, ns: UnityEditor.Localization.Plugins.CSV.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_LocaleIdentifier:
+          m_Code: ru
+        m_FieldName: ru
+        m_CommentFieldName: Russian(ru) Comments
+        m_IncludeComments: 0

@@ -19,23 +19,23 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 762519120908288
-    m_Localized: Play
+    m_Localized: Start the descent
     m_Metadata:
       m_Items: []
   - m_Id: 762675748802560
-    m_Localized: 'Volume:'
+    m_Localized: Master
     m_Metadata:
       m_Items: []
   - m_Id: 5440935510282240
-    m_Localized: 'Music:'
+    m_Localized: Music
     m_Metadata:
       m_Items: []
   - m_Id: 5441115429146624
-    m_Localized: 'Sound:'
+    m_Localized: SFX
     m_Metadata:
       m_Items: []
   - m_Id: 5448663477653504
-    m_Localized: 'Language:'
+    m_Localized: Language
     m_Metadata:
       m_Items: []
   - m_Id: 5655323160743936
@@ -55,7 +55,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 5849783521906688
-    m_Localized: '{0}$'
+    m_Localized: '{0} <sprite name="money">'
     m_Metadata:
       m_Items: []
   - m_Id: 5852370899963904
@@ -64,6 +64,258 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 5856777448329216
     m_Localized: Bulk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414389190656
+    m_Localized: <style="uncommon">Gold Ingot</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939392
+    m_Localized: <style="uncommon">Handful of Gold Coins</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939393
+    m_Localized: <style="uncommon">Iron Ore</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939394
+    m_Localized: <style="uncommon">Gold Ore</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939395
+    m_Localized: <style="uncommon">Shell Fragments</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939396
+    m_Localized: <style="uncommon">Mollusk</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939397
+    m_Localized: <style="rare">Blue Flower</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939398
+    m_Localized: <style="rare">Elderbloom Bark</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939399
+    m_Localized: <style="uncommon">Crystal Shards</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939400
+    m_Localized: <style="rare">Crystalline Dust</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939401
+    m_Localized: <style="epic">Pure Crystal</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939402
+    m_Localized: <style="epic">Crystal Heart</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939403
+    m_Localized: Treasure chest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939404
+    m_Localized: Raw ore
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939405
+    m_Localized: Clamshell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939406
+    m_Localized: Elderbloom
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939407
+    m_Localized: Crystal
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939408
+    m_Localized: Minecart
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939409
+    m_Localized: <style="uncommon">Iron Hilt</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939410
+    m_Localized: <style="rare">Mollusk Hilt</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939411
+    m_Localized: <style="epic">Crystalic Hilt</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939412
+    m_Localized: <style="uncommon">Chisel & Mallet I</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939413
+    m_Localized: <style="rare">Chisel & Mallet II</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939414
+    m_Localized: <style="epic">Chisel & Mallet III</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939415
+    m_Localized: <style="rare">Gold Coating</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939416
+    m_Localized: <style="epic">Elderbloom Coating</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939417
+    m_Localized: Increases gathering speed by <style="number">1</style> tap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939418
+    m_Localized: Increases gathering speed by <style="number">2</style> taps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939419
+    m_Localized: Increases gathering speed by <style="number">4</style> taps
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939420
+    m_Localized: Increases loot value by <style="number">5%</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939421
+    m_Localized: Increases loot value by <style="number">15%</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939422
+    m_Localized: Increases loot value by <style="number">25%</style>
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939423
+    m_Localized: You can find <style="rare">rare</style> items now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939424
+    m_Localized: You can find <style="epic">epic</style> items now
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939425
+    m_Localized: Forgotten Sands
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939426
+    m_Localized: Waterfalls of Hope
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939427
+    m_Localized: Crystall Dungeons
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939428
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939429
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939430
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939431
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939432
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939433
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939434
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939435
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939436
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939437
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939438
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939439
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939440
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939441
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939442
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939443
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414426939444
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414431133696
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414431133697
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414431133698
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414431133699
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414431133700
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414431133701
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414431133702
+    m_Localized: null
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414431133703
+    m_Localized: Buy {0} <sprite name="money">
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6026414431133704
+    m_Localized: Sell
     m_Metadata:
       m_Items: []
   references:
