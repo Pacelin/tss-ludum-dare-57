@@ -12,6 +12,7 @@ namespace TSS.Tweening
         internal bool PlayOnEnable => _playOnEnable;
         internal int Loops => _loops;
         internal LoopType LoopType => _loopType;
+        internal float Delay => _delay;
         
         [SerializeField] private ScriptableTweenPreset _preset;
         [SerializeField] private Object[] _targets;
@@ -20,5 +21,6 @@ namespace TSS.Tweening
         [SerializeField] private bool _playOnEnable;
         [SerializeField] private int _loops;
         [SerializeField] private LoopType _loopType = LoopType.Restart;
+        [SerializeField] private float _delay;
     }
 }
