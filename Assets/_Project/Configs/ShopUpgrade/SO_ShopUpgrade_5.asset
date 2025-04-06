@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b083a20054504f3c949832fc728a039a, type: 3}
   m_Name: SO_ShopUpgrade_5
-  m_EditorClassIdentifier: LudumDare57.Game.Shop.ShopUpgradeConfig, Assembly-CSharp
+  m_EditorClassIdentifier: LudumDare57.Game.Shop.IncomeUpgradeConfig, Assembly-CSharp
   _name:
     m_TableReference:
       m_TableCollectionName: GUID:57a0e491692fc7143b32d45150d7ad8c
