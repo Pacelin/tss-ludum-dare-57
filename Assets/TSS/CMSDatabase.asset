@@ -45,3 +45,7 @@ MonoBehaviour:
     CMSName: ShopPrefab
     ComponentName: ShopComponent
     Namespace: LudumDare57.Game.Shop
+  - GUID: e05a74f6fcd92e847a2d2326b8050d7d
+    CMSName: LocationPrefab
+    ComponentName: LocationView
+    Namespace: LudumDare57.Game.GameEvent
