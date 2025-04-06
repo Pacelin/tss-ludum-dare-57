@@ -439,11 +439,11 @@ MonoBehaviour:
   _activationY: -15
   _deactivationY: 90
   _distance: 75
-  _lootCount: {x: 9, y: 12}
+  _lootCount: {x: 11, y: 13}
   _spawnSpread: 1
   _loots:
     _entries:
-    - Value: {fileID: 11400000, guid: 244b2ce3d5618e44cba399ca95e59df8, type: 2}
+    - Value: {fileID: 11400000, guid: 070cdf71c3f84a24786fd05f2665e63c, type: 2}
       Weight: 1
 --- !u!1 &2278552889013118699
 GameObject:
