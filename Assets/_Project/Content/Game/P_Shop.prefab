@@ -1,5 +1,80 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &697213625389372598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8332492567241790276}
+  - component: {fileID: 5605823843991576318}
+  - component: {fileID: 3089476719823633694}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &8332492567241790276
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697213625389372598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179608023512177235}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5605823843991576318
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697213625389372598}
+  m_CullTransparentMesh: 1
+--- !u!114 &3089476719823633694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697213625389372598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.039215688, g: 0.039215688, b: 0.039215688, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &1038625756470541077
 GameObject:
   m_ObjectHideFlags: 0
@@ -51,10 +126,18 @@ MonoBehaviour:
   _preset: {fileID: 0}
   _targets:
   - {fileID: 5763870435302399772}
-  - {fileID: 3166267152572464937}
+  - {fileID: 697213625389372598}
+  - {fileID: 3089476719823633694}
+  - {fileID: 4269132866292743568}
+  - {fileID: 3089476719823633694}
+  - {fileID: 697213625389372598}
   _items:
   - rid: 4922611557021515975
-  - rid: 4922611557021515956
+  - rid: 4922611557021516020
+  - rid: 4922611557021515988
+  - rid: 4922611557021516025
+  - rid: 4922611557021516003
+  - rid: 4922611557021516018
   _cacheTween: 0
   _playOnEnable: 0
   _loops: 0
@@ -62,45 +145,95 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 4922611557021515956
-      type: {class: ScriptableTweenRectTranform_DOAnchorPos, ns: TSS.Tweening, asm: TSS.Tweening}
+    - rid: 4922611557021515975
+      type: {class: ScriptableTweenEnableGO, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+    - rid: 4922611557021515988
+      type: {class: ScriptableTweenGraphic_DOFade, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
         _connectBehaviour: 0
         _easing: 6
         _delay:
-          rid: 4922611557021515957
+          rid: 4922611557021515989
         _loopsCount:
-          rid: 4922611557021515958
+          rid: 4922611557021515990
         _loopType: 0
         _ignoreTimescale: 0
         _duration:
-          rid: 4922611557021515959
+          rid: 4922611557021515991
         _useStartValue: 0
         _startValue:
-          rid: 4922611557021515960
+          rid: 4922611557021515992
         _endValue:
-          rid: 4922611557021515961
-    - rid: 4922611557021515957
+          rid: 4922611557021515993
+    - rid: 4922611557021515989
       type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
         _value: 0
-    - rid: 4922611557021515958
+    - rid: 4922611557021515990
       type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
         _value: 1
-    - rid: 4922611557021515959
+    - rid: 4922611557021515991
       type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
-        _value: 0.5
-    - rid: 4922611557021515960
-      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+        _value: 0.2
+    - rid: 4922611557021515992
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
-        _value: {x: 0, y: 0}
-    - rid: 4922611557021515961
-      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+        _value: 0
+    - rid: 4922611557021515993
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
-        _value: {x: 0, y: 0}
-    - rid: 4922611557021515975
+        _value: 1
+    - rid: 4922611557021516003
+      type: {class: ScriptableTweenGraphic_DOFade, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _easing: 6
+        _delay:
+          rid: 4922611557021516004
+        _loopsCount:
+          rid: 4922611557021516005
+        _loopType: 0
+        _ignoreTimescale: 0
+        _duration:
+          rid: 4922611557021516006
+        _useStartValue: 0
+        _startValue:
+          rid: 4922611557021516007
+        _endValue:
+          rid: 4922611557021516008
+    - rid: 4922611557021516004
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611557021516005
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 4922611557021516006
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.2
+    - rid: 4922611557021516007
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611557021516008
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611557021516018
+      type: {class: ScriptableTweenDisableGO, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+    - rid: 4922611557021516020
+      type: {class: ScriptableTweenEnableGO, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+    - rid: 4922611557021516025
       type: {class: ScriptableTweenEnableGO, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
         _connectBehaviour: 0
@@ -154,11 +287,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _preset: {fileID: 0}
   _targets:
-  - {fileID: 3166267152572464937}
+  - {fileID: 697213625389372598}
+  - {fileID: 3089476719823633694}
+  - {fileID: 4269132866292743568}
+  - {fileID: 3089476719823633694}
   - {fileID: 5763870435302399772}
   _items:
-  - rid: 4922611557021515956
+  - rid: 4922611557021516022
+  - rid: 4922611557021516009
   - rid: 4922611557021515977
+  - rid: 4922611557021516027
+  - rid: 4922611557021516034
   _cacheTween: 0
   _playOnEnable: 0
   _loops: 0
@@ -166,45 +305,91 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
-    - rid: 4922611557021515956
-      type: {class: ScriptableTweenRectTranform_DOAnchorPos, ns: TSS.Tweening, asm: TSS.Tweening}
+    - rid: 4922611557021515977
+      type: {class: ScriptableTweenDisableGO, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+    - rid: 4922611557021516009
+      type: {class: ScriptableTweenGraphic_DOFade, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
         _connectBehaviour: 0
         _easing: 6
         _delay:
-          rid: 4922611557021515957
+          rid: 4922611557021516010
         _loopsCount:
-          rid: 4922611557021515958
+          rid: 4922611557021516011
         _loopType: 0
         _ignoreTimescale: 0
         _duration:
-          rid: 4922611557021515959
+          rid: 4922611557021516012
         _useStartValue: 0
         _startValue:
-          rid: 4922611557021515960
+          rid: 4922611557021516013
         _endValue:
-          rid: 4922611557021515961
-    - rid: 4922611557021515957
+          rid: 4922611557021516014
+    - rid: 4922611557021516010
       type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
         _value: 0
-    - rid: 4922611557021515958
+    - rid: 4922611557021516011
       type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
         _value: 1
-    - rid: 4922611557021515959
+    - rid: 4922611557021516012
       type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
-        _value: 0.5
-    - rid: 4922611557021515960
-      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+        _value: 0.2
+    - rid: 4922611557021516013
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
-        _value: {x: 0, y: 0}
-    - rid: 4922611557021515961
-      type: {class: Vector2ValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+        _value: 0
+    - rid: 4922611557021516014
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
-        _value: {x: 0, y: -1080}
-    - rid: 4922611557021515977
+        _value: 1
+    - rid: 4922611557021516022
+      type: {class: ScriptableTweenEnableGO, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+    - rid: 4922611557021516027
+      type: {class: ScriptableTweenGraphic_DOFade, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _easing: 6
+        _delay:
+          rid: 4922611557021516028
+        _loopsCount:
+          rid: 4922611557021516029
+        _loopType: 0
+        _ignoreTimescale: 0
+        _duration:
+          rid: 4922611557021516030
+        _useStartValue: 0
+        _startValue:
+          rid: 4922611557021516031
+        _endValue:
+          rid: 4922611557021516032
+    - rid: 4922611557021516028
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611557021516029
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 4922611557021516030
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.2
+    - rid: 4922611557021516031
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611557021516032
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 4922611557021516034
       type: {class: ScriptableTweenDisableGO, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
         _connectBehaviour: 0
@@ -223,7 +408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3166267152572464937
 RectTransform:
   m_ObjectHideFlags: 0
@@ -245,7 +430,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1080}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4447521350731423467
@@ -357,6 +542,7 @@ RectTransform:
   m_Children:
   - {fileID: 2622302345116769142}
   - {fileID: 3166267152572464937}
+  - {fileID: 8332492567241790276}
   - {fileID: 2588396818325843686}
   - {fileID: 4261345377092521803}
   m_Father: {fileID: 0}

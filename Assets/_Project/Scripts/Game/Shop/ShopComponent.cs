@@ -1,7 +1,9 @@
 ﻿using System;
 using LudumDare57.UI;
+using mixpanel;
 using R3;
 using TSS.Tweening;
+using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 
 namespace LudumDare57.Game.Shop
@@ -16,6 +18,7 @@ namespace LudumDare57.Game.Shop
 
         private IDisposable _disposable;
         private int _shopLevel;
+        private string _exitAnalytics;
 
         private void OnEnable()
         {
@@ -27,7 +30,7 @@ namespace LudumDare57.Game.Shop
             _disposable?.Dispose();
         }
 
-        public void Show(int shopLevel)
+        public void Show(int shopLevel, string enterAnalytics, string exitAnalytics)
         {
             _shopLevel = shopLevel;
             if (_hideTween.IsPlaying)
@@ -35,6 +38,8 @@ namespace LudumDare57.Game.Shop
             _showTween.Play();
             GameContext.Inventory.ShowSoldButtons();
             GameContext.Hole.SetStop(true);
+            Mixpanel.Track(enterAnalytics);
+            _exitAnalytics = exitAnalytics;
         }
 
         public void Hide()
@@ -45,6 +50,7 @@ namespace LudumDare57.Game.Shop
             _hideTween.Play();
             GameContext.Inventory.HideSoldButtons();
             GameContext.Hole.SetStop(false);
+            Mixpanel.Track(_exitAnalytics);
         }
     }
 }
