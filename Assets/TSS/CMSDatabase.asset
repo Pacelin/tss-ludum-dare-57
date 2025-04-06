@@ -41,3 +41,7 @@ MonoBehaviour:
     CMSName: InventoryItemPrefab
     ComponentName: ItemComponent
     Namespace: LudumDare57.Inventory
+  - GUID: 8d623736f046e43499199c2aebdf6b7c
+    CMSName: ShopPrefab
+    ComponentName: ShopComponent
+    Namespace: LudumDare57.Game.Shop

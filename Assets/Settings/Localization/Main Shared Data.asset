@@ -63,6 +63,34 @@ MonoBehaviour:
     m_Key: item_2
     m_Metadata:
       m_Items: []
+  - m_Id: 6009231531970560
+    m_Key: button_sell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6016722189815808
+    m_Key: buy_text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6019017241661440
+    m_Key: upgrade_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6019309819531264
+    m_Key: description_name
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6021420351361024
+    m_Key: upgrade_name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6021498436718592
+    m_Key: upgrade_description_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6024274596204544
+    m_Key: exit_shop_button
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

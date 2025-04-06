@@ -21,6 +21,9 @@ namespace LudumDare57.Game
         [SerializeField] private float _downSpeed = 3;
         
         private float _depth = 0;
+        private bool _stop;
+
+        public void SetStop(bool stop) => _stop = stop;
 
         private void OnDrawGizmosSelected()
         {
@@ -33,6 +36,8 @@ namespace LudumDare57.Game
 
         private void Update()
         {
+            if (_stop)
+                return;
             _depth += _downSpeed * Time.deltaTime;
             foreach (var layer in _parallaxLayers)
             {
