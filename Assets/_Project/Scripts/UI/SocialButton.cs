@@ -1,4 +1,5 @@
 ﻿using System;
+using mixpanel;
 using R3;
 using UnityEngine;
 
@@ -9,6 +10,7 @@ namespace LudumDare57.UI
     {
         [SerializeField] private FeedbackButton _feedbackButton;
         [SerializeField] private string _url;
+        [SerializeField] private string _analytics;
         
         private IDisposable _disposable;
 
@@ -21,7 +23,11 @@ namespace LudumDare57.UI
         private void OnEnable()
         {
             _disposable = _feedbackButton.ObserveClick()
-                .Subscribe(_ => Application.OpenURL(_url));
+                .Subscribe(_ =>
+                {
+                    Mixpanel.Track("social_" + _analytics);
+                    Application.OpenURL(_url);
+                });
         }
 
         private void OnDisable()
