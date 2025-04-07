@@ -232,11 +232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4842519637411940038, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.027
+      value: 0.931
       objectReference: {fileID: 0}
     - target: {fileID: 4842519637411940038, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.035
+      value: 0.421
       objectReference: {fileID: 0}
     - target: {fileID: 5048062184458972736, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: m_LocalRotation.w
@@ -272,11 +272,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6037009983121489836, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02700001
+      value: 0.931
       objectReference: {fileID: 0}
     - target: {fileID: 6037009983121489836, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.034999996
+      value: 0.421
       objectReference: {fileID: 0}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.size
