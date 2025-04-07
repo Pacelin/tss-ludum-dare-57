@@ -14,5 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: LudumDare57.Game.HoleLootsDeposit, Assembly-CSharp
   Entries:
     _entries:
+    - Value: {fileID: 4663229359588411088, guid: fc77053d2c0df2d4ba51c4953ff228e3, type: 3}
+      Weight: 1
     - Value: {fileID: 4663229359588411088, guid: ccf0474ab5500b14f9b1262137414624, type: 3}
       Weight: 1

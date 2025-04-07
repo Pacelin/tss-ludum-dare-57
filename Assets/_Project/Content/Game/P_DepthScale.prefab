@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 6620996292226928604}
   - component: {fileID: 7658142439161570975}
   - component: {fileID: 158933034385811701}
+  - component: {fileID: 7704089410045338833}
   m_Layer: 5
   m_Name: P_DepthScale
   m_TagString: Untagged
@@ -320,9 +321,9 @@ Canvas:
   m_GameObject: {fileID: 2109817608851937492}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 1
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -371,6 +372,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: LudumDare57.Game.Shop.DepthScaleView, Assembly-CSharp
   _scroll: {fileID: 2493997146815385387}
   _pixelsPerUnit: 1.35
+--- !u!114 &7704089410045338833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109817608851937492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: deda7b9df9594516b04986fe9b10316d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: TSS.Core.AssignMainCameraToCanvas, TSS.Core
 --- !u!1 &2133659973923906747
 GameObject:
   m_ObjectHideFlags: 0
