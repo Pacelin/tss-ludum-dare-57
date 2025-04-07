@@ -4173,6 +4173,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3883080932138014837, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 6959913445025743038, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
       propertyPath: m_Name
       value: P_Shop_Outside_Waterfall
@@ -4246,6 +4250,10 @@ PrefabInstance:
     - target: {fileID: 2997286846619197917, guid: c758617c515519044b0a557668f2ff09, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883080932138014837, guid: c758617c515519044b0a557668f2ff09, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6959913445025743038, guid: c758617c515519044b0a557668f2ff09, type: 3}
       propertyPath: m_Name
@@ -4321,6 +4329,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3883080932138014837, guid: c758617c515519044b0a557668f2ff09, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 6277892705827408280, guid: c758617c515519044b0a557668f2ff09, type: 3}
       propertyPath: m_Name
       value: Shop_2
@@ -4354,6 +4366,10 @@ PrefabInstance:
     - target: {fileID: 38584010542945274, guid: d5cff9b48aaeb6d429c4d419255b3b93, type: 3}
       propertyPath: _enterAnalytics
       value: fun_lvl0_shop0_start
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393210773537321264, guid: d5cff9b48aaeb6d429c4d419255b3b93, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 3705585293637027992, guid: d5cff9b48aaeb6d429c4d419255b3b93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4428,6 +4444,10 @@ PrefabInstance:
     - target: {fileID: 38584010542945274, guid: d5cff9b48aaeb6d429c4d419255b3b93, type: 3}
       propertyPath: _enterAnalytics
       value: fun_lvl0_shop1_start
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393210773537321264, guid: d5cff9b48aaeb6d429c4d419255b3b93, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 3705585293637027992, guid: d5cff9b48aaeb6d429c4d419255b3b93, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4550,6 +4570,10 @@ PrefabInstance:
     - target: {fileID: 2997286846619197917, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883080932138014837, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 6277892705827408280, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
       propertyPath: m_Name
