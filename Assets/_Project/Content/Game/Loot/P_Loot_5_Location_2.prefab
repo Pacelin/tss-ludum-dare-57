@@ -31,6 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 8251133577846132029}
   - {fileID: 2694131819805308542}
   - {fileID: 1905092907365364988}
   m_Father: {fileID: 0}
@@ -110,6 +111,57 @@ PolygonCollider2D:
       - {x: 0.4754174, y: -0.059565693}
       - {x: 0.20730338, y: 0.67639166}
   m_UseDelaunayMesh: 0
+--- !u!1 &3671837808607809559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8251133577846132029}
+  - component: {fileID: 6366037300987214918}
+  m_Layer: 0
+  m_Name: DestroySound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8251133577846132029
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671837808607809559}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8361530493997258381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6366037300987214918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3671837808607809559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventRef:
+    Guid:
+      Data1: -1542804518
+      Data2: 1079777795
+      Data3: 2056507012
+      Data4: -1664985262
+    Path: event:/seashell_dest
 --- !u!1 &8871709691033400977
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,6 +284,34 @@ PrefabInstance:
     - target: {fileID: 1501831365278734508, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: InitialModule.startColor.minColor.r
       value: 0.9803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 6366037300987214918}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TSS.Audio.SoundEventComponent, TSS.Audio.FMOD
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4038770303284521192, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: m_Name

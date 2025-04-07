@@ -2,6 +2,7 @@
 using mixpanel;
 using R3;
 using TMPro;
+using TSS.Audio;
 using TSS.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -69,6 +70,7 @@ namespace LudumDare57.Game.Shop
             GameContext.Coins.Value -= _activeItem.Cost;
             Mixpanel.Track(_activeItem.ButEvent);
             _activeItem.OnBuy();
+            AudioSystem.ItemBuy.PlayOneShot();
             Next();
         }
 

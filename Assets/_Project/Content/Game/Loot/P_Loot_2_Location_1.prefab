@@ -31,6 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 3119774326789999672}
   - {fileID: 3049547222427618782}
   - {fileID: 7999947422498700648}
   m_Father: {fileID: 0}
@@ -162,6 +163,57 @@ MonoBehaviour:
       Data3: 852854419
       Data4: 577194044
     Path: event:/chest_impact
+--- !u!1 &8492218159863176786
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3119774326789999672}
+  - component: {fileID: 2960016872863939159}
+  m_Layer: 0
+  m_Name: DestroySound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3119774326789999672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8492218159863176786}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8361530493997258381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2960016872863939159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8492218159863176786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _eventRef:
+    Guid:
+      Data1: -391278287
+      Data2: 1278130092
+      Data3: -1133765247
+      Data4: -895861294
+    Path: event:/chest_dest
 --- !u!1001 &3461423447197149237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -170,6 +222,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8361530493997258381}
     m_Modifications:
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2960016872863939159}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: TSS.Audio.SoundEventComponent, TSS.Audio.FMOD
+      objectReference: {fileID: 0}
+    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4038770303284521192, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: m_Name
       value: P_Loot_Graphics
