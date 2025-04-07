@@ -8,7 +8,7 @@ namespace TSS.Core
     [PublicAPI]
     public static class Runtime
     {
-        public static bool IsPaused => RuntimeMonoHook._pauseState.CurrentValue;
+        public static bool IsPaused => RuntimeMonoHook._pauseState.CurrentValue || RuntimeMonoHook._overridePauseState.CurrentValue;
         public static bool IsFocused => RuntimeMonoHook._focusState.CurrentValue;
         public static CancellationToken CancellationToken => _cancellationDisposable.Token;
 
