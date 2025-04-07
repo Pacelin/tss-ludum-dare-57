@@ -1,19 +1,45 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="LudumDare57.Audio.LifetimedOST" preserve="all" />
+    <type fullname="LudumDare57.Game.GameEvent.GameEventComponent" preserve="all" />
+    <type fullname="LudumDare57.Game.GameEvent.GameEventOptionComponent" preserve="all" />
+    <type fullname="LudumDare57.Game.GameEvent.GameLocationActivation" preserve="all" />
+    <type fullname="LudumDare57.Game.GameEvent.LocationView" preserve="all" />
     <type fullname="LudumDare57.Game.GameScope" preserve="all" />
     <type fullname="LudumDare57.Game.HoleComponent" preserve="all" />
     <type fullname="LudumDare57.Game.HoleLootsDeposit" preserve="all" />
     <type fullname="LudumDare57.Game.HoleLootView" preserve="all" />
     <type fullname="LudumDare57.Game.LootSpawn" preserve="all" />
     <type fullname="LudumDare57.Game.PlayerComponent" preserve="all" />
+    <type fullname="LudumDare57.Game.RopeSoundPlayer" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.ClickEffect" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.CoinsText" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.DepthScaleView" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.DropView" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.IncomeUpgradeConfig" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.PickaxeStrengthUpgradeConfig" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.PickaxeUpgradeConfig" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.ShopActivation" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.ShopComponent" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.ShopUpgradeComponent" preserve="all" />
+    <type fullname="LudumDare57.Game.Shop.ShopUpgradeTooltip" preserve="all" />
+    <type fullname="LudumDare57.Inventory.InventoryComponent" preserve="all" />
+    <type fullname="LudumDare57.Inventory.ItemComponent" preserve="all" />
+    <type fullname="LudumDare57.Inventory.ItemConfig" preserve="all" />
+    <type fullname="LudumDare57.Inventory.ItemsCollection" preserve="all" />
+    <type fullname="LudumDare57.Inventory.ItemTooltip" preserve="all" />
     <type fullname="LudumDare57.UI.FeedbackButton" preserve="all" />
     <type fullname="LudumDare57.UI.LanguageSelectionView" preserve="all" />
+    <type fullname="LudumDare57.UI.OpenPauseButton" preserve="all" />
     <type fullname="LudumDare57.UI.PauseMenu" preserve="all" />
     <type fullname="LudumDare57.UI.PlayButton" preserve="all" />
     <type fullname="LudumDare57.UI.SocialButton" preserve="all" />
     <type fullname="LudumDare57.UI.VolumesView" preserve="all" />
+    <type fullname="VFXEffect" preserve="all" />
     <type fullname="LudumDare57.Game.HoleComponent/ParallaxLayer" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="Coffee.UIParticle, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Coffee.UIExtensions.UIParticle" preserve="all" />
   </assembly>
   <assembly fullname="FMODUnity, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="FMODUnity.StudioListener" preserve="all" />
@@ -32,12 +58,20 @@
   <assembly fullname="TSS.Tweening, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="TSS.Tweening.ScriptableTween" preserve="all" />
     <type fullname="TSS.Tweening.ScriptableTweenPreset" preserve="all" />
+    <type fullname="TSS.Tweening.ScriptableTweenCallback" preserve="nothing" serialized="true" />
+    <type fullname="TSS.Tweening.ScriptableTweenCanvasGroup_DOFade" preserve="nothing" serialized="true" />
+    <type fullname="TSS.Tweening.ScriptableTweenDisableGO" preserve="nothing" serialized="true" />
+    <type fullname="TSS.Tweening.ScriptableTweenEnableGO" preserve="nothing" serialized="true" />
+    <type fullname="TSS.Tweening.ScriptableTweenGraphic_DOColor" preserve="nothing" serialized="true" />
+    <type fullname="TSS.Tweening.ScriptableTweenGraphic_DOFade" preserve="nothing" serialized="true" />
+    <type fullname="TSS.Tweening.ScriptableTweenGraphic_DOTint" preserve="nothing" serialized="true" />
+    <type fullname="TSS.Tweening.ScriptableTweenInterval" preserve="nothing" serialized="true" />
+    <type fullname="TSS.Tweening.ScriptableTweenRectTranform_DOAnchorPos" preserve="nothing" serialized="true" />
+    <type fullname="TSS.Tweening.ScriptableTweenRectTranform_DOSizeDelta" preserve="nothing" serialized="true" />
     <type fullname="TSS.Tweening.ScriptableTweenTranform_DOMove" preserve="nothing" serialized="true" />
+    <type fullname="TSS.Tweening.ScriptableTweenTranform_DORotate" preserve="nothing" serialized="true" />
     <type fullname="TSS.Tweening.ScriptableTweenTranform_DOScale" preserve="nothing" serialized="true" />
     <type fullname="TSS.Tweening.ScriptableTweenTranform_DOShakePosition" preserve="nothing" serialized="true" />
-    <type fullname="TSS.Tweening.ScriptableTweenCanvasGroup_DOFade" preserve="nothing" serialized="true" />
-    <type fullname="TSS.Tweening.ScriptableTweenGraphic_DOTint" preserve="nothing" serialized="true" />
-    <type fullname="TSS.Tweening.ScriptableTweenRectTranform_DOAnchorPos" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Unity.Addressables, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.AddressableAssets.Addressables" preserve="all" />
@@ -56,15 +90,18 @@
   <assembly fullname="Unity.Localization, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Localization.Components.LocalizeStringEvent" preserve="all" />
     <type fullname="UnityEngine.Localization.Locale" preserve="all" />
+    <type fullname="UnityEngine.Localization.Tables.AssetTable" preserve="all" />
     <type fullname="UnityEngine.Localization.Tables.SharedTableData" preserve="all" />
     <type fullname="UnityEngine.Localization.Tables.StringTable" preserve="all" />
     <type fullname="UnityEngine.Localization.LocaleIdentifier" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.Metadata.MetadataCollection" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.Tables.TableEntryData" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.Events.UnityEventString" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.LocalizedSprite" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.LocalizedString" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.Tables.TableEntryReference" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.Tables.TableReference" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Localization.Metadata.AssetTypeMetadata" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.Tables.DistributedUIDGenerator" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Localization.Tables.SharedTableData/SharedTableEntry" preserve="nothing" serialized="true" />
   </assembly>
@@ -81,6 +118,8 @@
   <assembly fullname="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="TMPro.TextMeshProUGUI" preserve="all" />
     <type fullname="TMPro.TMP_FontAsset" preserve="all" />
+    <type fullname="TMPro.TMP_SpriteAsset" preserve="all" />
+    <type fullname="TMPro.TMP_StyleSheet" preserve="all" />
     <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
     <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
     <type fullname="TMPro.GlyphAnchorPoint" preserve="nothing" serialized="true" />
@@ -91,7 +130,15 @@
     <type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_SpriteCharacter" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_SpriteGlyph" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_Style" preserve="nothing" serialized="true" />
     <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AnimationClip" preserve="all" />
+    <type fullname="UnityEngine.Animator" preserve="all" />
+    <type fullname="UnityEngine.RuntimeAnimatorController" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Camera" preserve="all" />
@@ -99,19 +146,29 @@
     <type fullname="UnityEngine.GameObject" preserve="all" />
     <type fullname="UnityEngine.LightmapSettings" preserve="all" />
     <type fullname="UnityEngine.Material" preserve="all" />
+    <type fullname="UnityEngine.Mesh" preserve="all" />
+    <type fullname="UnityEngine.MeshFilter" preserve="all" />
+    <type fullname="UnityEngine.MeshRenderer" preserve="all" />
     <type fullname="UnityEngine.Object" preserve="all" />
     <type fullname="UnityEngine.RectTransform" preserve="all" />
     <type fullname="UnityEngine.RenderSettings" preserve="all" />
     <type fullname="UnityEngine.Shader" preserve="all" />
+    <type fullname="UnityEngine.SkinnedMeshRenderer" preserve="all" />
     <type fullname="UnityEngine.Sprite" preserve="all" />
     <type fullname="UnityEngine.SpriteRenderer" preserve="all" />
     <type fullname="UnityEngine.Texture2D" preserve="all" />
+    <type fullname="UnityEngine.TrailRenderer" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
+    <type fullname="UnityEngine.U2D.SpriteAtlas" preserve="all" />
     <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
+  </assembly>
+  <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.ParticleSystem" preserve="all" />
+    <type fullname="UnityEngine.ParticleSystemRenderer" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.PolygonCollider2D" preserve="all" />
@@ -123,6 +180,7 @@
     <type fullname="UnityEngine.EventSystems.EventSystem" preserve="all" />
     <type fullname="UnityEngine.EventSystems.Physics2DRaycaster" preserve="all" />
     <type fullname="UnityEngine.UI.AspectRatioFitter" preserve="all" />
+    <type fullname="UnityEngine.UI.Button" preserve="all" />
     <type fullname="UnityEngine.UI.CanvasScaler" preserve="all" />
     <type fullname="UnityEngine.UI.ContentSizeFitter" preserve="all" />
     <type fullname="UnityEngine.UI.GraphicRaycaster" preserve="all" />
@@ -133,11 +191,12 @@
     <type fullname="UnityEngine.UI.Slider" preserve="all" />
     <type fullname="UnityEngine.UI.VerticalLayoutGroup" preserve="all" />
     <type fullname="UnityEngine.UI.AnimationTriggers" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Button/ButtonClickedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.ColorBlock" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.MaskableGraphic/CullStateChangedEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Canvas" preserve="all" />
