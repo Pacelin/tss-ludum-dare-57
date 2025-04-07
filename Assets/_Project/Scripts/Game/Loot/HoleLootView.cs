@@ -1,6 +1,7 @@
 ﻿using Cysharp.Threading.Tasks;
 using LudumDare57.Game.Shop;
 using LudumDare57.Inventory;
+using mixpanel;
 using TSS.Audio;
 using TSS.ContentManagement;
 using TSS.Tweening;
@@ -67,6 +68,7 @@ namespace LudumDare57.Game
                 {
                     Destroy(gameObject);
                 });
+                Mixpanel.Track("loot_destroy");
             }
             else
             {
@@ -75,6 +77,7 @@ namespace LudumDare57.Game
                 instance.Start();
                 instance.Release();
                 _onClickTween.Play();
+                Mixpanel.Track("loot_hit");
             }
         }
 
