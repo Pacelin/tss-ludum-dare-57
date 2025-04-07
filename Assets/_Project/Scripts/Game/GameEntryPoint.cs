@@ -3,6 +3,7 @@ using System.Threading;
 using JetBrains.Annotations;
 using mixpanel;
 using R3;
+using TSS.Audio;
 using TSS.ContentManagement;
 using TSS.Core;
 using VContainer.Unity;
@@ -33,10 +34,12 @@ namespace LudumDare57.Game
             GameContext.Shop = Object.Instantiate(CMS.ShopPrefab);
             GameContext.LocationView = Object.Instantiate(CMS.LocationPrefab);
             GameContext.DepthScale = Object.Instantiate(CMS.DepthScalePrefab);
+            GameContext.Ambient = AudioSystem.Ambient.CreateInstance();
             
             GameContext.StateMachine = new GameStateMachine();
             
             GameContext.StateMachine.Run();
+            GameContext.Ambient.Start();
         }
 
         public void Tick()
@@ -51,6 +54,9 @@ namespace LudumDare57.Game
             _cts.Cancel();
             _cts.Dispose();
             _cts = null;
+            if (GameContext.Ambient.GetPlaybackState() is ESoundState.Playing or ESoundState.Paused)
+                GameContext.Ambient.Stop(true);
+            GameContext.Ambient.Release();
             
             GameContext.CancellationToken = default;
             GameContext.Hole = null;
@@ -60,6 +66,7 @@ namespace LudumDare57.Game
             GameContext.DepthScale = null;
             GameContext.LocationView = null;
             GameContext.StateMachine = null;
+            GameContext.Ambient = null;
         }
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace LudumDare57.Inventory
 {
+    [CanEditMultipleObjects]
     [CustomPropertyDrawer(typeof(InventoryItemAttribute))]
     public class InventoryItemPropertyDrawer : PropertyDrawer
     {

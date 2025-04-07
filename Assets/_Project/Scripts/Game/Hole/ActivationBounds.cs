@@ -14,7 +14,7 @@ namespace LudumDare57.Game
             var y = transform.position.y;
             if (!_activated)
             {
-                if (y > _activationY)
+                if (y > _activationY && y < _deactivationY)
                 {
                     OnActivate();
                     _activated = true;

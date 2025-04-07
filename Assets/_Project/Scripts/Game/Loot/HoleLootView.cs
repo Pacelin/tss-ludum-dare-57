@@ -1,8 +1,9 @@
 ﻿using Cysharp.Threading.Tasks;
+using LudumDare57.Game.Shop;
 using LudumDare57.Inventory;
+using TSS.Audio;
 using TSS.ContentManagement;
 using TSS.Tweening;
-using TSS.Utils.Randoms.Weighted;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Random = UnityEngine.Random;
@@ -18,13 +19,17 @@ namespace LudumDare57.Game
         [SerializeField] private Vector2Int _kicksCount;
         [SerializeField] private Vector2 _scaleRange;
         [SerializeField] private Vector2 _rotateRange;
+        [SerializeField] private Vector2 _pitchRange;
         [SerializeField] private int _requirePickaxeLevel = 1;
         [InventoryItem] 
         [SerializeField] private string _dropItem;
         [SerializeField] private float _dropChance = 1;
-
+        [SerializeField] private SoundEvent _kickSound;
+        [SerializeField] private SoundEvent _destroySound;
+        
         private int _cost;
         private int _kicksRemaining;
+        private float _pitch;
         
         public void Start()
         {
@@ -37,6 +42,7 @@ namespace LudumDare57.Game
             _kicksRemaining = Mathf.Max(1, _kicksRemaining - GameContext.PickaxeStrength);
             if (GameContext.PickaxeLevel < _requirePickaxeLevel)
                 _kicksRemaining += 99;
+            _pitch = Mathf.Lerp(_pitchRange.x, _pitchRange.y, t);
             transform.localScale = Vector3.one * Mathf.Lerp(_scaleRange.x, _scaleRange.y, t);
 
             var rotateAngle = Random.Range(_rotateRange.x, _rotateRange.y);
@@ -48,8 +54,13 @@ namespace LudumDare57.Game
         {
             if (_kicksRemaining <= 0)
                 return;
+            ClickEffect.Play();
             if (--_kicksRemaining <= 0)
             {
+                var instance = _destroySound.CreateInstance();
+                instance.SetPitch(_pitch);
+                instance.Start();
+                instance.Release();
                 DropItems();
                 _onDestroyTween.Play();
                 _onDestroyTween.WaitWhilePlay().ContinueWith(() =>
@@ -59,6 +70,10 @@ namespace LudumDare57.Game
             }
             else
             {
+                var instance = _kickSound.CreateInstance();
+                instance.SetPitch(_pitch);
+                instance.Start();
+                instance.Release();
                 _onClickTween.Play();
             }
         }

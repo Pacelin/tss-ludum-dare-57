@@ -17,6 +17,7 @@ namespace LudumDare57.Game
         public float RightWallX => _wallsX.y;
         public float HoleCenterX => LeftWallX + (RightWallX - LeftWallX) / 2;
         public float Depth => _depth;
+        public bool IsStopped => _stop;
 
         [SerializeField] private Vector2 _wallsX;
         [SerializeField] private ParallaxLayer[] _parallaxLayers;

@@ -2,6 +2,7 @@
 using LudumDare57.UI;
 using mixpanel;
 using R3;
+using TSS.Audio;
 using TSS.Tweening;
 using UnityEngine;
 
@@ -18,6 +19,8 @@ namespace LudumDare57.Game.Shop
         private IDisposable _disposable;
         private int _shopLevel;
         private string _exitAnalytics;
+        private SoundEvent_ShopMusicIn.Instance _soundInstance;
+        private SoundEvent_ShopMusicOutside.Instance _outsideInstance;
 
         private void OnEnable()
         {
@@ -29,8 +32,9 @@ namespace LudumDare57.Game.Shop
             _disposable?.Dispose();
         }
 
-        public void Show(int shopLevel, string enterAnalytics, string exitAnalytics)
+        public void Show(int shopLevel, string enterAnalytics, string exitAnalytics, SoundEvent_ShopMusicOutside.Instance outside)
         {
+            _outsideInstance = outside;
             _shopLevel = shopLevel;
             if (_hideTween.IsPlaying)
                 _hideTween.Pause();
@@ -39,6 +43,11 @@ namespace LudumDare57.Game.Shop
             GameContext.Hole.SetStop(true);
             Mixpanel.Track(enterAnalytics);
             _exitAnalytics = exitAnalytics;
+            _soundInstance = AudioSystem.ShopMusicIn.CreateInstance();
+            _soundInstance.SetTimelinePosition(_outsideInstance.GetTimelinePosition());
+            _soundInstance.Start();
+            _outsideInstance.SetPaused(true);
+            GameContext.Ambient.SetPaused(true);
         }
 
         public void Hide()
@@ -50,6 +59,12 @@ namespace LudumDare57.Game.Shop
             GameContext.Inventory.HideSoldButtons();
             GameContext.Hole.SetStop(false);
             Mixpanel.Track(_exitAnalytics);
+            _outsideInstance.SetTimelinePosition(_soundInstance.GetTimelinePosition());
+            _outsideInstance.SetPaused(false);
+            GameContext.Ambient.SetPaused(false);
+            _soundInstance.Stop(true);
+            _soundInstance.Release();
+            _soundInstance = null;
         }
     }
 }

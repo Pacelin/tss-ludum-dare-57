@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using LudumDare57.Game;
 using LudumDare57.UI;
+using TSS.Audio;
 using TSS.ContentManagement;
 using UnityEngine;
 
@@ -80,6 +81,7 @@ namespace LudumDare57.Inventory
 
         public void SellItem(ItemComponent component)
         {
+            AudioSystem.ItemSell.PlayOneShot();
             for (int i = 0; i < _entries.Length; i++)
             {
                 if (_entries[i].Component != component)
