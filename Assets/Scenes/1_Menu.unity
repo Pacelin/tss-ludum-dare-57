@@ -680,7 +680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.UI.SocialButton, Assembly-CSharp
   _feedbackButton: {fileID: 1837692029}
-  _url: https://thespinningsofa.itch.io
+  _url: https://bsky.app/profile/thespinningsofa.bsky.social
   _analytics: bluesky
 --- !u!1 &1990396635
 GameObject:
@@ -931,19 +931,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 976944661881870989, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 976944661881870989, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 976944661881870989, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 976944661881870989, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1003544500103011702, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_Color.b
@@ -1503,19 +1503,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7705025454982818269, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7705025454982818269, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7705025454982818269, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7705025454982818269, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 7946540369876674727, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_fontColor.b
@@ -1559,19 +1559,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8385728028913139402, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8385728028913139402, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8385728028913139402, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.305
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8385728028913139402, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8445811112495146150, guid: a778521a34347bf4e83dabbadd371ec6, type: 3}
       propertyPath: m_Pivot.x
