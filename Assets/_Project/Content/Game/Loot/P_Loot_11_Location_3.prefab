@@ -4932,8 +4932,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 2703856327482120399}
-  - {fileID: 1300764901223067169}
   - {fileID: 3421554377985188418}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4955,9 +4953,26 @@ MonoBehaviour:
   _kicksCount: {x: 7, y: 9}
   _scaleRange: {x: 1, y: 1.5}
   _rotateRange: {x: -15, y: 10}
+  _pitchRange: {x: 1.1, y: 0.9}
   _requirePickaxeLevel: 1
   _dropItem: 11
   _dropChance: 1
+  _kickSound:
+    _eventRef:
+      Guid:
+        Data1: 643714837
+        Data2: 1232708717
+        Data3: -540856142
+        Data4: 490874778
+      Path: event:/minecart_impact
+  _destroySound:
+    _eventRef:
+      Guid:
+        Data1: 881892032
+        Data2: 1337948779
+        Data3: -248219000
+        Data4: -1623316334
+      Path: event:/minecart_dest
 --- !u!60 &5684799854823472330
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5012,57 +5027,6 @@ PolygonCollider2D:
       - {x: 0.92463887, y: -0.44812843}
       - {x: 0.9404473, y: 0.92777836}
   m_UseDelaunayMesh: 0
---- !u!1 &2646941793882779464
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2703856327482120399}
-  - component: {fileID: 7574534185760602673}
-  m_Layer: 0
-  m_Name: DestroySound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2703856327482120399
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2646941793882779464}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8361530493997258381}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7574534185760602673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2646941793882779464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventRef:
-    Guid:
-      Data1: 881892032
-      Data2: 1337948779
-      Data3: -248219000
-      Data4: -1623316334
-    Path: event:/minecart_dest
 --- !u!1 &5308219308176491775
 GameObject:
   m_ObjectHideFlags: 0
@@ -9964,57 +9928,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!1 &8507575920485863993
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1300764901223067169}
-  - component: {fileID: 4614661421730491391}
-  m_Layer: 0
-  m_Name: ImpactSound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1300764901223067169
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8507575920485863993}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8361530493997258381}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4614661421730491391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8507575920485863993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventRef:
-    Guid:
-      Data1: 643714837
-      Data2: 1232708717
-      Data3: -540856142
-      Data4: 490874778
-    Path: event:/minecart_impact
 --- !u!1001 &8104009923455596319
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10105,16 +10018,12 @@ PrefabInstance:
       objectReference: {fileID: 1053447452670568688}
     - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
-      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 7574534185760602673}
     - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -10185,16 +10094,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
-      propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 4614661421730491391}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2

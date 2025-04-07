@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace TSS.Audio.Editor
 {
+    [CanEditMultipleObjects]
     [CustomPropertyDrawer(typeof(SoundEvent))]
     internal class SoundEventPropertyDrawer : PropertyDrawer
     {

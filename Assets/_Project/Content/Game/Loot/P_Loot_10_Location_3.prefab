@@ -4932,8 +4932,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 7923913527832078881}
-  - {fileID: 5820223214369864949}
   - {fileID: 6801707538201740513}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4955,9 +4953,26 @@ MonoBehaviour:
   _kicksCount: {x: 6, y: 8}
   _scaleRange: {x: 1, y: 1.25}
   _rotateRange: {x: -30, y: -50}
+  _pitchRange: {x: 1.1, y: 0.9}
   _requirePickaxeLevel: 1
   _dropItem: 10
   _dropChance: 1
+  _kickSound:
+    _eventRef:
+      Guid:
+        Data1: 380309167
+        Data2: 1200027272
+        Data3: -1540122489
+        Data4: -1246061969
+      Path: event:/crystal_impact
+  _destroySound:
+    _eventRef:
+      Guid:
+        Data1: 2106156729
+        Data2: 1191060462
+        Data3: -1608245102
+        Data4: -1244471058
+      Path: event:/crystal_dest
 --- !u!60 &7406477959777546500
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5013,57 +5028,6 @@ PolygonCollider2D:
       - {x: -0.9722887, y: 0.13945912}
       - {x: -1.1918478, y: 1.3585641}
   m_UseDelaunayMesh: 0
---- !u!1 &1854798644952914306
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5820223214369864949}
-  - component: {fileID: 4628444782186486989}
-  m_Layer: 0
-  m_Name: ImpactSound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5820223214369864949
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854798644952914306}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8361530493997258381}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4628444782186486989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1854798644952914306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventRef:
-    Guid:
-      Data1: 380309167
-      Data2: 1200027272
-      Data3: -1540122489
-      Data4: -1246061969
-    Path: event:/crystal_impact
 --- !u!1 &1908442086184893052
 GameObject:
   m_ObjectHideFlags: 0
@@ -9965,57 +9929,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!1 &4268199675818446792
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7923913527832078881}
-  - component: {fileID: 1661002177363852104}
-  m_Layer: 0
-  m_Name: DestroySound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7923913527832078881
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4268199675818446792}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8361530493997258381}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1661002177363852104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4268199675818446792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventRef:
-    Guid:
-      Data1: 2106156729
-      Data2: 1191060462
-      Data3: -1608245102
-      Data4: -1244471058
-    Path: event:/crystal_dest
 --- !u!1001 &101457962260648380
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10098,16 +10011,12 @@ PrefabInstance:
       objectReference: {fileID: 4327070809807121303}
     - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
-      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 1661002177363852104}
     - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -10178,16 +10087,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
-      propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 4628444782186486989}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2

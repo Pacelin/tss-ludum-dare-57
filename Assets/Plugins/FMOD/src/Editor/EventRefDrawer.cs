@@ -7,6 +7,7 @@ using UnityEditor;
 namespace FMODUnity
 {
     [CustomPropertyDrawer(typeof(EventReference))]
+    [CanEditMultipleObjects]
     public class EventReferenceDrawer : PropertyDrawer
     {
         private static readonly Texture RepairIcon = EditorUtils.LoadImage("Wrench.png");

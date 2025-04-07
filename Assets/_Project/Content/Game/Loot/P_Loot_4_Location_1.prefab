@@ -31,8 +31,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 4556981189731239806}
-  - {fileID: 1377263044933916047}
   - {fileID: 6378940550486285305}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54,9 +52,26 @@ MonoBehaviour:
   _kicksCount: {x: 3, y: 5}
   _scaleRange: {x: 1.5, y: 2}
   _rotateRange: {x: 20, y: -10}
+  _pitchRange: {x: 1.1, y: 0.9}
   _requirePickaxeLevel: 1
   _dropItem: 4
   _dropChance: 1
+  _kickSound:
+    _eventRef:
+      Guid:
+        Data1: -1658257145
+        Data2: 1323841259
+        Data3: 1304008345
+        Data4: -1641693361
+      Path: event:/ore_impact
+  _destroySound:
+    _eventRef:
+      Guid:
+        Data1: 524757650
+        Data2: 1204382717
+        Data3: 1213488038
+        Data4: -868725365
+      Path: event:/ore_dest
 --- !u!60 &1074572643387198954
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -111,108 +126,6 @@ PolygonCollider2D:
       - {x: 0.82791716, y: 0.028303102}
       - {x: 1.1697716, y: 0.5419563}
   m_UseDelaunayMesh: 0
---- !u!1 &2597735802533623722
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4556981189731239806}
-  - component: {fileID: 5388521615652411593}
-  m_Layer: 0
-  m_Name: DestroySound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4556981189731239806
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2597735802533623722}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8361530493997258381}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5388521615652411593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2597735802533623722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventRef:
-    Guid:
-      Data1: 524757650
-      Data2: 1204382717
-      Data3: 1213488038
-      Data4: -868725365
-    Path: event:/ore_dest
---- !u!1 &5870264411498647676
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1377263044933916047}
-  - component: {fileID: 5791841094558926793}
-  m_Layer: 0
-  m_Name: ImpactSound
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1377263044933916047
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5870264411498647676}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8361530493997258381}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5791841094558926793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5870264411498647676}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 544e5dfeefb4470ab1dccc05f3993dd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _eventRef:
-    Guid:
-      Data1: -1658257145
-      Data2: 1323841259
-      Data3: 1304008345
-      Data4: -1641693361
-    Path: event:/ore_impact
 --- !u!1001 &543382084763455140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -279,16 +192,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
-      propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 5388521615652411593}
     - target: {fileID: 3749021097038828665, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659563]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
@@ -359,16 +268,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
-      propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 5791841094558926793}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
