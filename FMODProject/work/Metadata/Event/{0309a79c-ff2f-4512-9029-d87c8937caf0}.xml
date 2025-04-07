@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{0309a79c-ff2f-4512-9029-d87c8937caf0}">
 		<property name="name">
-			<value>shop_music</value>
+			<value>shop_music_in</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -27,6 +27,9 @@
 		</relationship>
 		<relationship name="timeline">
 			<destination>{20d77edc-386e-4622-a331-6fbd8ab2933f}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{4d24604d-9911-4ac4-ab02-8852f0c1b88c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{bd2dc033-2aed-4593-802d-5b20e965c508}">
@@ -65,7 +68,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{11cb621b-43e5-4689-88ba-b2309787da78}">
 		<property name="volume">
-			<value>-4.5</value>
+			<value>-17</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{ece7e77f-fdb1-4ff8-b954-ff5c4109b3ed}</destination>
