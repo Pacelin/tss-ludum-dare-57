@@ -27,6 +27,10 @@ namespace LudumDare57.Game
                     OnDeactivate();
                     _activated = false;
                 }
+                else
+                {
+                    OnUpdate();
+                }
             }
         }
 
@@ -41,6 +45,7 @@ namespace LudumDare57.Game
         }
         
         protected virtual void OnGizmosSelected() {}
+        protected virtual void OnUpdate() {}
 
         protected abstract void OnActivate();
         protected abstract void OnDeactivate();

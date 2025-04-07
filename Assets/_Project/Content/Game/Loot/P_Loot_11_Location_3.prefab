@@ -10044,6 +10044,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Loot_Graphics
       objectReference: {fileID: 0}
+    - target: {fileID: 4138746111560773070, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.435
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138746111560773070, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.461
+      objectReference: {fileID: 0}
     - target: {fileID: 4842519637411940038, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.41
@@ -10079,6 +10087,10 @@ PrefabInstance:
     - target: {fileID: 5516604225554065563, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: ShapeModule.m_Rotation.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516604225554065563, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 0.76
       objectReference: {fileID: 0}
     - target: {fileID: 5516604225554065563, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
