@@ -1,5 +1,6 @@
 ﻿using System;
 using DG.Tweening;
+using TSS.Audio;
 using TSS.ContentManagement;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -64,6 +65,7 @@ namespace LudumDare57.Game.Shop
                     }
                     _spriteRenderer.gameObject.SetActive(false);
                     _claimParticle.Play();
+                    AudioSystem.Pickup.PlayOneShot();
                     GameContext.Inventory.TryAddItem(item, cost);
                 })
                 .AppendCallback(GameContext.Player.CloseBackpack)

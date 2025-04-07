@@ -83,6 +83,7 @@ namespace TSS.Audio
 		public static SoundEvent_MinecartDest MinecartDest { get; } = new();
 		public static SoundEvent_SeashellDest SeashellDest { get; } = new();
 		public static SoundEvent_TreeDest TreeDest { get; } = new();
+		public static SoundEvent_Ambient Ambient { get; } = new();
     
 		private System.IDisposable _focusDisposable;
 		
@@ -577,6 +578,27 @@ namespace TSS.Audio
 		public float Length => 0;
 
 		private static readonly FMOD.GUID _guid = new FMOD.GUID() { Data1 = 1283246317, Data2 = 1253177355, Data3 = -1337630323, Data4 = -776634669 };
+
+		public void PlayOneShot() => RuntimeManager.PlayOneShot(_guid);
+		public void PlayOneShotAttached(GameObject attachTo) => RuntimeManager.PlayOneShotAttached(_guid, attachTo);
+		public void PlayOneShotInPoint(Vector3 point) => RuntimeManager.PlayOneShot(_guid, point);
+
+		public Instance CreateInstance() => new Instance(RuntimeManager.CreateInstance(_guid));
+		ISoundEventInstance ISoundEvent.CreateInstance() => CreateInstance();
+
+		public class Instance : SoundEventInstance
+		{
+			public Instance(FMOD.Studio.EventInstance eventInstance) : base(eventInstance) { }
+
+		}
+	}
+
+	public class SoundEvent_Ambient : ISoundEvent
+	{
+		public bool IsOneShot => false;
+		public float Length => 89191;
+
+		private static readonly FMOD.GUID _guid = new FMOD.GUID() { Data1 = 33554630, Data2 = 1229588207, Data3 = -1015728718, Data4 = -795709280 };
 
 		public void PlayOneShot() => RuntimeManager.PlayOneShot(_guid);
 		public void PlayOneShotAttached(GameObject attachTo) => RuntimeManager.PlayOneShotAttached(_guid, attachTo);

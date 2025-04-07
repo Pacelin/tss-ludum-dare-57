@@ -47,6 +47,7 @@ namespace LudumDare57.Game.Shop
             _soundInstance.SetTimelinePosition(_outsideInstance.GetTimelinePosition());
             _soundInstance.Start();
             _outsideInstance.SetPaused(true);
+            GameContext.Ambient.SetPaused(true);
         }
 
         public void Hide()
@@ -60,6 +61,7 @@ namespace LudumDare57.Game.Shop
             Mixpanel.Track(_exitAnalytics);
             _outsideInstance.SetTimelinePosition(_soundInstance.GetTimelinePosition());
             _outsideInstance.SetPaused(false);
+            GameContext.Ambient.SetPaused(false);
             _soundInstance.Stop(true);
             _soundInstance.Release();
             _soundInstance = null;
