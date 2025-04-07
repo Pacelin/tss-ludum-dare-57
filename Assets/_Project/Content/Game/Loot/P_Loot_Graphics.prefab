@@ -490,25 +490,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 6849121274140218717}
     m_Modifications:
     - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
-      propertyPath: prewarm
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
       propertyPath: ShapeModule.m_SpriteRenderer
       value: 
       objectReference: {fileID: 6667594836169544347}
-    - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
-      propertyPath: InitialModule.startSpeed.minMaxState
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2424621706568258058, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
       propertyPath: m_Name
       value: VFX_Loot_Sparkle
