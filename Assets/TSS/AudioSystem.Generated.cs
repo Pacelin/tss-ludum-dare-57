@@ -155,7 +155,7 @@ namespace TSS.Audio
 	public class SoundEvent_MainMenuOST : ISoundEvent
 	{
 		public bool IsOneShot => false;
-		public float Length => 98977;
+		public float Length => 156865;
 
 		private static readonly FMOD.GUID _guid = new FMOD.GUID() { Data1 = -1577484616, Data2 = 1116902958, Data3 = -170917233, Data4 = -1447747404 };
 
