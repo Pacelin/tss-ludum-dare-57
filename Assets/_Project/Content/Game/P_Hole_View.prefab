@@ -497,7 +497,7 @@ Transform:
   m_GameObject: {fileID: 960796631303795863}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -630, z: 0}
+  m_LocalPosition: {x: 0, y: -620, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1789,7 +1789,7 @@ Transform:
   m_GameObject: {fileID: 4399599271803485604}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -270, z: 0}
+  m_LocalPosition: {x: 0, y: -260, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2886,7 +2886,7 @@ Transform:
   m_GameObject: {fileID: 7037853116678104946}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -570, z: 0}
+  m_LocalPosition: {x: 0, y: -565, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2951,7 +2951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: LudumDare57.Game.LootSpawn, Assembly-CSharp
   _activationY: -15
-  _deactivationY: 35
+  _deactivationY: 40
   _distance: 25
   _lootCount: {x: 1, y: 3}
   _spawnSpread: 1
@@ -4220,7 +4220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8088316978289500032, guid: 49c76114ad057b84b8de7edbe7514b57, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1000
+      value: -990
       objectReference: {fileID: 0}
     - target: {fileID: 8088316978289500032, guid: 49c76114ad057b84b8de7edbe7514b57, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4286,7 +4286,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2997286846619197917, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2997286846619197917, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4364,7 +4364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2997286846619197917, guid: c758617c515519044b0a557668f2ff09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 2997286846619197917, guid: c758617c515519044b0a557668f2ff09, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4442,7 +4442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2997286846619197917, guid: c758617c515519044b0a557668f2ff09, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8
+      value: 1.35
       objectReference: {fileID: 0}
     - target: {fileID: 2997286846619197917, guid: c758617c515519044b0a557668f2ff09, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4684,7 +4684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2997286846619197917, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2997286846619197917, guid: adccaf45e53ddc2459129a5bb9120f43, type: 3}
       propertyPath: m_LocalPosition.y

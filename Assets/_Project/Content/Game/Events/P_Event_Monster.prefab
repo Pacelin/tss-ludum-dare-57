@@ -32,6 +32,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 668504615598280567, guid: 7f635795e78675c4a8c447be15aac7a5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -6
+      objectReference: {fileID: 0}
     - target: {fileID: 2064627340384163542, guid: 7f635795e78675c4a8c447be15aac7a5, type: 3}
       propertyPath: _coinsPenalty
       value: 150
