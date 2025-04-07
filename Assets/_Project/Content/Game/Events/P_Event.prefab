@@ -347,7 +347,7 @@ Transform:
   m_GameObject: {fileID: 3001248929170797040}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.029973365, y: 0.000058401678, z: -0.0006402005}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: LudumDare57.Game.GameEvent.GameEventComponent, Assembly-CSharp
   _options:
   - {fileID: 2064627340384163542}
-  _resultText: {fileID: 4814784513834039289}
+  _resultText: {fileID: 6556254526568784578}
   _openTween: {fileID: 228193301111622998}
   _showResultTween: {fileID: 5081661103578880335}
   _hideTween: {fileID: 4001854667029260495}
@@ -599,11 +599,13 @@ MonoBehaviour:
   _targets:
   - {fileID: 6407868872165630594}
   - {fileID: 249579535866945066}
+  - {fileID: 7457595320902611648}
   - {fileID: 6607755463143017053}
   - {fileID: 6407868872165630594}
   _items:
   - rid: 4922611557021516168
   - rid: 4922611557021516152
+  - rid: 3917938335312248944
   - rid: 4922611557021516159
   - rid: 4922611557021516166
   _cacheTween: 0
@@ -614,6 +616,51 @@ MonoBehaviour:
   references:
     version: 2
     RefIds:
+    - rid: 3917938335312248944
+      type: {class: ScriptableTweenTranform_DOShakePosition, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 1
+        _easing: 3
+        _delay:
+          rid: 3917938335312248945
+        _loopsCount:
+          rid: 3917938335312248946
+        _loopType: 0
+        _ignoreTimescale: 0
+        _duration:
+          rid: 3917938335312248947
+        _strength:
+          rid: 3917938335312248951
+        _vibrato:
+          rid: 3917938335312248949
+        _randomness:
+          rid: 3917938335312248950
+        _randomnessMode: 0
+        _fadeOut: 0
+    - rid: 3917938335312248945
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0
+    - rid: 3917938335312248946
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 1
+    - rid: 3917938335312248947
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 4
+    - rid: 3917938335312248949
+      type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 20
+    - rid: 3917938335312248950
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 90
+    - rid: 3917938335312248951
+      type: {class: Vector3UniformValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.03
     - rid: 4922611557021516152
       type: {class: ScriptableTweenTranform_DOMove, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
@@ -733,10 +780,10 @@ RectTransform:
   - {fileID: 8401105569779192291}
   m_Father: {fileID: 4597091083397798909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 460, y: -229.66501}
-  m_SizeDelta: {x: 860, y: 80.67}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8485126506214070764
 MonoBehaviour:
@@ -935,7 +982,7 @@ MonoBehaviour:
     - rid: 4922611557021516182
       type: {class: IntValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
-        _value: 30
+        _value: 20
     - rid: 4922611557021516183
       type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
@@ -998,7 +1045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &634620589197632278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1090,7 +1137,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6407868872165630594}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -1127,10 +1174,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 4597091083397798909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 460, y: -30}
-  m_SizeDelta: {x: 860, y: 31.69}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &375593712380349517
 CanvasRenderer:
@@ -1349,7 +1396,6 @@ GameObject:
   - component: {fileID: 4233808673254106545}
   - component: {fileID: 1284841456990639150}
   - component: {fileID: 6556254526568784578}
-  - component: {fileID: 6173887312267976051}
   - component: {fileID: 8806078395768156114}
   - component: {fileID: 5901154717328436793}
   m_Layer: 5
@@ -1374,10 +1420,10 @@ RectTransform:
   - {fileID: 8873800115334492619}
   m_Father: {fileID: 4597091083397798909}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 460, y: -61.690002}
-  m_SizeDelta: {x: 860, y: 127.64}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &1284841456990639150
 CanvasRenderer:
@@ -1478,46 +1524,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &6173887312267976051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7214401141102601271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56eb0353ae6e5124bb35b17aff880f16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StringReference:
-    m_TableReference:
-      m_TableCollectionName: GUID:57a0e491692fc7143b32d45150d7ad8c
-    m_TableEntryReference:
-      m_KeyId: 6028775593599007
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  m_FormatArguments: []
-  m_UpdateString:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6556254526568784578}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  references:
-    version: 2
-    RefIds: []
 --- !u!114 &8806078395768156114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1636,7 +1642,7 @@ GameObject:
   - component: {fileID: 8873800115334492619}
   - component: {fileID: 7475478440987961734}
   - component: {fileID: 4814784513834039289}
-  - component: {fileID: 9216916394387240770}
+  - component: {fileID: 1877916542382527622}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1762,7 +1768,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &9216916394387240770
+--- !u!114 &1877916542382527622
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1778,7 +1784,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:57a0e491692fc7143b32d45150d7ad8c
     m_TableEntryReference:
-      m_KeyId: 6028775593598992
+      m_KeyId: 6549068556787712
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -1787,10 +1793,10 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8309928131227911196}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 4814784513834039289}
+        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
+        m_MethodName: set_text
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: 
@@ -1798,7 +1804,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
   references:
     version: 2
     RefIds: []
@@ -1906,7 +1912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1819098648821504681, guid: b91ef00e2721a3046a3c92a0d3d9c9fa, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1819098648821504681, guid: b91ef00e2721a3046a3c92a0d3d9c9fa, type: 3}
       propertyPath: m_AnchorMin.x
@@ -1914,11 +1920,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1819098648821504681, guid: b91ef00e2721a3046a3c92a0d3d9c9fa, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1819098648821504681, guid: b91ef00e2721a3046a3c92a0d3d9c9fa, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 760
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1819098648821504681, guid: b91ef00e2721a3046a3c92a0d3d9c9fa, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1954,11 +1960,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1819098648821504681, guid: b91ef00e2721a3046a3c92a0d3d9c9fa, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 430
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1819098648821504681, guid: b91ef00e2721a3046a3c92a0d3d9c9fa, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -40.335
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1819098648821504681, guid: b91ef00e2721a3046a3c92a0d3d9c9fa, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

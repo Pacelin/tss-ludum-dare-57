@@ -345,6 +345,10 @@ MonoBehaviour:
       a sound, she was gone.
     m_Metadata:
       m_Items: []
+  - m_Id: 6549068556787712
+    m_Localized: Press to continue
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -327,6 +327,10 @@ MonoBehaviour:
     m_Key: upgrade_desc
     m_Metadata:
       m_Items: []
+  - m_Id: 6549068556787712
+    m_Key: event.continue
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
