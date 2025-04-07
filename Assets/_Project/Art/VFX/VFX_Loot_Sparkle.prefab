@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7044858290444231699}
+  - component: {fileID: 3616920399944740165}
   m_Layer: 0
   m_Name: VFX_Loot_Sparkle
   m_TagString: Untagged
@@ -32,6 +33,21 @@ Transform:
   - {fileID: 7743129919183436451}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3616920399944740165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2424621706568258058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49d4f94886b55b4f86ec78fb81f954a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: VFXEffect, Assembly-CSharp
+  _particleSystems:
+  - {fileID: 2203441486113734646}
+  _playOnAwake: 1
 --- !u!1 &4083532769732868598
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,7 +98,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -200,8 +216,8 @@ ParticleSystem:
         m_RotationOrder: 4
     startSpeed:
       serializedVersion: 2
-      minMaxState: 3
-      scalar: 7
+      minMaxState: 0
+      scalar: 0
       minScalar: 3
       maxCurve:
         serializedVersion: 2

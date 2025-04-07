@@ -163,6 +163,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Loot_Graphics
       objectReference: {fileID: 0}
+    - target: {fileID: 4842519637411940038, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842519637411940038, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.304
+      objectReference: {fileID: 0}
+    - target: {fileID: 5516604225554065563, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6037009983121489836, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.48999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6037009983121489836, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.30399996
+      objectReference: {fileID: 0}
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.size
       value: 1
