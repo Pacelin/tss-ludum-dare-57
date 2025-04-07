@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{b33d08eb-a150-4ddf-a73a-803b61a1e535}">
+	<object class="AudioFile" id="{adbf0ae8-2b48-4da5-a45e-cbd7355cb28c}">
 		<property name="assetPath">
-			<value>destroy/A_oredestr.wav</value>
+			<value>ambient.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>22.0499992</value>
+			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.60961451247165532</value>
+			<value>89.191065759637183</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{cfa004d2-95d8-431c-98f0-201d45e0d327}</destination>
