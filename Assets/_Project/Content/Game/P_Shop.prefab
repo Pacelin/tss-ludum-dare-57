@@ -1509,7 +1509,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4125478107860424993, guid: 70e1d3998086bf34da547dc057e78a69, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.015686275
+      value: 0.011764706
       objectReference: {fileID: 0}
     - target: {fileID: 4125478107860424993, guid: 70e1d3998086bf34da547dc057e78a69, type: 3}
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].value
@@ -1543,13 +1543,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: VFX_Sigarette_Smoke
       objectReference: {fileID: 0}
+    - target: {fileID: 5713858222406558809, guid: 70e1d3998086bf34da547dc057e78a69, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6898020381019115328, guid: 70e1d3998086bf34da547dc057e78a69, type: 3}
       propertyPath: ShapeModule.angle
       value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6898020381019115328, guid: 70e1d3998086bf34da547dc057e78a69, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
-      value: 0.14901961
+      value: 0.078431375
       objectReference: {fileID: 0}
     - target: {fileID: 6898020381019115328, guid: 70e1d3998086bf34da547dc057e78a69, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.atime3
