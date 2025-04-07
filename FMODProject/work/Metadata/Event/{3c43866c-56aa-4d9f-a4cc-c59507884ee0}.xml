@@ -130,10 +130,10 @@
 			<value>-11</value>
 		</property>
 		<property name="midGain">
-			<value>-46</value>
+			<value>-53</value>
 		</property>
 		<property name="highGain">
-			<value>-62</value>
+			<value>-80</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{b1095849-dcbf-4971-a5f0-06174da783e3}" />
