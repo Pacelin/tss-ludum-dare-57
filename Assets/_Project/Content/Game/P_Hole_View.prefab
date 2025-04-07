@@ -481,6 +481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7049436791698180181}
   - component: {fileID: 4410583894887228434}
+  - component: {fileID: 2941621315006890733}
   m_Layer: 0
   m_Name: Notification_Location_3
   m_TagString: Untagged
@@ -527,6 +528,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &2941621315006890733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960796631303795863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b545a0968441818c7662feae76931d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.Game.AnalyticsTrigger, Assembly-CSharp
+  _event: fun_lvl2_start
 --- !u!1 &995249108436635354
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,6 +948,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2058465955672139599}
+  - component: {fileID: 8825602712967228733}
   m_Layer: 0
   m_Name: ---Waterfall-Crystal---
   m_TagString: Untagged
@@ -950,12 +965,25 @@ Transform:
   m_GameObject: {fileID: 2482209795160503003}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -620, z: 0}
+  m_LocalPosition: {x: 0, y: -610, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3761654906760894409}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8825602712967228733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482209795160503003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b545a0968441818c7662feae76931d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.Game.AnalyticsTrigger, Assembly-CSharp
+  _event: fun_lvl1_end
 --- !u!1 &2609174597626720355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1424,6 +1452,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 47323573295186957}
+  - component: {fileID: 8667515612034007282}
   m_Layer: 0
   m_Name: ---Desert---
   m_TagString: Untagged
@@ -1446,6 +1475,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3761654906760894409}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8667515612034007282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3911924651336619088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b545a0968441818c7662feae76931d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.Game.AnalyticsTrigger, Assembly-CSharp
+  _event: fun_lvl0_start
 --- !u!1 &4024430901541325687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,9 +1978,9 @@ Transform:
   - {fileID: 3968389674824348405}
   - {fileID: 6156454689818607482}
   - {fileID: 6070884901762158089}
-  - {fileID: 6543589039058185143}
   - {fileID: 2642748365755961075}
   - {fileID: 3471777122182648420}
+  - {fileID: 6543589039058185143}
   - {fileID: 2518051220711920516}
   - {fileID: 1508512594834994626}
   - {fileID: 7003939180283070510}
@@ -1949,10 +1991,10 @@ Transform:
   - {fileID: 3272324019573546779}
   - {fileID: 2870629922487240110}
   - {fileID: 4933177755848764358}
-  - {fileID: 2058465955672139599}
   - {fileID: 4666636859875710367}
   - {fileID: 765050300626654015}
   - {fileID: 3482868462547758910}
+  - {fileID: 2058465955672139599}
   - {fileID: 3831433842705539352}
   - {fileID: 7049436791698180181}
   - {fileID: 6497550496992618703}
@@ -1963,6 +2005,7 @@ Transform:
   - {fileID: 3358810430480038786}
   - {fileID: 4964925311846977944}
   - {fileID: 8331155276322405331}
+  - {fileID: 1443476914359830741}
   - {fileID: 4233168559466038741}
   m_Father: {fileID: 807596912460586145}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2430,6 +2473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1508512594834994626}
   - component: {fileID: 6800203132326082647}
+  - component: {fileID: 2541813996572247056}
   m_Layer: 0
   m_Name: Notification_Location_2
   m_TagString: Untagged
@@ -2476,6 +2520,19 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
+--- !u!114 &2541813996572247056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6051967189657287527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b545a0968441818c7662feae76931d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.Game.AnalyticsTrigger, Assembly-CSharp
+  _event: fun_lvl1_start
 --- !u!1 &6434074549608311432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,6 +2620,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6691341558803931507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443476914359830741}
+  - component: {fileID: 3376416178879825585}
+  m_Layer: 0
+  m_Name: ---Crystal-End---
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1443476914359830741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6691341558803931507}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -910, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3761654906760894409}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3376416178879825585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6691341558803931507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b545a0968441818c7662feae76931d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.Game.AnalyticsTrigger, Assembly-CSharp
+  _event: fun_lvl2_end
 --- !u!1 &6743736157666172779
 GameObject:
   m_ObjectHideFlags: 0
@@ -3882,6 +3984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6543589039058185143}
+  - component: {fileID: 6523907435854669685}
   m_Layer: 0
   m_Name: ---Desert-Waterfall---
   m_TagString: Untagged
@@ -3904,6 +4007,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3761654906760894409}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6523907435854669685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9108207303934517249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b545a0968441818c7662feae76931d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.Game.AnalyticsTrigger, Assembly-CSharp
+  _event: fun_lvl0_end
 --- !u!1 &9215494730232258709
 GameObject:
   m_ObjectHideFlags: 0
