@@ -211,7 +211,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598985
-    m_Localized: Crystall Dungeons
+    m_Localized: Crystal Dungeons
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598986
@@ -311,18 +311,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599010
-    m_Localized: Buy <style="currency">{0}</style>
+    m_Localized: Upgrade <style="currency">{0}</style>
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599011
     m_Localized: Sell
     m_Metadata:
       m_Items: []
-  - m_Id: 6144794202988544
+  - m_Id: 6475610980343808
     m_Localized: '{0}'
     m_Metadata:
       m_Items: []
-  - m_Id: 6144850096283648
+  - m_Id: 6475610934206464
+    m_Localized: Exit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6475610980343809
     m_Localized: '{0}'
     m_Metadata:
       m_Items: []
