@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{5ce5df29-e8f8-4d70-b616-bfb8410b272a}">
+		<property name="name">
+			<value>OST</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{3f53fd39-ccf6-4aea-9d05-2a02b11e1945}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{1ffbb952-72dc-4dfd-8373-cc0735c61c94}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{af09ff84-c822-4763-ab9a-44b95feed305}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{3f53fd39-ccf6-4aea-9d05-2a02b11e1945}">
+		<relationship name="effects">
+			<destination>{b0daf962-a00c-468f-9c22-287ef4defc92}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{1ffbb952-72dc-4dfd-8373-cc0735c61c94}">
+		<property name="surroundLFELevel">
+			<value>-10</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{b0daf962-a00c-468f-9c22-287ef4defc92}" />
+</objects>
