@@ -171,15 +171,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775585210393
-    m_Localized: Increases gathering speed by <style="number">1</style> tap
+    m_Localized: Increases gathering speed by <style="number">1</style> click
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598976
-    m_Localized: Increases gathering speed by <style="number">2</style> taps
+    m_Localized: Increases gathering speed by <style="number">2</style> clicks
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598977
-    m_Localized: Increases gathering speed by <style="number">4</style> taps
+    m_Localized: Increases gathering speed by <style="number">4</style> clicks
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598978

@@ -13,7 +13,9 @@ namespace TSS.Tweening
         internal int Loops => _loops;
         internal LoopType LoopType => _loopType;
         internal float Delay => _delay;
-        
+        internal bool CompleteOnKill => _completeOnKill;
+
+        [SerializeField] private bool _completeOnKill = false;
         [SerializeField] private ScriptableTweenPreset _preset;
         [SerializeField] private Object[] _targets;
         [SerializeReference] private IScriptableTweenItem[] _items;

@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using LudumDare57.Game;
 using LudumDare57.UI;
+using mixpanel;
 using TSS.Audio;
 using TSS.ContentManagement;
 using UnityEngine;
@@ -88,6 +89,7 @@ namespace LudumDare57.Inventory
                     continue;
                 GameContext.Coins.Value += _entries[i].Cost;
                 RemoveItem(_entries[i].Id, 1f);
+                Mixpanel.Track("loot_sold");
             }
         }
         

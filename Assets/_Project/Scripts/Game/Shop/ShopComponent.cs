@@ -5,6 +5,7 @@ using R3;
 using TSS.Audio;
 using TSS.Tweening;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace LudumDare57.Game.Shop
 {
@@ -15,6 +16,7 @@ namespace LudumDare57.Game.Shop
         [SerializeField] private FeedbackButton _hideButton;
         [SerializeField] private ScriptableTween _showTween;
         [SerializeField] private ScriptableTween _hideTween;
+        [SerializeField] private ScriptableTween _happyTween;
 
         private IDisposable _disposable;
         private int _shopLevel;
@@ -22,6 +24,13 @@ namespace LudumDare57.Game.Shop
         private SoundEvent_ShopMusicIn.Instance _soundInstance;
         private SoundEvent_ShopMusicOutside.Instance _outsideInstance;
 
+        public void PlayHappy()
+        {
+            if (_happyTween.IsPlaying)
+                _happyTween.Pause();
+            _happyTween.Play();
+        }
+        
         private void OnEnable()
         {
             _disposable = _hideButton.ObserveClick().Subscribe(_ => Hide());

@@ -23,7 +23,7 @@ namespace TSS.Tweening
         {
             if (_sequence == null) return;
             
-            _sequence.Kill();
+            _sequence.Kill(CompleteOnKill);
             _sequence = null;
         }
 
