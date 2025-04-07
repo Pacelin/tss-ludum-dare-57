@@ -331,6 +331,10 @@ MonoBehaviour:
     m_Key: event.continue
     m_Metadata:
       m_Items: []
+  - m_Id: 6591409277648896
+    m_Key: thanks
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
