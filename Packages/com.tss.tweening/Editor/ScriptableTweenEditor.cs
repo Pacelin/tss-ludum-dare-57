@@ -17,7 +17,9 @@ namespace TSS.Tweening.Editor
             var playOnEnableProp = serializedObject.FindProperty("_playOnEnable");
             var loopTypeProp = serializedObject.FindProperty("_loopType");
             var delayProp = serializedObject.FindProperty("_delay");
-            
+            var completeOnKill = serializedObject.FindProperty("_completeOnKill");
+
+            EditorGUILayout.PropertyField(completeOnKill);
             EditorGUILayout.PropertyField(cacheProp);
             EditorGUILayout.PropertyField(playOnEnableProp);
             EditorGUILayout.PropertyField(loopsProp);

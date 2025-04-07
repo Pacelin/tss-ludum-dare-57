@@ -199,6 +199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9ff0b64396cb04282c72829dcc46c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _completeOnKill: 1
   _preset: {fileID: 0}
   _targets:
   - {fileID: 6041259404504115331}

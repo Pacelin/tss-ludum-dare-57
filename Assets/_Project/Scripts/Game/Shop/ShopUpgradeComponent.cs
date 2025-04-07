@@ -71,6 +71,7 @@ namespace LudumDare57.Game.Shop
             Mixpanel.Track(_activeItem.ButEvent);
             _activeItem.OnBuy();
             AudioSystem.ItemBuy.PlayOneShot();
+            GameContext.Shop.PlayHappy();
             Next();
         }
 
