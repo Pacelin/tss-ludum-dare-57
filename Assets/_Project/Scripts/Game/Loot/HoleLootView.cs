@@ -1,8 +1,8 @@
 ﻿using Cysharp.Threading.Tasks;
+using LudumDare57.Game.Shop;
 using LudumDare57.Inventory;
 using TSS.ContentManagement;
 using TSS.Tweening;
-using TSS.Utils.Randoms.Weighted;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Random = UnityEngine.Random;
@@ -48,6 +48,7 @@ namespace LudumDare57.Game
         {
             if (_kicksRemaining <= 0)
                 return;
+            ClickEffect.Play();
             if (--_kicksRemaining <= 0)
             {
                 DropItems();
