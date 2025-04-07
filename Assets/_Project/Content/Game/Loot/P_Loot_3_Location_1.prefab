@@ -230,6 +230,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_Loot_Graphics
       objectReference: {fileID: 0}
+    - target: {fileID: 4138746111560773070, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.247
+      objectReference: {fileID: 0}
+    - target: {fileID: 4138746111560773070, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.116
+      objectReference: {fileID: 0}
     - target: {fileID: 4842519637411940038, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.17200002
@@ -259,12 +267,12 @@ PrefabInstance:
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 5516604225554065563, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
-      propertyPath: ShapeModule.m_Position.x
-      value: 0
+      propertyPath: ShapeModule.radius.value
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 5516604225554065563, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
-      propertyPath: ShapeModule.m_Rotation.z
-      value: 120
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5516604225554065563, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
@@ -297,10 +305,6 @@ PrefabInstance:
     - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: TSS.Audio.SoundEventComponent, TSS.Audio.FMOD
-      objectReference: {fileID: 0}
-    - target: {fileID: 6306380606569678131, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
-      propertyPath: managedReferences[3917938309228659561]._callback.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6667594836169544347, guid: db9b3bd906aa1e447977bed208f84422, type: 3}
       propertyPath: m_Sprite

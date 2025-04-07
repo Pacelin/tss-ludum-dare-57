@@ -490,12 +490,40 @@ PrefabInstance:
     m_TransformParent: {fileID: 6849121274140218717}
     m_Modifications:
     - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
+      propertyPath: cullingMode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
+      propertyPath: ShapeModule.type
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
+      propertyPath: ShapeModule.m_Position.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
+      propertyPath: ShapeModule.placementMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
       propertyPath: ShapeModule.m_SpriteRenderer
       value: 
       objectReference: {fileID: 6667594836169544347}
+    - target: {fileID: 2203441486113734646, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
+      propertyPath: ShapeModule.m_MeshNormalOffset
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2424621706568258058, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
       propertyPath: m_Name
       value: VFX_Loot_Sparkle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3810457321560844067, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7044858290444231699, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
       propertyPath: m_LocalPosition.x
@@ -536,6 +564,14 @@ PrefabInstance:
     - target: {fileID: 7044858290444231699, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743129919183436451, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7743129919183436451, guid: 4f4f62d2a6396b54987b1bc5eb7fa040, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
