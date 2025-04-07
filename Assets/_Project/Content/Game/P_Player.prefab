@@ -79,7 +79,7 @@ MonoBehaviour:
   _backpackPoint: {fileID: 4153249630155032645}
   _backpackCap: {fileID: 5630262134739807762}
   _backpackLocalClosedRotation: {x: -17, y: 0, z: 0}
-  _backpackLocalOpenedRotation: {x: -80, y: 0, z: 0}
+  _backpackLocalOpenedRotation: {x: -90, y: 0, z: 0}
   _openDuration: 0.5
   _closeDuration: 0.5
   _openEase: 6
