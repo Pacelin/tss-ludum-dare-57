@@ -187,76 +187,76 @@ MonoBehaviour:
     m_Key: location.crystal.name
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598986
-    m_Key: event.blockage.name
+  - m_Id: 6506439139909632
+    m_Key: event.spider.name
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598987
-    m_Key: event.spikes.name
+  - m_Id: 6506439186046976
+    m_Key: event.ghost.name
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598988
     m_Key: event.monster.name
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598989
-    m_Key: event.blockage.desc
+  - m_Id: 6506439186046977
+    m_Key: event.spider.desc
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598990
-    m_Key: event.spikes.desc
+  - m_Id: 6506439186046978
+    m_Key: event.ghost.desc
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598991
     m_Key: event.monster.desc
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598992
-    m_Key: event.blockage.choice.0
+  - m_Id: 6506439186046979
+    m_Key: event.spider.choice.0
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598993
-    m_Key: event.blockage.choice.1
+  - m_Id: 6506439186046980
+    m_Key: event.spider.choice.1
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598994
-    m_Key: event.blockage.choice.2
+  - m_Id: 6506439186046981
+    m_Key: event.spider.choice.2
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598995
-    m_Key: event.blockage.result.0
+  - m_Id: 6506439186046982
+    m_Key: event.spider.result.0
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598996
-    m_Key: event.blockage.result.1
+  - m_Id: 6506439186046983
+    m_Key: event.spider.result.1
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598997
-    m_Key: event.blockage.result.2
+  - m_Id: 6506439186046984
+    m_Key: event.spider.result.2
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598998
-    m_Key: event.spikes.choice.0
+  - m_Id: 6506439186046985
+    m_Key: event.ghost.choice.0
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598999
-    m_Key: event.spikes.choice.1
+  - m_Id: 6506439186046986
+    m_Key: event.ghost.choice.1
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593599000
-    m_Key: event.spikes.choice.2
+  - m_Id: 6506439186046987
+    m_Key: event.ghost.choice.2
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593599001
-    m_Key: event.spikes.result.0
+  - m_Id: 6506439186046988
+    m_Key: event.ghost.result.0
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593599002
-    m_Key: event.spikes.result.1
+  - m_Id: 6506439186046989
+    m_Key: event.ghost.result.1
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593599003
-    m_Key: event.spikes.result.2
+  - m_Id: 6506439186046990
+    m_Key: event.ghost.result.2
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599004

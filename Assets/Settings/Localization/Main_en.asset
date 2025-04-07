@@ -214,100 +214,41 @@ MonoBehaviour:
     m_Localized: Crystal Dungeons
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598986
-    m_Localized: Blockage
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593598987
-    m_Localized: Sharp Spikes
-    m_Metadata:
-      m_Items: []
   - m_Id: 6028775593598988
     m_Localized: Something from the Deep
     m_Metadata:
       m_Items: []
-  - m_Id: 6028775593598989
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593598990
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
   - m_Id: 6028775593598991
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593598992
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593598993
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593598994
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593598995
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593598996
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593598997
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593598998
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593598999
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593599000
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593599001
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593599002
-    m_Localized: null
-    m_Metadata:
-      m_Items: []
-  - m_Id: 6028775593599003
-    m_Localized: null
+    m_Localized: "You stared into the darkness... until the darkness stared back.
+      That void wasn\u2019t empty - it was a huge crystal monster being."
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599004
-    m_Localized: null
+    m_Localized: "I\u2019ll try to slip past... slowly. Never breaking eye contact."
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599005
-    m_Localized: null
+    m_Localized: "I\u2019ll offer it some crystal shards."
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599006
-    m_Localized: null
+    m_Localized: I carry a crystal heart... and the monster has a hole that matches
+      it perfectly.
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599007
-    m_Localized: null
+    m_Localized: You edged past, silent as shadow - but that thing snagged your pack.
+      Treasures fell to the ground.
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599008
-    m_Localized: null
+    m_Localized: You inserted pure crystal shards into its gap. The creature shivered...
+      then retreated.
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599009
-    m_Localized: null
+    m_Localized: You placed the heart into the gap. The monster stillened. You can
+      pass.
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599010
@@ -328,6 +269,80 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6475610980343809
     m_Localized: '{0}'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439139909632
+    m_Localized: Pirate Spider
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046976
+    m_Localized: Crying Ghost
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046977
+    m_Localized: Yarrr! Ye've stumbled right into the Pirate Spider's lair! Tonight,
+      ye be its dinner!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046978
+    m_Localized: "Suddenly, before you stands the ghost of a little girl. She\u2019s...
+      crying?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046979
+    m_Localized: I'll poke out its beady eyes!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046980
+    m_Localized: I'll lob some scrap iron at it - send it flyin' off the cliff!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046981
+    m_Localized: Might be I can buy me way past with some shiny doublons.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046982
+    m_Localized: Ye took a swing at the beast but missed yer mark! Treasure spilled
+      from yer sack right into its web. The eight-legged devil scurried off into
+      the caves!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046983
+    m_Localized: The mangy spider weren't in no fightin' mood. When ye raised another
+      chunk o' iron, it turned tail and skittered down the rocks!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046984
+    m_Localized: Ye tossed the hairy brute a handful o' pirate coin. The greedy wretch
+      snatched it up quick! Aye, seems ye're free to pass... fer now.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046985
+    m_Localized: '"Aa-agh! THERE''S NO WAY... Ghost aren''t real!"'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046986
+    m_Localized: "I\u2019ll throw a seashell at her - maybe it\u2019ll scare her
+      off."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046987
+    m_Localized: "I\u2019ll tell her a fairytale... about a ghost girl."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046988
+    m_Localized: You flinched so hard that treasure spilled from your pack. With
+      a soft wail, she drifted away...
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046989
+    m_Localized: The seashell passed right through her. Her sobs grew louder, and
+      she vanished deeper into the gloom. Well done.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6506439186046990
+    m_Localized: The story seemed to soothe her. Her tears faded... then, without
+      a sound, she was gone.
     m_Metadata:
       m_Items: []
   references:
