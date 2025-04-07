@@ -895,6 +895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: LudumDare57.UI.SocialButton, Assembly-CSharp
   _feedbackButton: {fileID: 8363033559870990863}
   _url: 
+  _analytics: 
 --- !u!114 &8363033559870990863 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7882798321923813391, guid: 2868c534a4143f7499fea22670177957, type: 3}
@@ -1202,6 +1203,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: LudumDare57.UI.SocialButton, Assembly-CSharp
   _feedbackButton: {fileID: 5950472220518349473}
   _url: 
+  _analytics: 
 --- !u!114 &5950472220518349473 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7882798321923813391, guid: 2868c534a4143f7499fea22670177957, type: 3}
@@ -1375,6 +1377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: LudumDare57.UI.SocialButton, Assembly-CSharp
   _feedbackButton: {fileID: 3292332884935929161}
   _url: 
+  _analytics: 
 --- !u!1001 &6820486600963103247
 PrefabInstance:
   m_ObjectHideFlags: 0

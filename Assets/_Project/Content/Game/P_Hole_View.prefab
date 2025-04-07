@@ -1414,7 +1414,7 @@ MonoBehaviour:
     Transform: {fileID: 4310677680474105743}
   - Parallax: 0.24
     Transform: {fileID: 2266608157009715490}
-  _downSpeed: 50
+  _downSpeed: 4
 --- !u!1 &3911924651336619088
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,7 +1531,7 @@ SpriteRenderer:
   m_Size: {x: 17.777779, y: 16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!331 &2524776267591108998
