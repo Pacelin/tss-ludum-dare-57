@@ -73,7 +73,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{14dd6fcd-3b71-44fa-91e2-0c6c968a78ed}">
 		<property name="volume">
-			<value>-13</value>
+			<value>-14.5</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{ef93334b-aad0-4169-b52e-25388e8a7fb1}</destination>
@@ -117,7 +117,7 @@
 	<object class="MixerBusFader" id="{86e67e49-1ba2-4d73-97b7-16e6116cef70}" />
 	<object class="PannerEffect" id="{7d3a2ec5-39ae-4ca1-b906-73653f5f10b6}">
 		<property name="stereoPan">
-			<value>-34</value>
+			<value>-70</value>
 		</property>
 	</object>
 	<object class="SFXReverbEffect" id="{db1478ec-4f3c-4ad9-891d-3cb2966be6d3}" />

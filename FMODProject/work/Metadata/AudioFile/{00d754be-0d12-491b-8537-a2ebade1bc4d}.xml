@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{423365c7-9f54-4010-864c-635b917d99d5}">
+	<object class="AudioFile" id="{00d754be-0d12-491b-8537-a2ebade1bc4d}">
 		<property name="assetPath">
-			<value>impact/A_treeimpact.wav</value>
+			<value>destroy/A_chestdestro.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.47714285714285715</value>
+			<value>1.400748299319728</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{cfa004d2-95d8-431c-98f0-201d45e0d327}</destination>
