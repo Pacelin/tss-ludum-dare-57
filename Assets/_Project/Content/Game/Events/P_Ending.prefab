@@ -250,6 +250,7 @@ GameObject:
   - component: {fileID: 8088316978289500032}
   - component: {fileID: 7646571321863196172}
   - component: {fileID: 1632361548735894949}
+  - component: {fileID: 1012033172877838548}
   m_Layer: 0
   m_Name: P_Ending
   m_TagString: Untagged
@@ -312,6 +313,8 @@ MonoBehaviour:
   - rid: 4922611590527975635
   - rid: 4922611590527975596
   - rid: 4922611590527975607
+  - rid: 4922611590527975682
+  - rid: 4922611590527975685
   - rid: 4922611590527975609
   - rid: 4922611590527975618
   - rid: 4922611590527975627
@@ -389,6 +392,18 @@ MonoBehaviour:
                 m_StringArgument: end
                 m_BoolArgument: 0
               m_CallState: 2
+            - m_Target: {fileID: 1012033172877838548}
+              m_TargetAssemblyTypeName: LudumDare57.Game.PlayerActor, Assembly-CSharp
+              m_MethodName: PlayAnim
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
     - rid: 4922611590527975609
       type: {class: ScriptableTweenGraphic_DOFade, ns: TSS.Tweening, asm: TSS.Tweening}
       data:
@@ -418,7 +433,7 @@ MonoBehaviour:
     - rid: 4922611590527975612
       type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
-        _value: 1.72
+        _value: 1.22
     - rid: 4922611590527975613
       type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
@@ -512,6 +527,46 @@ MonoBehaviour:
       type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
       data:
         _value: 1
+    - rid: 4922611590527975682
+      type: {class: ScriptableTweenInterval, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _interval:
+          rid: 4922611590527975683
+    - rid: 4922611590527975683
+      type: {class: FloatValueProvider, ns: TSS.Utils, asm: TSS.Utils}
+      data:
+        _value: 0.5
+    - rid: 4922611590527975685
+      type: {class: ScriptableTweenCallback, ns: TSS.Tweening, asm: TSS.Tweening}
+      data:
+        _connectBehaviour: 0
+        _callback:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1012033172877838548}
+              m_TargetAssemblyTypeName: LudumDare57.Game.PlayerActor, Assembly-CSharp
+              m_MethodName: Kick
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+--- !u!114 &1012033172877838548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7067623921855790771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e42840ac10d64b85897985df4aae40bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: LudumDare57.Game.PlayerActor, Assembly-CSharp
 --- !u!1 &7151258265262827064
 GameObject:
   m_ObjectHideFlags: 0
