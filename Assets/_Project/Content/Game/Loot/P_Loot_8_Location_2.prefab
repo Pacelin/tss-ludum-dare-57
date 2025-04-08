@@ -53,7 +53,7 @@ MonoBehaviour:
   _scaleRange: {x: 1, y: 1}
   _rotateRange: {x: -15, y: 10}
   _pitchRange: {x: 1.1, y: 0.9}
-  _requirePickaxeLevel: 1
+  _requirePickaxeLevel: 2
   _dropItem: 8
   _dropChance: 1
   _kickSound:

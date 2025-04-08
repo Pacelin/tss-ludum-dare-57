@@ -42,7 +42,7 @@ namespace LudumDare57.Game
             _kicksRemaining = (int) Mathf.Lerp(_kicksCount.x, _kicksCount.y, t);
             _kicksRemaining = Mathf.Max(1, _kicksRemaining - GameContext.PickaxeStrength);
             if (GameContext.PickaxeLevel < _requirePickaxeLevel)
-                _kicksRemaining += 99;
+                _kicksRemaining += 3;
             _pitch = Mathf.Lerp(_pitchRange.x, _pitchRange.y, t);
             transform.localScale = Vector3.one * Mathf.Lerp(_scaleRange.x, _scaleRange.y, t);
 
