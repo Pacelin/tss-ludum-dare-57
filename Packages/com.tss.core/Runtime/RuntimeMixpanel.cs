@@ -13,7 +13,14 @@ namespace TSS.Core
         {
             Mixpanel.Init();
             await UniTask.WaitUntil(Mixpanel.IsInitialized, cancellationToken: cancellationToken);
-            Mixpanel.Track("$session_start");
+            try
+            {
+                Mixpanel.Track("$session_start");
+            }
+            catch
+            {
+                Mixpanel.Disable();
+            }
         }
 
         public void Dispose()

@@ -27,6 +27,8 @@
     <type fullname="LudumDare57.Game.Shop.ShopComponent" preserve="all" />
     <type fullname="LudumDare57.Game.Shop.ShopUpgradeComponent" preserve="all" />
     <type fullname="LudumDare57.Game.Shop.ShopUpgradeTooltip" preserve="all" />
+    <type fullname="LudumDare57.Game.Tutorial.TutorialActivation" preserve="all" />
+    <type fullname="LudumDare57.Game.VfxEffectTrigger" preserve="all" />
     <type fullname="LudumDare57.Inventory.InventoryComponent" preserve="all" />
     <type fullname="LudumDare57.Inventory.ItemComponent" preserve="all" />
     <type fullname="LudumDare57.Inventory.ItemConfig" preserve="all" />
