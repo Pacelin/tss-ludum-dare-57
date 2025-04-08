@@ -338,7 +338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8146732677063564700, guid: b91ef00e2721a3046a3c92a0d3d9c9fa, type: 3}
       propertyPath: _penalty.Array.data[0].Count
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8146732677063564700, guid: b91ef00e2721a3046a3c92a0d3d9c9fa, type: 3}
       propertyPath: _penalty.Array.data[1].Count

@@ -219,8 +219,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593598991
-    m_Localized: "You stared into the darkness... until the darkness stared back.
-      That void wasn\u2019t empty - it was a huge crystal monster being."
+    m_Localized: You stared into the darkness... until the darkness stared back.
+      It was a huge crystal monster being.
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599004
@@ -232,13 +232,11 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599006
-    m_Localized: I carry a crystal heart... and the monster has a hole that matches
-      it perfectly.
+    m_Localized: I will offer him a crystal heart.
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599007
-    m_Localized: You edged past, silent as shadow - but that thing snagged your pack.
-      Treasures fell to the ground.
+    m_Localized: That thing snagged your pack. Treasures fell to the ground.
     m_Metadata:
       m_Items: []
   - m_Id: 6028775593599008
@@ -303,18 +301,17 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 6506439186046982
     m_Localized: Ye took a swing at the beast but missed yer mark! Treasure spilled
-      from yer sack right into its web. The eight-legged devil scurried off into
-      the caves!
+      from yer sack right into its web.
     m_Metadata:
       m_Items: []
   - m_Id: 6506439186046983
-    m_Localized: The mangy spider weren't in no fightin' mood. When ye raised another
-      chunk o' iron, it turned tail and skittered down the rocks!
+    m_Localized: The mangy spider weren't in no fightin' mood. It turned tail and
+      skittered down the rocks!
     m_Metadata:
       m_Items: []
   - m_Id: 6506439186046984
-    m_Localized: Ye tossed the hairy brute a handful o' pirate coin. The greedy wretch
-      snatched it up quick! Aye, seems ye're free to pass... fer now.
+    m_Localized: Ye tossed the hairy brute a handful o' pirate coin. Aye, seems ye're
+      free to pass... fer now.
     m_Metadata:
       m_Items: []
   - m_Id: 6506439186046985
@@ -331,18 +328,18 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 6506439186046988
-    m_Localized: You flinched so hard that treasure spilled from your pack. With
-      a soft wail, she drifted away...
+    m_Localized: You flinched so hard that treasure spilled from your pack. She drifted
+      away...
     m_Metadata:
       m_Items: []
   - m_Id: 6506439186046989
     m_Localized: The seashell passed right through her. Her sobs grew louder, and
-      she vanished deeper into the gloom. Well done.
+      she vanished. Well done.
     m_Metadata:
       m_Items: []
   - m_Id: 6506439186046990
-    m_Localized: The story seemed to soothe her. Her tears faded... then, without
-      a sound, she was gone.
+    m_Localized: The story seemed to soothe her. Her tears faded... a moment later
+      she was gone.
     m_Metadata:
       m_Items: []
   - m_Id: 6549068556787712
