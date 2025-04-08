@@ -16,6 +16,7 @@ namespace TSS.Core
             try
             {
                 Mixpanel.Track("$session_start");
+                Mixpanel.Flush();
             }
             catch
             {
